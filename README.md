@@ -8,14 +8,13 @@ Je m’appelle Mathéo et je me spécialise dans la création de projets qui me 
 
 ## 🔭 Mes projets
 
-- **L'Antre des Loutres** : Une communauté où les idées se transforment en projets, et où la créativité est reine !
+- **[L'Antre des Loutres](https://github.com/L-Antre-des-Loutres)** : Une communauté où les idées se transforment en projets, et où la créativité et la bonne humeur est reine !
 - **Bots Discord** : Je crée des bots, en particulier pour le jeu **Genshin Impact**, pour enrichir l'expérience des joueurs.
-- **API et gestion de serveurs** : En quête de solutions pratiques et fonctionnelles, je m’amuse aussi à construire des API pour simplifier la gestion de serveurs de jeu.
+- **[API et gestion de serveurs](https://github.com/matheo-1712/API-Serveur)** : En quête de solutions pratiques et fonctionnelles, je m’amuse aussi à construire des API pour simplifier la gestion de serveurs de jeu.
 
 ## Ce que j'adore faire 💻
 
 - **Développer en JavaScript et PHP** : Mes langages de prédilection !
-- **Explorer le Full-Stack** : Toujours en train d'apprendre et d'élargir mes compétences pour devenir un développeur Full-Stack polyvalent.
 - **Partager et collaborer** : Rien de mieux que de travailler ensemble pour donner vie aux idées.
 
 ## Plus sur moi 😄
