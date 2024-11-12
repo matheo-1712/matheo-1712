@@ -17,7 +17,7 @@ Je m’appelle Mathéo et je me spécialise dans la création de projets qui me 
 - **Développer en JavaScript et PHP** : Mes langages de prédilection !
 - **Partager et collaborer** : Rien de mieux que de travailler ensemble pour donner vie aux idées.
 
-## Plus sur moi 😄
+## Plus sur moi 😁
 
 - 🌱 J’aime apprendre de nouvelles technologies et expérimenter dans mes projets.
 - ⚡ Fun fact : Les loutres sont mes animaux préférés (en plus d'être super organisées, elles sont adorables) 🦦
