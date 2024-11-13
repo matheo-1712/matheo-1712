@@ -23,4 +23,4 @@ Je m’appelle Mathéo et je me spécialise dans la création de projets qui me 
 - ⚡ Fun fact : Les loutres sont mes animaux préférés (en plus d'être super organisées, elles sont adorables) 🦦
 - 📫 Envie de discuter ou de collaborer ? N'hésitez pas à me contacter !
 
-Merci de visiter mon profil ! Je vous souhaite une belle exploration à travers mes projets et, surtout, beaucoup de fun ! 🎉
+Merci de visiter mon profil ! Je vous souhaite une belle exploration à travers mes projets et, surtout, de passer une très bonne journée ! 🎉
