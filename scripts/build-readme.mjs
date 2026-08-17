@@ -46,6 +46,27 @@ const NOT_A_SELLING_POINT = new Set([
   "Makefile", "Batchfile", "PowerShell", "Procfile", "SCSS", "Less", "Vue", "Handlebars",
 ]);
 
+// Destination officielle de chaque techno. Un langage absent d'ici reste
+// affiché, mais sans lien : on ne renvoie jamais vers une simple image.
+const DOCS = {
+  TypeScript: "https://www.typescriptlang.org/",
+  JavaScript: "https://developer.mozilla.org/docs/Web/JavaScript",
+  Rust: "https://www.rust-lang.org/",
+  Java: "https://dev.java/",
+  Kotlin: "https://kotlinlang.org/",
+  PHP: "https://www.php.net/",
+  "C++": "https://isocpp.org/",
+  "C#": "https://learn.microsoft.com/dotnet/csharp/",
+  Astro: "https://astro.build/",
+  HTML: "https://developer.mozilla.org/docs/Web/HTML",
+  CSS: "https://developer.mozilla.org/docs/Web/CSS",
+  Ruby: "https://www.ruby-lang.org/",
+  Dockerfile: "https://docs.docker.com/reference/dockerfile/",
+  Twig: "https://twig.symfony.com/",
+  Vue: "https://vuejs.org/",
+  Shell: "https://www.gnu.org/software/bash/",
+};
+
 const BADGE = {
   TypeScript: "TypeScript-3178C6?logo=typescript&logoColor=white",
   JavaScript: "JavaScript-F7DF1E?logo=javascript&logoColor=black",
@@ -115,11 +136,14 @@ async function searchCount(kind, q) {
 const fmt = (n) => n.toLocaleString("en-US");
 const day = (iso) => (iso ? iso.slice(0, 10) : "");
 
+// Rend l'image cliquable seulement si on a une vraie destination.
+const linked = (img, href) => (href ? `[${img}](${href})` : img);
+
 function langBadge(lang) {
   if (!lang) return "";
   const spec = BADGE[lang] ?? `${encodeURIComponent(lang)}-64748B`;
   const sep = spec.includes("?") ? "&" : "?";
-  return `![${lang}](https://img.shields.io/badge/-${spec}${sep}style=flat-square)`;
+  return linked(`![${lang}](https://img.shields.io/badge/-${spec}${sep}style=flat-square)`, DOCS[lang]);
 }
 
 export async function collectRepo(repo) {
@@ -163,18 +187,26 @@ export function projectTable(rows) {
 }
 
 export function statBadges(s) {
-  const b = (label, value, color = "7C3AED") =>
+  const img = (label, value, color) =>
     `![${label}](https://img.shields.io/badge/${encodeURIComponent(label).replace(/%20/g, "_")}-${encodeURIComponent(value)}-${color}?style=for-the-badge)`;
+  // Chaque compteur pointe vers la recherche GitHub qui le reproduit : le chiffre est vérifiable.
+  const find = (query, type) => `https://github.com/search?q=${encodeURIComponent(query)}&type=${type}`;
+  const orgQuery = ORGS.map((o) => `org:${o}`).join(" ");
+
   return [
-    b("Commits", fmt(s.commits)),
-    b("Pull requests", fmt(s.prs)),
-    b("Merged", `${fmt(s.merged)} / ${fmt(s.prs)}`, "16A34A"),
-    b("Issues", fmt(s.issues)),
-    b("Repositories", fmt(s.repos)),
-    b("Releases", fmt(s.releases)),
-    b("Org / team commits", `${s.orgShare}%`, "16A34A"),
-    b("GitHub since", String(s.since), "64748B"),
-  ].join("\n");
+    ["Commits", fmt(s.commits), "7C3AED", find(`author:${USER}`, "commits")],
+    ["Pull requests", fmt(s.prs), "7C3AED", find(`author:${USER} type:pr`, "pullrequests")],
+    ["Merged", `${fmt(s.merged)} / ${fmt(s.prs)}`, "16A34A", find(`author:${USER} type:pr is:merged`, "pullrequests")],
+    ["Issues", fmt(s.issues), "7C3AED", find(`author:${USER} type:issue`, "issues")],
+    ["Repositories", fmt(s.repos), "7C3AED", `https://github.com/${USER}?tab=repositories`],
+    // Pas d'URL fiable pour l'ensemble des releases : badge non cliquable.
+    ["Releases", fmt(s.releases), "7C3AED", ""],
+    ["Org / team commits", `${s.orgShare}%`, "16A34A", ORGS.length ? find(`author:${USER} ${orgQuery}`, "commits") : ""],
+    // Rien d'utile à ouvrir : on laisse le badge non cliquable.
+    ["GitHub since", String(s.since), "64748B", ""],
+  ]
+    .map(([label, value, color, href]) => linked(img(label, value, color), href))
+    .join("\n");
 }
 
 export function bannerUrl(s) {
