@@ -3,7 +3,7 @@
 
 # Mathéo Perodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BTypeScript+%C2%B7+Astro+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Rust%3B2%2C209+commits+%C2%B7+409+pull+requests+%C2%B7+81+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Astro+%C2%B7+Rust+%C2%B7+Java%3B2%2C210+commits+%C2%B7+409+pull+requests+%C2%B7+84+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![Email](https://img.shields.io/badge/Email-perod.matheo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -19,12 +19,12 @@
 
 <div align="center">
 
-[![Commits](https://img.shields.io/badge/Commits-2%2C209-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
+[![Commits](https://img.shields.io/badge/Commits-2%2C210-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
 [![Pull requests](https://img.shields.io/badge/Pull_requests-409-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
 [![Merged](https://img.shields.io/badge/Merged-401%20%2F%20409-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-262-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
-[![Repositories](https://img.shields.io/badge/Repositories-46-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
-![Releases](https://img.shields.io/badge/Releases-81-7C3AED?style=for-the-badge)
+[![Repositories](https://img.shields.io/badge/Repositories-45-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
+![Releases](https://img.shields.io/badge/Releases-84-7C3AED?style=for-the-badge)
 [![Org / team commits](https://img.shields.io/badge/Org_%2F_team_commits-62%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
 ![GitHub since](https://img.shields.io/badge/GitHub_since-2022-64748B?style=for-the-badge)
 
@@ -33,8 +33,8 @@
 ## Latest releases · Dernières sorties
 
 - `2026-08-16` **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** → `v0.2.0`
-- `2026-08-05` **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** → `v1.7.0`
 - `2026-08-05` **[Mateloutre](https://github.com/L-Antre-des-Loutres/Mateloutre)** → `v1.3.0`
+- `2026-08-05` **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** → `v1.7.0`
 - `2026-07-27` **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.5.7`
 - `2026-07-10` **[OAPI](https://github.com/matheo-1712/OAPI)** → `v0.4.1`
 
@@ -48,21 +48,21 @@
 | Project | | Commits | Releases | Latest | Stack |
 |---|---|:---:|:---:|:---:|---|
 | **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** | Community website · member stats & achievements | `357` | `18` | `v1.7.0` <sub>2026-08-05</sub> | [![Astro](https://img.shields.io/badge/-Astro-BC52EE?logo=astro&logoColor=white&style=flat-square)](https://astro.build/) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
-| **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** | Minecraft datapack + resourcepack · custom creature roster | `336` | `14` | `v1.5.7` <sub>2026-07-27</sub> | [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) ![mcfunction](https://img.shields.io/badge/-mcfunction-64748B?style=flat-square) |
+| **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** | Minecraft datapack + resourcepack · custom creature roster | `336` | `14` | `v1.5.7` <sub>2026-07-27</sub> | [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
 | **[OtterlyApi](https://github.com/L-Antre-des-Loutres/OtterlyApi)** | Game server management API · install, start, stop over HTTP | `158` | `3` | `v1.2.0` <sub>2026-01-14</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
-| **[Arisoutre](https://github.com/L-Antre-des-Loutres/Arisoutre)** | Discord admin bot · member management | `128` | `7` | `v3.1.3` <sub>2026-02-12</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
-| **[Otterbots](https://github.com/L-Antre-des-Loutres/Otterbots)** | Discord bot framework · native events, commands, channels | `126` | `9` | `v1.0.0` <sub>2026-01-15</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
+| **[Arisoutre](https://github.com/L-Antre-des-Loutres/Arisoutre)** | Discord admin bot · member management | `128` | `7` | `v3.1.3` <sub>2026-02-12</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) [![Dockerfile](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat-square)](https://docs.docker.com/reference/dockerfile/) |
+| **[Otterbots](https://github.com/L-Antre-des-Loutres/Otterbots)** | Discord bot framework · native events, commands, channels | `126` | `9` | `v1.0.0` <sub>2026-01-15</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
 | **[Mateloutre](https://github.com/L-Antre-des-Loutres/Mateloutre)** | Community Discord bot · Docker deployment | `75` | `4` | `v1.3.0` <sub>2026-08-05</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) [![Dockerfile](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat-square)](https://docs.docker.com/reference/dockerfile/) |
 
 **Solo**
 
 | Project | | Commits | Releases | Latest | Stack |
 |---|---|:---:|:---:|:---:|---|
-| **[OAPI](https://github.com/matheo-1712/OAPI)** | Async orchestration API · image generation, infra monitoring | `91` | `5` | `v0.4.1` <sub>2026-07-10</sub> | [![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white&style=flat-square)](https://www.rust-lang.org/) |
-| **[Citlali](https://github.com/matheo-1712/Citlali)** | Genshin Impact Discord bot | `81` | `8` | `v3.0.3` <sub>2026-01-20</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
+| **[OAPI](https://github.com/matheo-1712/OAPI)** | Async orchestration API · image generation, infra monitoring | `91` | `5` | `v0.4.1` <sub>2026-07-10</sub> | [![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white&style=flat-square)](https://www.rust-lang.org/) [![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=flat-square)](https://developer.mozilla.org/docs/Web/HTML) |
+| **[Citlali](https://github.com/matheo-1712/Citlali)** | Genshin Impact Discord bot | `81` | `8` | `v3.0.3` <sub>2026-01-20</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
 | **[WatchSide](https://github.com/matheo-1712/WatchSide)** | Movie rental platform · dynamic pricing, user roles | `62` | `5` | `v1.0.0` <sub>2026-02-01</sub> | [![PHP](https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=flat-square)](https://www.php.net/) [![Twig](https://img.shields.io/badge/-Twig-64748B?style=flat-square)](https://twig.symfony.com/) |
 | **[CitlAPI](https://github.com/matheo-1712/CitlAPI)** | REST API powering Citlali | `60` | `1` | `v1.0.0` <sub>2026-01-19</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
-| **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** | Minecraft mod · configurable trainers | `42` | `3` | `v0.2.0` <sub>2026-08-16</sub> | [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat-square)](https://kotlinlang.org/) |
+| **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** | Minecraft mod · configurable trainers | `42` | `3` | `v0.2.0` <sub>2026-08-16</sub> | [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat-square)](https://kotlinlang.org/) [![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white&style=flat-square)](https://dev.java/) |
 
 ## Tech Stack
 
