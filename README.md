@@ -3,7 +3,7 @@
 
 # Mathéo Perodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Astro+%C2%B7+Kotlin+%C2%B7+Rust%3B2%2C498+commits+%C2%B7+467+pull+requests+%C2%B7+100+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Astro+%C2%B7+Kotlin+%C2%B7+Rust%3B2%2C498+commits+%C2%B7+467+pull+requests+%C2%B7+102+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![Email](https://img.shields.io/badge/Email-perod.matheo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -24,7 +24,7 @@
 [![Merged](https://img.shields.io/badge/Merged-459%20%2F%20467-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
 [![Repositories](https://img.shields.io/badge/Repositories-49-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
-![Releases](https://img.shields.io/badge/Releases-100-7C3AED?style=for-the-badge)
+![Releases](https://img.shields.io/badge/Releases-102-7C3AED?style=for-the-badge)
 [![Org / team commits](https://img.shields.io/badge/Org_%2F_team_commits-58%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
 ![GitHub since](https://img.shields.io/badge/GitHub_since-2022-64748B?style=for-the-badge)
 
@@ -32,8 +32,8 @@
 
 ## Latest releases · Dernières sorties
 
+- `2026-09-18` **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** → `v0.8.3-1.7.3`
 - `2026-09-16` **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.6.3`
-- `2026-09-16` **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** → `v0.8.2`
 - `2026-08-05` **[Mateloutre](https://github.com/L-Antre-des-Loutres/Mateloutre)** → `v1.3.0`
 - `2026-08-05` **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** → `v1.7.0`
 - `2026-07-10` **[OAPI](https://github.com/matheo-1712/OAPI)** → `v0.4.1`
@@ -58,7 +58,7 @@
 
 | Project | | Commits | Releases | Latest | Stack |
 |---|---|:---:|:---:|:---:|---|
-| **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** | Minecraft mod · configurable trainers | `173` | `12` | `v0.8.2` <sub>2026-09-16</sub> | [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat-square)](https://kotlinlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
+| **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** | Minecraft mod · configurable trainers | `173` | `14` | `v0.8.3-1.7.3` <sub>2026-09-18</sub> | [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat-square)](https://kotlinlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
 | **[OAPI](https://github.com/matheo-1712/OAPI)** | Async orchestration API · image generation, infra monitoring | `91` | `5` | `v0.4.1` <sub>2026-07-10</sub> | [![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white&style=flat-square)](https://www.rust-lang.org/) [![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=flat-square)](https://developer.mozilla.org/docs/Web/HTML) |
 | **[Citlali](https://github.com/matheo-1712/Citlali)** | Genshin Impact Discord bot | `81` | `8` | `v3.0.3` <sub>2026-01-20</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
 | **[WatchSide](https://github.com/matheo-1712/WatchSide)** | Movie rental platform · dynamic pricing, user roles | `62` | `5` | `v1.0.0` <sub>2026-02-01</sub> | [![PHP](https://img.shields.io/badge/-PHP-777BB4?logo=php&logoColor=white&style=flat-square)](https://www.php.net/) [![Twig](https://img.shields.io/badge/-Twig-64748B?style=flat-square)](https://twig.symfony.com/) |
@@ -137,6 +137,6 @@
 [![Portfolio](https://img.shields.io/badge/perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![GitHub](https://img.shields.io/badge/L'Antre_des_Loutres-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>Auto-generated · Généré automatiquement - 2026-09-18</sub>
+<sub>Auto-generated · Généré automatiquement - 2026-09-19</sub>
 
 </div>
