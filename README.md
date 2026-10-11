@@ -3,7 +3,7 @@
 
 # Mathéo Perodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Astro+%C2%B7+Kotlin+%C2%B7+Rust%3B2%2C613+commits+%C2%B7+506+pull+requests+%C2%B7+117+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Astro+%C2%B7+Kotlin+%C2%B7+Rust%3B2%2C617+commits+%C2%B7+507+pull+requests+%C2%B7+118+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![Email](https://img.shields.io/badge/Email-perod.matheo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -19,12 +19,12 @@
 
 <div align="center">
 
-[![Commits](https://img.shields.io/badge/Commits-2%2C613-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
-[![Pull requests](https://img.shields.io/badge/Pull_requests-506-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
-[![Merged](https://img.shields.io/badge/Merged-495%20%2F%20506-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
+[![Commits](https://img.shields.io/badge/Commits-2%2C617-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
+[![Pull requests](https://img.shields.io/badge/Pull_requests-507-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
+[![Merged](https://img.shields.io/badge/Merged-496%20%2F%20507-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
 [![Repositories](https://img.shields.io/badge/Repositories-53-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
-![Releases](https://img.shields.io/badge/Releases-117-7C3AED?style=for-the-badge)
+![Releases](https://img.shields.io/badge/Releases-118-7C3AED?style=for-the-badge)
 [![Org / team commits](https://img.shields.io/badge/Org_%2F_team_commits-56%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
 ![GitHub since](https://img.shields.io/badge/GitHub_since-2022-64748B?style=for-the-badge)
 
@@ -32,8 +32,8 @@
 
 ## Latest releases · Dernières sorties
 
+- `2026-10-10` **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.6.5`
 - `2026-10-06` **[cobblemon-trainers](https://github.com/matheo-1712/cobblemon-trainers)** → `v1.1.0`
-- `2026-09-25` **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.6.4`
 - `2026-08-05` **[Mateloutre](https://github.com/L-Antre-des-Loutres/Mateloutre)** → `v1.3.0`
 - `2026-08-05` **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** → `v1.7.0`
 - `2026-07-10` **[OAPI](https://github.com/matheo-1712/OAPI)** → `v0.4.1`
@@ -47,7 +47,7 @@
 
 | Project | | Commits | Releases | Latest | Stack |
 |---|---|:---:|:---:|:---:|---|
-| **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** | Minecraft datapack + resourcepack · custom creature roster | `379` | `19` | `v1.6.4` <sub>2026-09-25</sub> | [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
+| **[Cobblemon-RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** | Minecraft datapack + resourcepack · custom creature roster | `383` | `20` | `v1.6.5` <sub>2026-10-10</sub> | [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://developer.mozilla.org/docs/Web/JavaScript) |
 | **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** | Community website · member stats & achievements | `357` | `18` | `v1.7.0` <sub>2026-08-05</sub> | [![Astro](https://img.shields.io/badge/-Astro-BC52EE?logo=astro&logoColor=white&style=flat-square)](https://astro.build/) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
 | **[OtterlyApi](https://github.com/L-Antre-des-Loutres/OtterlyApi)** | Game server management API · install, start, stop over HTTP | `158` | `3` | `v1.2.0` <sub>2026-01-14</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) |
 | **[Arisoutre](https://github.com/L-Antre-des-Loutres/Arisoutre)** | Discord admin bot · member management | `128` | `7` | `v3.1.3` <sub>2026-02-12</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/) [![Dockerfile](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat-square)](https://docs.docker.com/reference/dockerfile/) |
@@ -137,6 +137,6 @@
 [![Portfolio](https://img.shields.io/badge/perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![GitHub](https://img.shields.io/badge/L'Antre_des_Loutres-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>Auto-generated · Généré automatiquement - 2026-10-10</sub>
+<sub>Auto-generated · Généré automatiquement - 2026-10-11</sub>
 
 </div>
