@@ -23,7 +23,7 @@
 [![Pull requests](https://img.shields.io/badge/Pull_requests-517-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
 [![Merged](https://img.shields.io/badge/Merged-506%20%2F%20517-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
-[![Repositories](https://img.shields.io/badge/Repositories-54-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
+[![Repositories](https://img.shields.io/badge/Repositories-55-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
 ![Releases](https://img.shields.io/badge/Releases-121-7C3AED?style=for-the-badge)
 [![Org / team commits](https://img.shields.io/badge/Org_%2F_team_commits-56%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
 ![GitHub since](https://img.shields.io/badge/GitHub_since-2022-64748B?style=for-the-badge)
@@ -137,6 +137,6 @@
 [![Portfolio](https://img.shields.io/badge/perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![GitHub](https://img.shields.io/badge/L'Antre_des_Loutres-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>Auto-generated · Généré automatiquement - 2026-10-20</sub>
+<sub>Auto-generated · Généré automatiquement - 2026-10-21</sub>
 
 </div>
