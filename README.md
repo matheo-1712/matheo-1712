@@ -3,7 +3,7 @@
 
 # Mathéo Perodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BJavaScript+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B2%2C806+commits+%C2%B7+550+pull+requests+%C2%B7+134+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BJavaScript+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B2%2C816+commits+%C2%B7+550+pull+requests+%C2%B7+134+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![Email](https://img.shields.io/badge/Email-perod.matheo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -19,7 +19,7 @@
 
 <div align="center">
 
-[![Commits](https://img.shields.io/badge/Commits-2%2C806-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
+[![Commits](https://img.shields.io/badge/Commits-2%2C816-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
 [![Pull requests](https://img.shields.io/badge/Pull_requests-550-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
 [![Merged](https://img.shields.io/badge/Merged-539%20%2F%20550-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
@@ -137,6 +137,6 @@
 [![Portfolio](https://img.shields.io/badge/perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
 [![GitHub](https://img.shields.io/badge/L'Antre_des_Loutres-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>Auto-generated · Généré automatiquement - 2026-11-04</sub>
+<sub>Auto-generated · Généré automatiquement - 2026-11-05</sub>
 
 </div>
