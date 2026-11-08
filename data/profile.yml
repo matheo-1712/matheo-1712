@@ -1,0 +1,99 @@
+# Profil — edite ce fichier a la main.
+# Les projets, eux, sont collectes automatiquement (voir data/projects.json).
+
+identity:
+  name: "Mathéo Pérodeau"
+  role: "Développeur backend & infrastructure"
+  location: "Angers, France"
+  email: "perod.matheo@gmail.com"
+  github: "matheo-1712"
+  linkedin: "https://www.linkedin.com/in/mathéo-perodeau"
+  # Chemin relatif : le site fonctionne aussi bien a la racine du domaine
+  # que dans un sous-chemin (/portfolio/).
+  cv: "cv.pdf"
+  # Depot du site, pour le lien "source" en pied de page.
+  repo: "https://github.com/matheo-1712/matheo-1712.github.io"
+
+# L'accroche : une a deux phrases, concretes. Ce que tu fais, pas ce que tu aimes.
+headline: >
+  Je construis et j'exploite l'infrastructure d'une communauté de joueurs :
+  APIs en Rust et TypeScript, bots Discord, gestion de serveurs de jeu.
+
+# Une precision qui ancre l'accroche. Facultatif.
+subline: >
+  Du code déployé et utilisé tous les jours, pas des projets de démonstration.
+
+# Faits verifiables, affiches en grille sous l'accroche.
+# Ajuste "Objectif" et "Disponibilite" a ta situation du moment.
+facts:
+  - label: "Formation"
+    value: "LP Applications web — Université d'Angers"
+  - label: "Objectif"
+    value: "Master en informatique"
+  - label: "Langues"
+    value: "Français · Anglais C1"
+
+# Regroupees par usage reel, pas par liste de buzzwords.
+skills:
+  - group: "Backend"
+    items: ["TypeScript", "Rust", "PHP", "Java", "Python"]
+  - group: "Web"
+    items: ["Node.js", "Express", "Axum", "Laravel", "Next.js", "Astro"]
+  - group: "Données"
+    items: ["SQL", "MariaDB", "PocketBase"]
+  - group: "Infrastructure"
+    items: ["Linux", "Docker", "Nginx", "CI/CD", "Git"]
+  - group: "Mobile"
+    items: ["Kotlin"]
+
+education:
+  - degree: "Licence Professionnelle Métiers de l'informatique : Applications web"
+    school: "Université d'Angers"
+    place: "Angers"
+    start: "2025"
+    end: "présent"
+  - degree: "BTS Services Informatiques aux Organisations — option SLAM"
+    school: "Lycée Polyvalent Régional Merleau-Ponty"
+    place: "Rochefort"
+    start: "2022"
+    end: "2024"
+  - degree: "Baccalauréat professionnel Gestion-Administration"
+    school: "Lycée Polyvalent Jean Hyppolite"
+    place: "Jonzac"
+    start: "2019"
+    end: "2022"
+
+experience:
+  - title: "Service civique"
+    org: "École de Coulonges"
+    place: "Coulonges"
+    start: "2025-01"
+    end: "2025-07"
+    summary: >
+      Assistance à l'enseignante dans la préparation de supports pédagogiques.
+      Accompagnement d'élèves de CE2 et CM1.
+  - title: "Stagiaire en développement"
+    org: "UFOLEP 17"
+    place: "La Rochelle"
+    start: "2024-01"
+    end: "2024-02"
+    summary: >
+      Amélioration d'une application web PHP : ajout de fonctionnalités,
+      correction de bugs, travail collaboratif via tableau de bord.
+  - title: "Stagiaire en développement"
+    org: "NTConseil"
+    place: "Angoulême"
+    start: "2023-05"
+    end: "2023-06"
+    summary: >
+      Applications WordPress (création de thèmes, Elementor), déploiement et
+      configuration de bornes Wi-Fi, prise en main du framework PHP Zend.
+
+languages:
+  - { name: "Français", level: "langue maternelle" }
+  - { name: "Anglais", level: "C1" }
+
+seo:
+  title: "Mathéo Pérodeau — Développeur backend & infrastructure"
+  description: "Portfolio de Mathéo Pérodeau, développeur backend et infrastructure. APIs Rust et TypeScript, bots Discord, gestion de serveurs de jeu."
+  url: "https://matheo-1712.github.io"

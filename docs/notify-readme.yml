@@ -1,0 +1,32 @@
+# À copier dans .github/workflows/ du dépôt du portfolio
+# (matheo-1712.github.io) pour que le README de profil se régénère dès que la
+# collecte a produit de nouveaux projets, au lieu d'attendre le lendemain.
+#
+# Prérequis : un secret README_DISPATCH_TOKEN dans le dépôt du portfolio,
+# contenant un jeton personnel GitHub avec la permission « contents: write »
+# sur matheo-1712/matheo-1712.
+#
+# Sans ce workflow, tout fonctionne quand même : le README est reconstruit
+# chaque matin à 06:17 UTC, après la collecte de 05:17 UTC.
+
+name: Notifier le README de profil
+
+on:
+  push:
+    branches: [main]
+    paths:
+      # Les deux fichiers que le README consomme.
+      - "data/projects.json"
+      - "data/profile.yml"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déclencher la régénération du README
+        run: |
+          curl -sSf -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.README_DISPATCH_TOKEN }}" \
+            https://api.github.com/repos/matheo-1712/matheo-1712/dispatches \
+            -d '{"event_type":"projects-updated"}'

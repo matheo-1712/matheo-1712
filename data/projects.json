@@ -1,0 +1,1140 @@
+{
+  "generated": "2026-11-08T11:59:06.085Z",
+  "count": 20,
+  "projects": [
+    {
+      "key": "l-antre-des-loutres/cobblemon-rlm",
+      "slug": "cobblemon-rlm",
+      "title": "Cobblemon RLM",
+      "summary": "Un datapack/ressourcepack fait pour ajouter les fakemon de RLM dans Cobblemon.",
+      "body": "<br/>\n\n<br/>\n\nCréé par l'**Antre des Loutres**, **Cobblemon RLM** enrichit [Cobblemon](https://cobblemon.com) avec les Pokémon de notre univers, leurs talents et leurs capacités exclusives.\n\n> Depuis la version **1.7.0**, le datapack et ses ressources sont intégrés à un **mod**. Il s'installe avec un fichier `.jar` pour Fabric ou NeoForge et comprend les objets de méga-gemmes.\n\n## Les ajouts de l'addon\n\n<details>\n <summary>Découvrir les formes régionales RLM</summary>\n\n### Méganium RLM — Plante / Acier\n\nGardien au tempérament féroce, il réserve sa loyauté aux Dresseurs qui ont gagné son respect. Sa famille comprend **Germignon** et **Macronium RLM**.\n\nSon talent **Rempart Floracier** punit les attaques de contact et pose des Picots. Sa capacité **Charge Floracier** permet également de poser des Picots en attaquant.\n\n### Tortank RLM — Eau / Vol\n\nSes canons deviennent des propulseurs qui le projettent dans les airs. **Carapuce** et **Carabaffe RLM** apprennent déjà à maîtriser les courants ascendants.\n\nSon talent **Trombe Marine** invoque la pluie et renforce ses statistiques offensives. **Haute Propulsion** lui offre une attaque Vol prioritaire.\n\n### Pingoléon RLM — Eau / Électrik\n\nHabituellement calme, il déchaîne des torrents d'électricité lorsqu'il se met en colère. Il est accompagné de **Tiplouf** et **Prinplouf RLM**.\n\n### Goupelin RLM — Feu / Fée\n\nMagicien malicieux des bois, il joue des tours aux voyageurs tout en guidant les égarés. **Feunnec** et **Roussil RLM** partagent son affinité pour la magie.\n\nSon talent **Psycho-Prio** augmente sa priorité lorsqu'il possède plus de la moitié de ses PV. **Échange Psychomagique** lui permet de retourner les changements de statistiques à son avantage.\n\n### Pharamp RLM — Électrik / Spectre\n\nL'orbe de sa queue guide les âmes égarées vers l'au-delà. **Wattouat** et **Lainergie RLM** arborent eux aussi un pelage chargé d'énergie spectrale.\n\n### Tarinorme RLM — Roche / Fée\n\nVéritable habitué des plages, il aime se prélasser aux côtés des humains. **Tarinor RLM** partage son caractère décontracté et son double type.\n\n### Spiritomb RLM — Feu / Ténèbres\n\nInstallé dans une statue Jizo et portant un masque d'Oni, il repousse les mauvais esprits. Son talent **Relâchement des Âmes** riposte en fonction du nombre d'alliés KO.\n\n### Luxray RLM — Glace\n\nDepuis les sommets enneigés, il veille sur les **Lixy** et **Luxio RLM** de sa meute. Sa capacité **Glissade Givrée** frappe avec une priorité de +2.\n\n### Togekiss RLM — Fée / Dragon\n\nMarqué par les conflits humains, il lutte contre une rage draconique. **Togepi** et **Togetic RLM** puisent eux aussi dans cette énergie ancestrale.\n\nSon talent **Dragonate** transforme ses capacités Normal en capacités Dragon et augmente leur puissance.\n\n### Ningale, Ninjask et Munja RLM\n\n- **Ningale — Insecte / Eau**: vit près des berges et se déplace à la surface de l'eau.\n- **Ninjask — Eau / Vol**: traverse les lacs à une vitesse fulgurante grâce à ses pattes palmées.\n- **Munja — Eau / Roche**: sa carapace se mêle aux coraux et aux fossiles sous-marins. **Garde Émoussée** le protège des attaques neutres ou super efficaces.\n\n### Mysdibule RLM — Poison / Fée ou Dragon / Fée\n\nDeux variantes issues de **Minibule**: la forme **Poison** canalise une aura toxique, tandis que la forme **Dragon** développe une mâchoire capable de déchaîner des attaques dévastatrices. Chacune possède sa propre Méga-Évolution.\n\n### Héliatronc RLM — Trois formes\n\n- **Ciel — Plante / Vol**: prétend avoir été le maître de Rayquaza.\n- **Océan — Plante / Eau**: affirme avoir vaincu Kyogre en duel.\n- **Volcan — Plante / Feu**: se présente comme le meilleur ami de Groudon.\n\nLeurs récits restent aussi impressionnants que difficiles à vérifier!\n\n### Tranchodon RLM — Dragon / Poison\n\nSes lames sont imprégnées d'un poison mortel. Sa famille comprend **Coupenotte** et **Incisache RLM**, de type **Dragon / Normal**.\n\nSon talent **Venincisif** renforce les attaques tranchantes et peut empoisonner leur cible. Sa capacité **Hache Draconique** inflige des dégâts en échange d'une baisse de Défense.\n\n</details>\n\n<details>\n <summary>Découvrir les Fakemons</summary>\n\n| Pokémon | Type | Présentation |\n|---------|------|--------------|\n| **Flammiko** | Feu / Électrik | Maladroit mais amical, il ferait tout pour protéger ses amis. Possède une Méga-Évolution. |\n| **Apheos** | Fée / Vol | Un petit Pokémon ambitieux qui rêve de devenir un gardien des cieux. Évolue en Aphelis au niveau 33. |\n| **Aphelis** | Fée / Vol | Un gardien fier et protecteur qui défend les Pokémon contre les braconniers. |\n| **Rhinécaille** (`rineshell`) | Normal | Têtu et courageux, il attend que sa carapace métallique se développe. Évolue en Galama au niveau 26. |\n| **Galama** | Acier / Normal | Un Pokémon paisible dont le casque naturel offre un abri aux plus petits. |\n| **Kotora** | Électrik / Fée | Disponible par commande; aucune apparition naturelle n'est définie dans le pack. |\n| **Ptimek** (`tinywone`) | Insecte | Médite chaque jour pour devenir plus fort. Évolue en Guerriek au niveau 15. |\n| **Guerriek** (`wamek`) | Insecte / Combat | Un combattant qui continue de s'entraîner après son évolution. Possède une Méga-Évolution. |\n| **Minibule** (`smowile`) | Fée | Une pré-évolution timide de Mysdibule, capable d'évoluer vers ses variantes RLM. |\n\nLes identifiants entre parenthèses sont les noms à utiliser dans les commandes.\n\n</details>\n\n<details>\n <summary>Consulter les talents exclusifs</summary>\n\n| Talent | Effet |\n|--------|-------|\n| **Dragonate** | Transforme les capacités Normal compatibles en type Dragon et augmente leur puissance de 20 %. |\n| **Garde Émoussée** | Bloque les attaques neutres ou super efficaces; les capacités de statut ne sont pas bloquées. |\n| **Trombe Marine** | Invoque la pluie à l'entrée en combat. Sous la pluie, l'Attaque et l'Attaque Spéciale sont multipliées par 1,5. |\n| **Mystiforce** | Double l'Attaque Spéciale. |\n| **Psycho-Prio** | Ajoute +1 à la priorité des capacités tant que les PV dépassent 50 %. |\n| **Armure Venimeuse** | Augmente la Défense Spéciale de 50 % et donne 50 % de chances d'empoisonner l'attaquant au contact. |\n| **Relâchement des Âmes** | Une fois par combat, après une attaque subie, inflige à l'attaquant 10 % de ses PV max par allié KO. |\n| **Rempart Floracier** | Après une attaque de contact subie, retire 1/8 des PV max de l'attaquant et pose une rangée de Picots de son côté. |\n| **Venincisif** | Renforce les attaques tranchantes de 50 % et leur donne 20 % de chances d'empoisonner la cible. |\n\n</details>\n\n<details>\n <summary>Consulter les capacités exclusives</summary>\n\n| Capacité | Type | Caractéristique |\n|----------|------|-----------------|\n| **Charge Floracier** | Plante | Attaque physique qui pose une rangée de Picots du côté adverse. |\n| **Électro-Siphon** | Électrik | Attaque physique de puissance 110 et de précision 90 %. |\n| **Glissade Givrée** | Glace | Attaque physique de puissance 80 et de priorité +2. |\n| **Haute Propulsion** | Vol | Attaque physique de puissance 90, de priorité +1, avec des dégâts de recul. |\n| **Échange Psychomagique** | Fée | Vole les augmentations de statistiques de la cible et lui transfère les baisses du lanceur. |\n| **Exploroc** | Roche | Attaque explosive qui met le lanceur KO et peut poser les Pièges de Roc du côté adverse. Ajoutée au répertoire de Grolem. |\n| **Hache Draconique** | Dragon | Attaque tranchante de puissance 90 qui baisse la Défense du lanceur d'un niveau. |\n\n</details>\n\n<details>\n <summary>Découvrir les Méga-Évolutions RLM</summary>\n\nLes Méga-Évolutions nécessitent [**Cobblemon: Mega Showdown**](https://modrinth.com/mod/cobblemon-mega-showdown). Les formes régionales et les Fakemons restent utilisables sans lui.\n\n| Pokémon | Type | Talent | Gemme |\n|---------|------|--------|-------|\n| **Méga-Pharamp RLM** | Électrik / Feu | Marque Ombre | Pharampite RLM |\n| **Méga-Flammiko** | Feu / Électrik | Simple | Flammikite |\n| **Méga-Mysdibule RLM (Poison)** | Poison / Fée | Armure Venimeuse | Mysdibulite RLM (Poison) |\n| **Méga-Mysdibule RLM (Dragon)** | Dragon / Fée | Mystiforce | Mysdibulite RLM (Dragon) |\n| **Méga-Guerriek** | Insecte / Dragon | Dragonate | Guerriekite |\n\n</details>\n\n<details>\n <summary>Pokédex et succès</summary>\n\nLe pack comprend des entrées de Pokédex pour ses Pokémon et leurs formes, ainsi qu'une progression de succès consacrée aux captures: premiers Pokémon RLM, Fakemons, familles régionales, formes d'Héliatronc et Pokémon chromatiques.\n\nRetrouvez les fiches des Pokémon dans le [**Pokédex de l'Antre des Loutres**](https://antredesloutres.fr/pokemon/wiki/pokedex/).\n\n</details>\n\n## Objets, recettes et commandes\n\n<details>\n <summary>Fabriquer les méga-gemmes</summary>\n\nLes cinq gemmes sont disponibles dans l'onglet créatif **Cobblemon RLM**. Avec Mega Showdown installé, elles peuvent aussi être fabriquées dans une **table de forge**.\n\nPlacez une **Méga-Pierre** (`mega_showdown:mega_stone`) dans l'emplacement de base, puis les gemmes Cobblemon indiquées ci-dessous dans les premier et troisième emplacements.\n\n| Résultat | Premier emplacement | Base | Ajout |\n|----------|---------------------|------|-------|\n| **Pharampite RLM** | Gemme Électrik | Méga-Pierre | Gemme Spectre |\n| **Flammikite** | Gemme Feu | Méga-Pierre | Gemme Électrik |\n| **Mysdibulite RLM (Dragon)** | Gemme Dragon | Méga-Pierre | Gemme Fée |\n| **Mysdibulite RLM (Poison)** | Gemme Poison | Méga-Pierre | Gemme Fée |\n| **Guerriekite** | Gemme Insecte | Méga-Pierre | Gemme Dragon |\n\nSans Mega Showdown, les objets restent présents dans l'onglet créatif, mais leurs recettes et leurs effets de Méga-Évolution sont désactivés.\n\n</details>\n\n<details>\n <summary>Obtenir des Pokémon et des gemmes par commande</summary>\n\nCes commandes nécessitent les commandes activées en solo ou les permissions appropriées sur le serveur. Les noms d'espèces et les aspects utilisent leurs identifiants, même lorsque le jeu est en français.\n\n```mcfunction\n/pokegive @s flammiko\n/pokegive @s rineshell\n/pokegive @s tinywone\n/pokegive @s wamek\n/pokegive @s smowile\n/pokegive @s kotora\n/pokegive @s delphox rlm\n/pokegive @s mawile rlm dragon\n/pokegive @s mawile rlm poison\n/pokegive @s sunflora rlm ciel\n/pokegive @s sunflora rlm ocean\n/pokegive @s sunflora rlm volcan\n```\n\nPour Goupelin RLM, l'aspect `rlm=true` fonctionne également. Sans cet aspect, `/pokegive @s delphox` donne la forme normale, y compris lorsque Mega Showdown est installé.\n\n```mcfunction\n/give @s rlm_megas:ampharositerlm\n/give @s rlm_megas:flammikite\n/give @s rlm_megas:mawiliterlmdragon\n/give @s rlm_megas:mawiliterlmpoison\n/give @s rlm_megas:wamekite\n```\n\nAvec Mega Showdown installé, les gemmes obtenues par commande ou depuis l'onglet créatif reçoivent automatiquement les composants nécessaires à la Méga-Évolution.\n\n</details>\n\n## Développement\n\n<details>\n <summary>Compiler le mod et lancer un environnement de développement</summary>\n\nUtilisez un **JDK 21** et configurez `JAVA_HOME` vers ce JDK. Le wrapper Gradle est fourni dans le dépôt.\n\n```sh\n./gradlew build\n```\n\n```powershell\n.\\gradlew.bat build\n```\n\nLes deux mods installables sont regroupés dans **`build/libs/`**:\n\n- `cobblemon-rlm-fabric-1.7.0.jar`\n- `cobblemon-rlm-neoforge-1.7.0.jar`\n\nLes versions sont centralisées dans [`gradle.properties`](gradle.properties). L'option `-Prelease_version=1.7.1` permet de remplacer la version lors d'une compilation pour publication.\n\n| Module | Rôle |\n|--------|------|\n| [`common`](common) | Code partagé, objets, compatibilité Mega Showdown et ressources `assets/` et `data/` |\n| [`fabric`](fabric) | Enregistrement Fabric, onglet créatif et métadonnées |\n| [`neoforge`](neoforge) | Enregistrement NeoForge, onglet créatif et métadonnées |\n\nLes sources communes sont compilées dans chaque mod. RLM n'ajoute pas de dépendance Architectury; le JAR du module `common` ne doit pas être installé.\n\nPour lancer un client de développement:\n\n```sh\n./gradlew:fabric:runClient\n./gradlew:neoforge:runClient\n```\n\nSur Windows, remplacez `./gradlew` par `.\\gradlew.bat`. Les tâches `:fabric:runServer` et `:neoforge:runServer` sont également disponibles.\n\nCes environnements chargent **Cobblemon**, **Mega Showdown**, **Cobblemon Trainers 1.1.0** et **JEI 19.27.0.340** par défaut. Utilisez `-PwithCobblemonTrainers=false` pour tester sans les dresseurs. Kotlin for Forge 5.12.0 est utilisé sur NeoForge. Utilisez `-PwithMegaShowdown=false` pour tester sans Mega Showdown. Ces dépendances de développement ne sont pas incluses dans les JAR distribués. La version de JEI est définie par `jei_version`; redémarrez le jeu après sa modification.\n\nLes clients utilisent jusqu'à **4 Go de mémoire** et ouvrent automatiquement la sauvegarde **`RLM-Test`** si elle existe dans le dossier `runs/client/saves/` du module. L'option `-PquickPlayWorld=` permet de revenir au menu principal.\n\nLorsqu'il a été généré localement, le fichier `build/client-test/Cobblemon-RLM-Test-1.7.0.mrpack` peut être importé dans Modrinth App. Il contient le mod Fabric, ses dépendances, JEI et le monde créatif **« RLM 1.7.0 - Test creatif »**, avec les cinq méga-gemmes et un Méga-Bracelet dans la barre rapide.\n\n</details>\n\n<details>\n <summary>Lancer les clients depuis IntelliJ IDEA</summary>\n\n1. Ouvrez la racine du dépôt et importez le projet **Gradle**.\n2. Dans **Settings → Build, Execution, Deployment → Build Tools → Gradle**, sélectionnez le **wrapper Gradle** et un **JDK 21** comme Gradle JVM.\n3. Rechargez le projet Gradle, puis choisissez **RLM - Client Fabric** ou **RLM - Client NeoForge**.\n4. Cliquez sur **Run ** pour lancer le client et consulter les journaux dans la fenêtre **Run**.\n\nLes configurations sont partagées dans [`.run/`](.run). Les tâches `runClient` peuvent aussi être lancées depuis la fenêtre Gradle.\n\n</details>\n\n<details>\n <summary>Ajouter une gemme et suivre les versions</summary>\n\nPour ajouter une gemme, complétez l'énumération [`MegaGem`](common/src/main/java/fr/antredesloutres/cobblemonrlm/item/MegaGem.java), ses modèles, textures et traductions, sa recette dans [`data/rlm_megas/recipe/`](common/src/main/resources/data/rlm_megas/recipe) et le tag [`rlm_megas:mega_gems`](common/src/main/resources/data/rlm_megas/tags/item/mega_gems.json).\n\nLes conditions de présence de Mega Showdown sont ajoutées aux recettes lors de la construction des mods Fabric et NeoForge.\n\nConsultez le [changelog](CHANGELOG.md) pour les changements de version et le [guide de publication](.github/RELEASE.md) pour les releases.\n\n</details>\n\n## Contact\n\nPour poser une question, signaler un bug ou proposer une idée, [ouvrez une issue sur GitHub](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM/issues).\n\nPour un bug, indiquez les versions de Minecraft, de Cobblemon et de RLM, votre chargeur (**Fabric** ou **NeoForge**), la présence éventuelle de Mega Showdown, les étapes pour reproduire le problème et les journaux utiles.\n\nRetrouvez également le projet et son univers sur le [site de l'Antre des Loutres](https://antredesloutres.fr).\n\n## Dresseurs et Méga-Gemmes\n\n[Cobblemon Trainers](https://modrinth.com/mod/cobblemon-trainers-rerebleue) est une dépendance optionnelle. Avec ce mod installé, cinq dresseurs apparaissent dans la catégorie « Maîtres des Méga-Gemmes RLM » du Battle Phone. Ils peuvent être appelés dans les plaines; chacun possède un Pokémon niveau 50 tenant sa gemme RLM: Pharamp RLM, Flammiko, Mysdibule RLM Dragon, Mysdibule RLM Poison ou Guerriek.\n\nMega Showdown est également nécessaire pour leur Méga-Évolution. Les équipes utilisent les identifiants complets des objets (`@ rlm_megas:flammikite`, par exemple) et `battle.gimmicks: [\"mega\"]`. Les gemmes RLM existent aussi sans Mega Showdown: elles restent alors tenues, mais aucune Méga-Évolution ne se déclenche.\n\nPour un test administrateur: `/cobblemontrainers spawn cobblemonrlm:mega_trainers/flammiko`, puis `/cobblemontrainers debugai`. Vérifier en combat la transformation au premier tour. Le support des objets externes est confirmé dans le [parseur de Cobblemon Trainers](https://github.com/matheo-1712/cobblemon-trainers/blob/master/common/src/main/kotlin/matheo1712/cobbletrainers/parser/ShowdownTeamParser.kt) et les conditions sont décrites dans son [guide des gimmicks](https://github.com/matheo-1712/cobblemon-trainers/blob/master/docs/GIMMICKS.md).",
+      "type": "Datapack",
+      "stack": [
+        "JavaScript",
+        "Java"
+      ],
+      "status": "prod",
+      "started": "2025-07-24T20:12:46Z",
+      "ended": "",
+      "updated": "2026-11-02T23:13:53Z",
+      "featured": false,
+      "version": "v1.7.0",
+      "prerelease": false,
+      "image": "https://cdn.modrinth.com/data/GC58bFHM/3bf877dff9d979aac58d4df761f378cd57210cdb_96.webp",
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Cobblemon-RLM",
+        "demo": "https://modrinth.com/datapack/cobblemon-rlm"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 401,
+        "total": 614,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/cb256dcfe389bf440c8ed160ecfb73acb71460a6_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/cb256dcfe389bf440c8ed160ecfb73acb71460a6.png",
+          "title": "Mega Mawile RLM Poison",
+          "description": "",
+          "featured": true,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/10d532c0fa22ddf3ff065dd9ba50e8b6cd1c6d58_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/10d532c0fa22ddf3ff065dd9ba50e8b6cd1c6d58.png",
+          "title": "Flammiko",
+          "description": "New fakemon",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/f391682454864ba02e09a867de90b91524684105_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/f391682454864ba02e09a867de90b91524684105.png",
+          "title": "Rineshell",
+          "description": "A new fakemon",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/baf5a4d0c7530be1e65fcaf8c92afb41b3e06451_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/baf5a4d0c7530be1e65fcaf8c92afb41b3e06451.png",
+          "title": "Gallama",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/aa4d4f7a688b3ede5158afd982d310a398bceb92_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/aa4d4f7a688b3ede5158afd982d310a398bceb92.png",
+          "title": "Bayleef ",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/1834433feb585c8b2bb6a2a319979dab30ab54f2_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/1834433feb585c8b2bb6a2a319979dab30ab54f2.png",
+          "title": "Meganium",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/d51cc6faec9a2755c90318e0775bf61958be8735_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/d51cc6faec9a2755c90318e0775bf61958be8735.png",
+          "title": "Wartortle",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/206a75d0d0029c8a9d1d7ce37f93f7a73ba01f9e_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/206a75d0d0029c8a9d1d7ce37f93f7a73ba01f9e.png",
+          "title": "Blastoise",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/49234e832dbd1c24eafd0162bf6af415ab91e93d_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/49234e832dbd1c24eafd0162bf6af415ab91e93d.png",
+          "title": "Prinplup",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/7817b8bda4e046485b9fa15ec08013900a9d003f_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/7817b8bda4e046485b9fa15ec08013900a9d003f.png",
+          "title": "Emploleon",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/9ae5f8c15308073934e2f7bdaa2ea0d00fd18835_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/9ae5f8c15308073934e2f7bdaa2ea0d00fd18835.png",
+          "title": "Braixen",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/2abb5c6399a7b11b80fa360d36bb9c278a8e84bd_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/2abb5c6399a7b11b80fa360d36bb9c278a8e84bd.png",
+          "title": "Delphox",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/37a1a9ae2f76f2f169a3b2f1090a4444ef202bab_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/37a1a9ae2f76f2f169a3b2f1090a4444ef202bab.png",
+          "title": "Nosepass",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/666c88da750efccad5d7537a0ea78beda30d7647_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/666c88da750efccad5d7537a0ea78beda30d7647.png",
+          "title": "Probopass",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/fc239143e9bef4dc214aac2bdaccdb65e371aa4f_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/fc239143e9bef4dc214aac2bdaccdb65e371aa4f.png",
+          "title": "Mareep",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/c2517ee3e139c3367631faf2353a8ff1dac34f78_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/c2517ee3e139c3367631faf2353a8ff1dac34f78.png",
+          "title": "Flaafy",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/a3fb071c04cfd61baa1254d9ff6ec1eacb38fa28_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/a3fb071c04cfd61baa1254d9ff6ec1eacb38fa28.png",
+          "title": "Ampharos",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/6fb5b15e7203b88057efa7b8ab7ef4e520fa6984_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/6fb5b15e7203b88057efa7b8ab7ef4e520fa6984.png",
+          "title": "Sunflora",
+          "description": "RLM Form Ocean",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/f799b4332dbf5eaf1e6c8b0287262e431f7f0c08_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/f799b4332dbf5eaf1e6c8b0287262e431f7f0c08.png",
+          "title": "Sunflora",
+          "description": "RLM Form Ciel",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/ff747270010e3310187ab0e42d42d194f6689b4a_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/ff747270010e3310187ab0e42d42d194f6689b4a.png",
+          "title": "Sunflora",
+          "description": "RLM Form Volcan",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/06a356d01f276709fd702ef4d061bf56c80eecfa_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/06a356d01f276709fd702ef4d061bf56c80eecfa.png",
+          "title": "Spiritomb",
+          "description": "RLM Form",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/b32ab1802c0414a6387a98ec3ffc73c264531d9c.png",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/b32ab1802c0414a6387a98ec3ffc73c264531d9c.png",
+          "title": "Craft : Mawilite RLM Poison",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/6008a430180cd967c08035e3c59e62a84d8feb4f.png",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/6008a430180cd967c08035e3c59e62a84d8feb4f.png",
+          "title": "Craft : Mawilite RLM Dragon",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/3efaf41b2d97209621b6ca652beda39dacfc4c3b_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/3efaf41b2d97209621b6ca652beda39dacfc4c3b.png",
+          "title": "Mega Mawile RLM Dragon",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/b50825e1f6f749a44eb2b80b7bfd38d05ca42e0f.png",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/b50825e1f6f749a44eb2b80b7bfd38d05ca42e0f.png",
+          "title": "Craft : Ampharosite RLM",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        }
+      ],
+      "modrinth": {
+        "slug": "cobblemon-rlm",
+        "url": "https://modrinth.com/project/cobblemon-rlm",
+        "downloads": 10934,
+        "followers": 21,
+        "license": "MIT"
+      },
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/astroloutre",
+      "slug": "astroloutre",
+      "title": "Astroloutre",
+      "summary": "Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements.",
+      "body": "Bienvenue sur le dépôt du site web de [L'Antre des Loutres](https://antredesloutres.fr).\nCe projet est une application web statique moderne construite avec **Astro** et **React**, conçue pour la performance,\nla flexibilité et une expérience utilisateur fluide.\n\n## Technologies\n\nCe projet utilise une stack moderne:\n\n- **Framework**: [Astro](https://astro.build/) (v5) - Pour la génération statique et la performance.\n- **UI Library**: [React](https://react.dev/) (v19) - Pour les composants interactifs complexes (tableaux de\n classements, etc.).\n- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4) & Variables CSS natives pour la gestion des thèmes.\n- **Langage**: TypeScript - Pour un code robuste et typé.\n\n## Installation et Démarrage\n\n### Étapes\n\n1. **Cloner le projet**\n ```bash\n git clone https://github.com/L-Antre-des-Loutres/Reactisoutre.git\n cd Reactisoutre\n ```\n\n2. **Installer les dépendances**\n ```bash\n npm install\n ```\n\n3. **Lancer le serveur de développement**\n ```bash\n npm run dev\n ```\n Le site sera accessible sur `http://localhost:4321`.\n\n### Autres commandes utiles\n\n| Commande | Action |\n|:----------------------|:-------------------------------------------------------------|\n| `npm run build` | Compile le site pour la production dans le dossier `./dist/` |\n| `npm run preview` | Prévisualise le build de production localement |\n| `npm run astro check` | Lance une vérification des types et du code |\n\n## Structure du Projet\n\nL'architecture du code source dans `src/` est organisée comme suit:\n\n- **`pages/`**: Contient les routes du site. Astro utilise un routage basé sur les fichiers (ex:\n `pages/classements/minecraft.astro` devient `/classements/minecraft`).\n- **`components/`**:\n - `classements/`: Composants React gérant l'affichage et le tri des tableaux de scores.\n - `sections/`: Blocs de mise en page réutilisables (Bannières, Présentations...).\n - `ui/`: Composants d'interface atomiques (Boutons, Inputs...).\n- **`layouts/`**: Gabarits principaux (ex: `Layout.astro`) qui définissent la structure commune (Header, Footer, Meta\n tags).\n- **`styles/`**:\n - `themes/`: Définit les palettes de couleurs pour les modes Clair et Sombre via des variables CSS.\n - `global/`: Styles CSS globaux spécifiques (ex: `rankings.css`).\n- **`utils/`**: Fonctions utilitaires, helpers de formatage et logique métier partagée.\n\n## Fonctionnement des Thèmes (Dark Mode)\n\nLe site intègre un système de thème **Clair / Sombre** natif.\nCeci est géré via des variables CSS définies dans `src/styles/themes/`.\nLes composants utilisent ces variables (ex: `var(--background-color)`, `var(--ranking-text-color)`) pour s'adapter\nautomatiquement à la préférence de l'utilisateur ou au switch manuel.\n\n## Données et API\n\nL'application est \"Frontend-only\" pour l'affichage, mais elle consomme des données dynamiques.\nToutes les statistiques (Minecraft, Palworld, Discord) sont récupérées depuis notre API publique:\n\n **[Otterly API](https://otterlyapi.antredesloutres.fr/)**\n\n### Sources de données\n\n- **Minecraft**: Données collectées par [Otternel](https://github.com/Corentin-cott/Otternel) (Rust).\n- **Discord**: Bot Discord interne pour les statistiques d'activité.\n\n*Pour toute demande de suppression de données, veuillez consulter\nnotre [page de gestion des données](https://antredesloutres.fr/donnees/).*\n\n## Contributeurs\n\n- **Mathéo** ([matheo-1712](https://github.com/matheo-1712)): Développement Frontend (Astro/React) & API Otterly.\n- **Corentin** ([corentin-cott](https://github.com/corentin-cott)): Développement Backend, Outils de monitoring (\n Rust/Go) & DevOps.",
+      "type": "",
+      "stack": [
+        "Astro",
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2025-02-20T15:57:26Z",
+      "ended": "",
+      "updated": "2026-10-25T18:27:00Z",
+      "featured": false,
+      "version": "v1.9.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Astroloutre",
+        "demo": "https://antredesloutres.fr"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 401,
+        "total": 612,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "service": {
+        "up": true,
+        "uncertain": false,
+        "lastSeenUp": "2026-11-08",
+        "urls": {
+          "https://antredesloutres.fr": true
+        }
+      }
+    },
+    {
+      "key": "matheo-1712/cobblemon-trainers",
+      "slug": "cobblemon-trainers",
+      "title": "Cobblemon Trainers",
+      "summary": "Make your own trainers, or drop in a datapack that brings them",
+      "body": "Mod Fabric et NeoForge qui ajoute des dresseurs Pokémon configurables à Cobblemon. Chaque dresseur est\nun fichier JSON: une équipe au format Showdown, un skin - celui d'un compte Minecraft ou une\nimage livrée par le pack, ou un modèle NPC personnalisé -, des dialogues dans la boîte de Cobblemon, une musique de combat -\net, pour un champion, un écran de versus avant le combat -, et de quoi monter une progression - catégories, conditions à remplir pour être défié,\nadvancements à la victoire.\nLes dresseurs se déclarent dans un datapack, donc sans toucher au code.\n\n## Ce qui distingue ce mod\n\n**Aucun dresseur n'apparaît naturellement.** C'est le choix de départ, et il n'y a pas de\nréglage pour l'annuler: un monde ne se retrouve pas semé de dresseurs qui attendent dans le\nvide, dans des biomes que personne ne traverse. Un dresseur n'existe que parce que quelqu'un\nl'a voulu là - un administrateur ou le joueur lui-même.\n\n**Côté administrateur**, deux façons de peupler un monde:\n\n- `/cobblemontrainers spawn` pose un dresseur ici et maintenant, le temps d'un test ou d'un\n événement;\n- le **bloc de dresseur** lui donne un poste. Le bloc est invisible, retient quel dresseur\n invoquer, et le remet en place chaque fois qu'il manque à l'appel - tué, égaré, ou disparu\n avec un chunk. C'est ce qui tient un champion dans son arène ou le PNJ du spawn.\n\nEt comme un bloc configuré **voyage dans une structure** avec ses réglages, il suffit d'en\nposer un dans un bâtiment sauvegardé pour que chaque copie générée arrive avec *son* dresseur\ndéjà en place. Un village de dresseurs se construit une fois.\n\n**Côté joueur, la façon de rencontrer un dresseur est complètement différente**: tout passe\npar le **Battle Phone**, un objet, pas une commande.\n\nIl se **craft**, à l'établi: quatre lingots de fer aux coins, quatre lingots de cuivre sur\nles côtés, et une **noigrume au choix** au centre. Sa couleur donne celle du téléphone:\nnoir, bleu, vert, rose, rouge, blanc ou jaune.\n\nLe joueur ouvre son Battle Phone, choisit un dresseur dans la liste, et l'appelle. Mais un\ndresseur ne vient que **là où il a dit qu'il serait**: dans les mesas la nuit, sous un orage,\ndans une structure, dans l'End. La fiche du dresseur affiche ce lieu, le bouton **Appeler**\nest juste à côté, et si le joueur n'y est pas, le refus dit exactement ce qui manque. Trouver\nun dresseur, c'est donc lire sa fiche puis aller au bon endroit - et le monde reste vide\njusque-là.\n\n### Les dresseurs livrés avec le mod\n\nLe mod apporte **huit dresseurs**, dans le namespace `cobblemon-trainers`: des *dresseurs\niconiques* niveau 80, chacun appelable depuis un biome donné, et un dernier verrouillé\nderrière l'un d'eux, niveau 100, qui ne répond que dans l'End. Ils apparaissent dans le Battle\nPhone sous leur propre onglet, à côté de ceux de tes packs, et servent d'exemple jouable de ce\nque le format permet.\n\n## Le Battle Phone\n\n`/cobblemontrainers list` est réservé aux opérateurs. Le **Battle Phone**\n(`cobblemon-trainers:battle_phone`) est la même chose pour tout le monde: un clic droit et\nl'écran liste les dresseurs du monde, le skin de chacun, et dit lesquels sont déjà vaincus.\n\nLes dresseurs sont **triés par datapack**: les flèches en haut de la liste (ou les touches\ngauche et droite) passent d'un pack à l'autre, avec un onglet « tous les datapacks » en\npremier dès qu'il y en a plusieurs - celui-là sépare les packs par un intertitre. À\nl'intérieur d'un pack, un intertitre par **catégorie** - le dossier où le pack range ses\ndresseurs -, chacun avec son propre compteur.\n\nCliquer une ligne montre le dresseur en entier à droite, avec son niveau, la taille de son\néquipe et son état - vaincu, vaincu sans revanche possible, encore debout, ou fermé tant que\nses conditions ne sont pas remplies, auquel cas la liste de ce qui manque remplace son\néquipe. À côté de lui, ce que le battre rapporte: une case par objet, avec sa quantité, et\nau-delà de quatre la dernière case compte le reste et le nomme au survol. Contrairement à son\néquipe, les récompenses sont visibles avant de l'avoir battu - c'est ce qui donne envie\nd'essayer -, et un pack peut en garder une secrète avec `\"hidden\": true`. Une récompense qui\nne tombe qu'à la première victoire porte un marqueur, et son icône est grisée une fois\nréclamée. À côté, six cases pour son équipe: elles restent fermées jusqu'à la victoire, puis\naffichent les modèles de ses Pokémon, formes et chromatiques comprises. Passer la souris sur\nl'une d'elles donne le nom et le niveau du Pokémon.\n\nL'objet ne retient rien: il lit la progression du serveur, donc deux exemplaires affichent\nla même chose et le perdre ne perd rien. Il se craft avec du fer, du cuivre et une noigrume\nde la couleur voulue - voir [le craft](#ce-qui-distingue-ce-mod) -, se trouve dans l'onglet créatif\n**Cobblemon Trainers**, ou s'obtient avec:\n\n```\n/give @s cobblemon-trainers:battle_phone\n```\n\nCette commande donne le modèle bleu historique. Pour une autre couleur, utilise\n`battle_phone_black`, `battle_phone_green`, `battle_phone_pink`, `battle_phone_red`,\n`battle_phone_white` ou `battle_phone_yellow` après `cobblemon-trainers:`. Toutes les couleurs\nouvrent les mêmes dresseurs et montrent la même progression; le cadre et les couleurs de\nl'interface suivent celles du téléphone utilisé.\n\nSeuls les dresseurs en `\"listed\": true` y apparaissent, comme dans `/cobblemontrainers list`,\net un dresseur verrouillé peut se cacher entièrement jusqu'à ce que ses conditions soient\nremplies - voir [docs/DATAPACK.md](docs/DATAPACK.md#le-suivi-de-progression).\n\n### Appeler un dresseur\n\nUn dresseur qui déclare **où il se trouve** est appelable depuis sa fiche: le Battle Phone\naffiche son lieu, et un bouton **Appeler** le fait venir à quelques dizaines de blocs quand le\njoueur y est. Un dresseur qui ne déclare rien - un champion dans son arène - n'a pas de bouton\net se trouve à pied.\n\nUn joueur ne peut avoir qu'un seul dresseur appelé à la fois, et un dresseur verrouillé n'est\njamais appelable. Le combat se lance toujours au clic droit sur le dresseur.\n\n** Tout ça est dans [docs/SPAWNING.md](docs/SPAWNING.md)**: le bloc `location`, ses\nconditions, ses textes, et ce que fait le mod autour.\n\n## Le bloc de dresseur\n\nUn dresseur invoqué par `/cobblemontrainers spawn` disparaît quand on le tue. Pour un dresseur\nqui doit tenir un poste - un champion d'arène, le PNJ du spawn -, il y a le **bloc de dresseur**\n(`cobblemon-trainers:trainer_spawner`): il retient quel dresseur invoquer, et le remet\ntoujours en place.\n\nLe bloc est **invisible**, exactement comme une barrière: il n'apparaît que si on tient son\nitem en main, sous forme de marqueurs sur chaque bloc de dresseur des environs. On le trouve\ndans l'onglet créatif **Cobblemon Trainers**, ou avec:\n\n```\n/give @s cobblemon-trainers:trainer_spawner\n```\n\nC'est un bloc d'opérateur, au même titre qu'un bloc de commande: **tout ce qu'il fait demande\nd'être opérateur *et* en créatif**. Sans ça, l'item ne pose rien, le bloc ne se casse pas, les\nmarqueurs n'apparaissent pas même l'item en main, le curseur traverse le bloc sans l'accrocher,\net le clic droit n'ouvre rien.\n\n> L'onglet créatif, lui, est visible par tous. Le cacher n'était possible qu'en le liant au\n> réglage vanilla *Onglet d'objets d'opérateur*, désactivé par défaut - il aurait disparu pour\n> les opérateurs eux-mêmes. Un item inerte dans un inventaire créatif est le moindre mal.\n\nPose le bloc là où le dresseur doit se tenir - il n'a pas de collision, le dresseur se tient\ndedans - puis fais un **clic droit** dessus. Il faut le mod installé côté client pour que\nl'écran s'ouvre.\n\nL'écran qui s'ouvre reprend celui du bloc de commande:\n\n| Champ | Ce qu'il fait |\n| --- | --- |\n| **Dresseur** | L'ID du dresseur à invoquer. La liste en dessous montre les dresseurs chargés: cliquer sur l'un d'eux remplit le champ, et taper dedans filtre la liste. Un champ vide éteint le bloc. |\n| **Rayon de retour** | Distance au-delà de laquelle le dresseur est ramené sur son bloc. 12 blocs par défaut, de 1 à 64. |\n| **Délai de réapparition** | Temps d'attente avant qu'un dresseur tué revienne. 30 secondes par défaut, 0 pour un retour immédiat. |\n\n*Entrée* ou *Terminé* valide, *Échap* ou *Annuler* ferme sans rien changer. L'ID accepte la\nforme complète `<pack>:<dresseur>` comme le nom seul, comme `/cobblemontrainers spawn`.\n\nEnsuite le bloc se débrouille:\n\n- il invoque son dresseur dès qu'il est réglé, et le remet en place chaque fois qu'il manque\n à l'appel;\n- un dresseur tué revient après le délai;\n- un dresseur qui s'éloigne trop est ramené sur son bloc, sa propre vie remise au maximum\n comme s'il venait d'être invoqué - sauf s'il est en plein combat, où il est laissé\n tranquille jusqu'à la fin. Son équipe n'est pas touchée: le report des dégâts d'un combat\n au suivant reste réglé par `battle.healParty`;\n- casser le bloc emporte son dresseur. Comme une barrière, il ne se casse qu'en créatif et ne\n se ramasse pas;\n- le dresseur regarde vers le joueur qui a posé le bloc, et suit ensuite l'orientation de\n celui-ci.\n\nUn dresseur qui refuse la revanche (`\"rematch\": \"never\"`) ou dont les conditions ne sont pas\nremplies reste debout sur son bloc et décline poliment: ce qu'un joueur a accompli est retenu\npar ID de dresseur, pas par entité.\n\n### Dans une structure\n\nUn bloc configuré garde ses réglages quand il part dans une structure: sauvegarde un bâtiment\navec son bloc de dresseur dedans, et chaque copie posée sort réglée sur le même dresseur, même\nrayon, même délai - et invoque *son* dresseur, pas celui de l'original. Ça vaut pour le bloc\nde structure comme pour `/structure`, et donc aussi pour une structure générée par datapack.\n\nL'orientation suit la structure: pose-la tournée d'un quart de tour ou en miroir, le dresseur\nregarde dans la direction correspondante. Comme un four ou un lit, le bloc n'a que quatre\ndirections - il s'oriente vers celui qui le pose.\n\n## Déclarer un dresseur\n\nLes dresseurs se déclarent dans un datapack, à\n`data/<namespace>/cobblemontrainers/trainers/<chemin>.json`. L'ID est `<namespace>:<chemin>`,\nle dossier compris - et ce dossier est aussi la **catégorie** du dresseur. `/reload` recharge\nle tout sans redémarrer.\n\n```json\n{\n \"name\": \"Red\",\n \"skin\": { \"type\": \"player_username\", \"value\": \"Red\" },\n \"battle\": { \"level\": 88, \"difficulty\": 5 },\n \"messages\": { \"greeting\": \"On se défie?\", \"win\": \"C'est terminé!\" },\n \"team\": [\n \"Pikachu (M) @ Light Ball\nAbility: Static\nLevel: 88\nShiny: Yes\nTimid Nature\n- Thunderbolt\n- Iron Tail\"\n ]\n}\n```\n\nTous les champs sont facultatifs, et chacun vit dans le bloc qui le concerne: `battle` pour\nle combat (format, difficulté, soin de l'équipe, musique), `messages` pour ce que le dresseur\ndit, `progress` pour ce que le battre change, `rewards` pour ce qu'on y gagne, `cosmetics`\npour ce qu'il porte.\n\nUn dresseur peut **porter une armure, tenir une Poké Ball et avoir ses objets clés sur lui**:\nc'est le bloc `cosmetics`. Les six emplacements d'équipement d'un mob vanilla, plus un bloc\n`trinkets` qui nomme **sept endroits du corps** - visage, torse, poignet, avant-bras, main,\nceinture, cheville -, portables tous en même temps. Les noms disent l'endroit et pas l'usage,\nparce qu'un objet clé n'est pas toujours un bracelet: les lunettes de Max et la chevillère de\nZinnia sont des objets méga eux aussi. C'est de l'apparence et rien d'autre - aucun effet en\ncombat. Voir [docs/COSMETIQUES.md](docs/COSMETIQUES.md).\n\nUn clic droit sur un dresseur ouvre la boîte de dialogue de Cobblemon - la même que celle de\nleurs NPC: le dresseur salue, propose Combattre ou Annuler, et dit son mot une fois le combat\nfini. Ce sont les cinq `messages`, et aucun n'est obligatoire.\n\nCe qu'un joueur a accompli est retenu par ID de dresseur: battre un exemplaire de\n`mon_pack:champion` les bat tous, et le réinvoquer ne remet pas le compteur à zéro. C'est ce\nque lisent `\"rematch\": \"never\"` (une seule rencontre) et, sur une récompense,\n`\"firstWinOnly\": true` (un butin qui ne retombe pas). Les deux se combinent: un même combat\nrejouable peut donner un trophée une fois et du consommable à chaque victoire.\n\n**C'est là tout l'intérêt des récompenses**: un dresseur rejouable est une *méthode de farm*,\net c'est le datapack qui décide laquelle. Un dresseur qui rend des baies à chaque victoire est\nune plantation qui se joue au lieu de s'attendre; un autre peut rendre un minerai, une\nressource qu'on n'obtient pas autrement, ou de quoi avancer dans une progression. Le mod ne\nlivre aucune de ces boucles - il livre le crochet, et les packs à venir en feront ce qu'ils\nvoudront.\n\nUn bloc `requires` ferme un dresseur tant qu'un joueur n'a pas battu tel autre dresseur,\ngagné tant de combats, obtenu tel advancement ou tel objet, ou n'a pas tel Pokémon dans son\néquipe - de quoi monter une ligue à badges. Et battre un dresseur déclenche le critère `cobblemon-trainers:trainer_defeated`, sur\nlequel un pack branche ses propres advancements.\n\n`/cobblemontrainers list` liste les dresseurs restants et ceux déjà vaincus, groupés par\ncatégorie. Un dresseur qui n'a rien à y faire - démonstration, dresseur jamais invoqué - se\nretire de la liste avec `\"listed\": false`.\n\nUne forme - régionale, méga, fakemon d'un autre pack - s'obtient avec une ligne `Aspects:`,\nqui reprend la syntaxe de `/pokespawn`: `\"Aspects: rlm, poison\"` pour un Haxorus RLM Poison.\nUne ligne `Alpha: Yes` en fait un **Alpha** de Cobblemon 1.8 - plus grand et marqué, avec les\ncapacités et les stats que le pack lui a écrites.\n\nUn dresseur ne se promène jamais, mais il **tourne la tête vers le joueur qui s'approche** -\nà huit blocs, comme un villageois. Rien à régler: c'est le cas de tous les dresseurs, qu'ils\nsoient posés par un bloc, invoqués en commande ou appelés depuis le Battle Phone.\n\n** L'[éditeur en ligne](https://matheo-1712.github.io/cobblemon-trainers/) écrit ces JSON à\nta place**: les champs d'un dresseur avec leur documentation à côté, l'écran de versus avec\nson aperçu animé, les musiques et les skins déposés dans le pack, les textes traduits, et le\npack entier qui se télécharge en `.zip` - `sounds.json` et fichiers de langue écrits pour toi.\nRien à installer, rien qui sorte du navigateur.\n\n** Toute la documentation est indexée dans [docs/README.md](docs/README.md)**, qui dit\nquelle page répond à quelle question - et sa traduction anglaise dans\n[docs/en/](docs/en/README.md).\n\n** Le guide complet est dans [docs/DATAPACK.md](docs/DATAPACK.md)**: arborescence,\nréférence de tous les champs, catégories, conditions, advancements, format d'équipe Showdown,\nskins, musique, revanches et récompenses, traductions, et les erreurs fréquentes.\n\n** Ce que fait chaque niveau d'IA est dans [docs/DIFFICULTE.md](docs/DIFFICULTE.md)**:\nle comportement exact de `battle.difficulty`, de `0` à `5`.\n\n** Comment un dresseur se fait appeler est dans [docs/SPAWNING.md](docs/SPAWNING.md)**:\nle bloc `location` et tout ce qui l'entoure.\n\n** Les gimmicks de combat sont dans [docs/GIMMICKS.md](docs/GIMMICKS.md)**:\n`battle.gimmicks`, la méga-évolution, le Z-Move, le dynamax et le téracristal. Le téracristal ne\ndemande rien de plus que Cobblemon; les trois autres demandent\n[Cobblemon: Mega Showdown](https://modrinth.com/mod/mega-showdown), qui reste **facultatif** -\nsans lui, le mod se charge et se joue comme avant.\n\nUn pack d'exemple couvrant chaque option vit dans\n[`examples/cobblemonrlm/`](examples/cobblemonrlm): un seul dossier qui fait à la fois\ndatapack (`data/`) et resource pack (`assets/`). Il est aussi **téléchargeable prêt à\nl'emploi**: chaque [release](https://github.com/matheo-1712/cobblemon-trainers/releases)\nl'attache à côté du jar sous le nom `exemple_trainer_datapack.zip`. À déposer tel quel dans\n`mods/`, `datapacks/` ou `resourcepacks/` - rien à dézipper.\n\nTrois façons de livrer un pack, au choix de son auteur:\n\n| Voie | Emplacement | Formats | Charge |\n| --- | --- | --- | --- |\n| Dossier des mods | `mods/` | dossier, `.zip`, `.jar` | `data/` **et** `assets/` |\n| Datapack | `saves/<monde>/datapacks/`, `world/datapacks/` | dossier, `.zip`, `.jar` | `data/` |\n| Resource pack | `resourcepacks/` | dossier, `.zip`, `.jar` | `assets/` |\n\nDeux ajouts du mod par rapport à Minecraft: le `.jar` est accepté partout (le jeu ne connaît\nque le dossier et le `.zip`), et surtout **un pack posé dans `mods/` est lu tel quel, avec son\nseul `pack.mcmeta`** - sans `fabric.mod.json`, sans code. C'est la seule voie qui charge d'un\ncoup les dresseurs et leurs traductions et musique, en un fichier que le joueur dépose sans\nrien cocher.\n\nLe dossier `datapacks/` d'un monde, lui, ne lit que `data/`, jamais `assets/`. Le détail et\nles pièges sont dans [docs/DATAPACK.md](docs/DATAPACK.md#où-poser-le-pack).\n\n## Développement\n\n```bash\n./gradlew build\n```\n\nLes jars sortent dans `fabric/build/libs/` et `neoforge/build/libs/`. Pour lancer un\nenvironnement de test:\n\n```bash\n./gradlew runClient\n./gradlew:neoforge:runClient\n```\n\nLe projet cible Java 21 via un toolchain Gradle, ce qui force aussi `runClient` et\n`runServer` - sans ça, Cobblemon refuse de démarrer sous un JDK plus récent. Ne place pas\nde jar Cobblemon dans `fabric/run/mods/`: il est déjà fourni par les dépendances, et le doublon\nfait planter le client.\n\nLes versions de Cobblemon et Architectury sont des **ID de version Modrinth** dans\n`gradle.properties`, pas des numéros. Un ID ne dit rien de la version de jeu qu'il cible,\ndonc vérifie-le avant de le changer:\n\n```bash\ncurl -s \"https://api.modrinth.com/v2/version/<ID>\" | python -c \"import sys,json;v=json.load(sys.stdin);print(v['version_number'],v['loaders'],v['game_versions'])\"\n```\n\nVoir aussi la [documentation Fabric](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up)\npour la configuration de l'IDE.\n\n### Publier une release\n\nPublier une release GitHub dont le tag est `v<version>`, par exemple `v1.2.3`. Le workflow\n`release.yml` construit les deux loaders, publie chacun sur Modrinth et CurseForge, et attache à la release les deux jars et\n`exemple_trainer_datapack.zip` - le pack d'exemple, prêt à poser dans `mods/`, `datapacks/` ou\n`resourcepacks/`.\n\nC'est le tag qui donne la version du mod: rien à mettre à jour avant de tagguer, le `version=`\nde `gradle.properties` n'est que le défaut des builds locaux. Le corps de la release sert de\nchangelog, et la case *pre-release* publie en beta.\n\nLe workflow pousse aussi `MODRINTH.md` par-dessus la description du projet Modrinth, à chaque\nrelease: la page de la boutique ne peut donc pas décrire une version antérieure.\n\nDeux secrets attendus par le dépôt: `MODRINTH_TOKEN` et `CURSEFORGE_TOKEN` (jeton d'auteur CurseForge).\nLes publications et l'ajout des fichiers GitHub sont des tâches indépendantes après le build:\nun échec sur une plateforme n'empêche pas les autres. Relancer seulement la tâche échouée évite\nde republier une version déjà créée.\nEn local, `./gradlew publishMods` est\nsans risque: sans jeton, il écrit ce qu'il aurait envoyé dans `build/mod-publish/`.\n\n## Limites connues\n\n- Les formes se déclarent par leurs aspects (`Aspects: rlm, poison`), pas par le suffixe\n Showdown du nom d'espèce (`Raichu-Alola`), qui ne se distingue pas des espèces dont le nom\n contient un tiret (`Ho-Oh`, `Porygon-Z`).\n- Les skins `player_username` et `player_uuid` sont récupérés depuis l'API Mojang: ils\n nécessitent un accès réseau et un pseudo existant. En cas d'échec, le dresseur garde le\n skin par défaut et la raison est écrite dans les logs. Le type `texture`, lui, n'a besoin\n de rien d'autre que d'une image dans le pack.\n- Le type de skin `model` sélectionne un modèle NPC Cobblemon dans les ressources client.\n Un [pack d'exemple avec modèle personnalisé](examples/custom_model/README.md) est fourni.\n- La musique de combat n'est jouée que pour un joueur qui a le mod: c'est son client qui la\n fait tourner, ce qui est aussi ce qui la fait boucler et qui met la musique du jeu en\n attente le temps du combat.",
+      "type": "",
+      "stack": [
+        "Kotlin",
+        "JavaScript"
+      ],
+      "status": "prod",
+      "started": "2026-08-15T15:04:01Z",
+      "ended": "",
+      "updated": "2026-10-30T23:47:18Z",
+      "featured": false,
+      "version": "v1.1.3",
+      "prerelease": false,
+      "image": "https://cdn.modrinth.com/data/khlinTrc/48634cdcb9d1f1c196f1335a6d3b798379a54085.png",
+      "links": {
+        "repo": "https://github.com/matheo-1712/cobblemon-trainers",
+        "demo": "https://modrinth.com/mod/cobblemon-trainers-rerebleue"
+      },
+      "stars": 2,
+      "contribution": {
+        "commits": 286,
+        "total": 290,
+        "rank": 1,
+        "contributors": 3
+      },
+      "gallery": [
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/3d412cea1b95f3876612b9026db96626a4a0f5ad_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/3d412cea1b95f3876612b9026db96626a4a0f5ad.png",
+          "title": "Another new intro",
+          "description": "",
+          "featured": true,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351.png",
+          "title": "Optional intro battle similar to the Champion battle in BW",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2.png",
+          "title": "New intro !",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/f48145c08aa671d5fbb47d2a9196ae20e35da89c_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/f48145c08aa671d5fbb47d2a9196ae20e35da89c.png",
+          "title": "Dynamax gimmicks for trainers",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/f6d406553358451e7720f72e23a2e45b47f6c4de_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/f6d406553358451e7720f72e23a2e45b47f6c4de.png",
+          "title": "Duo trainer battle",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/740e8b9468cb4b55f89b15120b19cc2541e352b1_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/740e8b9468cb4b55f89b15120b19cc2541e352b1.png",
+          "title": "Trainer spawner",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/6be8e04ac78c80f7bb26b5d028a654b84ed7a9ba_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/6be8e04ac78c80f7bb26b5d028a654b84ed7a9ba.png",
+          "title": "Trainer Spawner Menu",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/91d829c7b23eafb8b43ddffb6976e3cdbb9fc2fa_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/91d829c7b23eafb8b43ddffb6976e3cdbb9fc2fa.png",
+          "title": "Mega gimmicks for trainers",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/21bea6c93dd9f681780bc3a17667b880b8ad3839_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/21bea6c93dd9f681780bc3a17667b880b8ad3839.png",
+          "title": "Terra Gimmicks for trainer",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/e41265239757000598d5f232ac52d5bc4b6d8059_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/e41265239757000598d5f232ac52d5bc4b6d8059.png",
+          "title": "Battle Phone",
+          "description": "Work in progress: the Battle Phone - every trainer of the world in one list, your progress on each of them, and a button to call one over for a battle.",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/a91401e80b3561567171e20cb53eb6a07ba5ac9a_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/a91401e80b3561567171e20cb53eb6a07ba5ac9a.png",
+          "title": "Use Cobblemon NPC Dialog",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        }
+      ],
+      "modrinth": {
+        "slug": "cobblemon-trainers-rerebleue",
+        "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
+        "downloads": 3928,
+        "followers": 19,
+        "license": "CC0-1.0"
+      },
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/mateloutre",
+      "slug": "mateloutre",
+      "title": "Mateloutre",
+      "summary": "Mateloutre mais qui marche",
+      "body": "",
+      "type": "Bot Discord",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2026-01-17T12:47:20Z",
+      "ended": "",
+      "updated": "2026-10-13T13:44:08Z",
+      "featured": false,
+      "version": "v1.3.1",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Mateloutre"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 77,
+        "total": 90,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "matheo-1712/oapi",
+      "slug": "oapi",
+      "title": "OAPI",
+      "summary": "OAPI is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the Antre des Loutres community, handling complex image generation, real-time infrastructure monitoring, and external API integration.",
+      "body": "[-orange.svg)](https://www.rust-lang.org)\n\nOAPI is the asynchronous Rust API (Axum + Tokio) behind the *Antre des Loutres* community.\nIt generates Discord and Minecraft profile cards, monitors the community infrastructure,\nhandles Discord authentication and exposes community data stored in PocketBase.\n\n## Features\n\n| Area | Description |\n|:--- |:--- |\n| **Profile cards** | PNG summary cards for Discord and Minecraft profiles (messages, voice time, playtime, distance, blocks). Generation is skipped when the SHA-256 hash of the profile state is unchanged. |\n| **Monitoring** | Parallel health checks of HTTP(S) services and Minecraft servers (Server List Ping), with a web dashboard. |\n| **Authentication** | Discord OAuth2 login, stateless JWT session cookie, roles (`Admin`, `LoutreInvesti`, …), service API key for trusted servers and read-only `rom_` tokens for games. |\n| **Friends** | Friendship system between Discord accounts. |\n| **Badges** | Automatic badge attribution from Discord and Minecraft statistics, rules defined in `badges.yaml`. |\n| **Discord activity** | JSON endpoints for Discord activity statistics, with request limits. |\n| **Investor statistics** | PocketBase record counts, restricted to `LoutreInvesti` and `Admin` accounts. Returns `503` rather than partial data when the database fails. |\n| **Daily tasks** | Background scheduler: account purge, badge refresh, then Minecraft head and skin refresh from Mojang. |\n| **API documentation** | OpenAPI 3 specification generated with `utoipa`, served through Swagger UI. |\n\n## Architecture\n\nOAPI uses a layered architecture. Each layer only depends on the layers below it.\n\n| Layer | Directory | Responsibility |\n|:--- |:--- |:--- |\n| Routes | `src/routes/` | Router assembly and middleware (authentication, CORS, rate limiting). |\n| Handlers | `src/handlers/` | HTTP entry points: parameter extraction, status codes. |\n| Actions | `src/actions/` | Use-case orchestration and external data fetching. |\n| Services | `src/services/` | Business logic: image rendering, badges, scheduler, Mojang skins. |\n| Models | `src/models/` | Typed DTOs and OpenAPI schemas. |\n| Utils | `src/utils/` | PocketBase client, formatters, paths and constants. |\n\nStatic web pages are in `public/`, front-end tests in `tests/`, deployment files in `deploy/`.\nSee [docs/architecture.md](docs/architecture.md) for details.\n\n**External dependencies:** PocketBase (data storage), the Discord API (OAuth2, profiles) and the\nMojang API (Minecraft skins).\n\n### Environment variables\n\nDefined in `.env`, see [.env.example](.env.example). Never commit `.env`.\n\n| Variable | Required | Description |\n|:--- |:---: |:--- |\n| `OAPI_ENV` | Yes | `development` or `production`. |\n| `PB_URL` | Yes | PocketBase URL. |\n| `PB_EMAIL` | Yes | PocketBase administrator email. |\n| `PB_PASSWORD` | Yes | PocketBase administrator password. |\n| `DISCORD_CLIENT_ID` | Yes | Discord application client ID. |\n| `DISCORD_CLIENT_SECRET` | Yes | Discord application client secret. |\n| `DISCORD_REDIRECT_URL` | Yes | OAuth2 callback, ending with `/api/auth/callback`. Must be HTTPS in production. |\n| `JWT_SECRET` | Yes | Random secret of at least 32 bytes (`openssl rand -hex 32`). Startup fails if it is missing or too short. |\n| `OAPI_SERVICE_API_KEY` | No | Key for trusted server-to-server calls, with administrator rights. Never expose it to browser code. |\n| `RUST_LOG` | No | Log filter, for example `info,OAPI=debug,tower_http=debug`. |\n| `POCKETBASE_NETWORK` | No | Docker network shared with PocketBase (Compose only). Default: `pocketbase_network`. |\n\n## Testing and quality\n\nThe project follows a zero-warnings policy. CI ([.github/workflows/ci.yml](.github/workflows/ci.yml))\nruns formatting, Clippy, tests, release build and a Semgrep scan on every push to `master` and\n`feat/*`, and on every pull request to `master`.\n\nRun the same checks locally before pushing:\n\n```bash\ncargo fmt --all -- --check\n```\n\n```bash\ncargo clippy --all-targets --all-features -- -D warnings\n```\n\n```bash\ncargo test --all-features\n```\n\n```bash\nnode --test tests/*.test.cjs\n```\n\n## Documentation\n\nDocumentation is written in French. English versions are available for some pages.\n\n| Topic | French | English |\n|:--- |:--- |:--- |\n| Architecture | [architecture.md](docs/architecture.md) | [EN](docs/en/architecture.md) |\n| Configuration | [configuration.md](docs/configuration.md) | [EN](docs/en/configuration.md) |\n| Authentication | [AUTH.md](docs/AUTH.md) | [EN](docs/en/AUTH.md) |\n| PocketBase integration | [pocketbase.md](docs/pocketbase.md) | [EN](docs/en/pocketbase.md) |\n| Image generation | [generation_images.md](docs/generation_images.md) | [EN](docs/en/generation_images.md) |\n| Monitoring | [monitoring.md](docs/monitoring.md) | [EN](docs/en/monitoring.md) |\n| Web interfaces | [interfaces.md](docs/interfaces.md) | — |\n| Badges | [badges.md](docs/badges.md) | — |\n| Friends API | [friends.md](docs/friends.md) | — |\n| Discord activity | [discord_statistics.md](docs/discord_statistics.md) | — |\n| ROM linking (`rom_` tokens) | [rom_auth.md](docs/rom_auth.md), [rom_contract.md](docs/rom_contract.md) | — |\n| Astro site integration | [astro.md](docs/astro.md) | — |\n| Daily tasks | [daily_tasks.md](docs/daily_tasks.md) | — |\n| Production deployment | [production.md](docs/production.md) | — |",
+      "type": "API REST",
+      "stack": [
+        "Rust"
+      ],
+      "status": "prod",
+      "started": "2026-05-19T23:06:56Z",
+      "ended": "",
+      "updated": "2026-10-26T01:40:57Z",
+      "featured": false,
+      "version": "v1.2.1",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/OAPI"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 165,
+        "total": 165,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/otterbots",
+      "slug": "otterbots",
+      "title": "Otterbots",
+      "summary": "Un framework de bot Discord adapté à la stack Antre des Loutres, conçu pour simplifier le développement en intégrant nativement la gestion des événements, commandes, réactions et création de salons — sans avoir à créer de couches de handlers séparées.",
+      "body": "---\n\n## À propos\n\nOtterbots est un framework complet développé par **L'Antre des Loutres** pour simplifier la création de bots Discord professionnels. Il intègre des fonctionnalités avancées comme la gestion automatique des salons, un système de logging sophistiqué, une API centralisée, et des modules de sécurité.\n\n### Points forts\n\n- **Prêt à l'emploi**: Configuration rapide avec `.env`\n- **Sécurité intégrée**: Module Otterguard (anti-spam, anti-scam, filtrage de liens)\n- **Logging avancé**: Otterlogs avec webhooks Discord\n- **Cache persistant**: Ottercache pour stocker vos données\n- **API centralisée**: OtterlyAPI pour gérer vos routes dynamiquement\n- **Tâches planifiées**: Système de cron jobs intégré\n- **TypeScript**: Code typé et maintenable\n\n---\n\n## Installation\n\n### Étapes\n\n1. **Cloner le projet**\n ```bash\n git clone https://github.com/L-Antre-des-Loutres/Otterbots.git\n cd Otterbots\n ```\n\n2. **Installer les dépendances**\n ```bash\n npm install\n ```\n\n3. **Configurer l'environnement**\n\n Copiez le fichier d'exemple et remplissez vos informations:\n ```bash\n cp.env.example.env\n ```\n\n Éditez `.env` avec vos valeurs:\n ```env\n # Environnement\n NODE_ENV=dev\n BOT_LANGUAGE=FR\n\n # Discord\n BOT_TOKEN=votre_token_discord\n DISCORD_GUILD_ID=id_de_votre_serveur\n DISCORD_CLIENT_ID=id_de_votre_application\n BOT_NAME=MonBot\n\n # Webhooks (optionnel)\n ENABLE_DISCORD_LOGS=true\n GLOBAL_WEBHOOK_URL=https://discord.com/api/webhooks/...\n ERROR_WEBHOOK_URL=https://discord.com/api/webhooks/...\n ```\n\n4. **Compiler le projet**\n ```bash\n npm run build\n ```\n\n5. **Lancer le bot**\n\n En développement:\n ```bash\n npm run dev\n ```\n\n En production:\n ```bash\n npm start\n ```\n\n---\n\n## Utilisation\n\n### Structure du projet\n\n```\nOtterbots/\n src/\n app/ # Configuration de votre bot\n config/ # Fichiers de configuration\n salon.ts # Configuration des salons Discord\n task.ts # Tâches planifiées (cron)\n otterguardConfig.ts # Configuration sécurité\n commands/ # Vos commandes Discord\n events/ # Vos gestionnaires d'événements\n index.ts # Point d'entrée\n otterbots/ # Framework (ne pas modifier)\n utils/ # Utilitaires du framework\n docs/ # Documentation détaillée\n.env # Variables d'environnement\n package.json\n```\n\n### Créer une commande\n\nCréez un fichier dans `src/app/commands/`:\n\n```typescript\nimport { CommandInteraction, SlashCommandBuilder } from 'discord.js';\n\nexport const data = new SlashCommandBuilder()\n.setName('hello')\n.setDescription('Dire bonjour');\n\nexport async function execute(interaction: CommandInteraction) {\n await interaction.reply('Bonjour! ');\n}\n```\n\n### Configurer des salons automatiques\n\nÉditez `src/app/config/salon.ts`:\n\n```typescript\nexport const salonCategory = [\n { id: 1, name: \"Logs\", role_id: \"ROLE_ID\" }\n];\n\nexport const botSalon = [\n {\n alias: \"logs-bot\",\n name: \"-logs\",\n category: 1,\n webhook: true\n }\n];\n```\n\n### Ajouter une tâche planifiée\n\nÉditez `src/app/config/task.ts`:\n\n```typescript\nexport const tasks = [\n {\n name: \"Sauvegarde quotidienne\",\n time: \"0 0 * * *\", // Tous les jours à minuit\n task: async () => {\n console.log(\"Sauvegarde en cours...\");\n }\n }\n];\n```\n\n### Utiliser le système de logs\n\n```typescript\nimport { otterlogs } from './otterbots/utils/otterlogs';\n\notterlogs.success(\"Bot démarré avec succès!\");\notterlogs.log(\"Chargement de 10 commandes...\");\notterlogs.warn(\"Cache expiré\");\notterlogs.error(\"Erreur de connexion à la DB\");\n```\n\n---\n\n## Fonctionnalités\n\n### Otterlogs\nSystème de logging avancé avec:\n- 7 niveaux de logs (success, log, warn, error, important, debug, silentlog)\n- Intégration webhooks Discord\n- Formatage coloré avec Pino\n- Configuration granulaire par type\n\n [Documentation complète](./src/otterbots/docs/OTTERLOGS.md)\n\n### Otterguard\nModule de sécurité pour protéger votre serveur:\n- Protection anti-liens malveillants\n- Détection de scam\n- Anti-spam / anti-flood\n- Liste blanche de domaines\n\n [Documentation complète](./src/otterbots/docs/OTTERGUARD.md)\n\n### OtterlyAPI\nGestionnaire d'API centralisé:\n- Routes dynamiques via alias\n- Cache local des configurations\n- Méthodes GET/POST simplifiées\n- Authentification automatique\n\n [Documentation complète](./src/otterbots/docs/OTTERLYAPI.md)\n\n### Ottercache\nSystème de cache persistant:\n- Stockage clé-valeur typé\n- Sauvegarde automatique en JSON\n- API simple type Map\n- Zero-config\n\n [Documentation complète](./src/otterbots/docs/OTTERCACHE.md)\n\n### Gestion des Salons\n- Création automatique de catégories et salons\n- Gestion des permissions par rôle\n- Webhooks automatiques\n- Récupération par alias\n\n [Documentation complète](./src/otterbots/docs/UTILS_GENERAUX.md#4-gestion-des-salons-salonts)\n\n### Tâches Planifiées\n- Cron jobs avec `node-cron`\n- Validation des expressions\n- Gestion des erreurs\n- Logs détaillés\n\n [Documentation complète](./src/otterbots/docs/UTILS_GENERAUX.md#5-gestionnaire-de-tâches-taskts)\n\n---\n\n## Documentation\n\nToute la documentation détaillée se trouve dans `src/otterbots/docs/`:\n\n- **[OTTERBOTS_CLASS.md](./src/otterbots/docs/OTTERBOTS_CLASS.md)** - API publique de la classe Otterbots (démarrage, configuration)\n- **[UTILS_GENERAUX.md](./src/otterbots/docs/UTILS_GENERAUX.md)** - Utilitaires généraux (Activity, DisplayLogo, Salon, Task)\n- **[OTTERLOGS.md](./src/otterbots/docs/OTTERLOGS.md)** - Système de logging complet\n- **[OTTERGUARD.md](./src/otterbots/docs/OTTERGUARD.md)** - Module de sécurité\n- **[OTTERLYAPI.md](./src/otterbots/docs/OTTERLYAPI.md)** - Gestionnaire d'API\n- **[OTTERCACHE.md](./src/otterbots/docs/OTTERCACHE.md)** - Système de cache\n\n---\n\n## Scripts disponibles\n\n| Commande | Description |\n|----------|-------------|\n| `npm run dev` | Lint + Build + Lancer en mode développement |\n| `npm run build` | Compiler TypeScript vers JavaScript |\n| `npm run lint` | Vérifier le code avec ESLint |\n| `npm start` | Lancer le bot compilé (production) |\n\n---\n\n## Contribution\n\nLes contributions sont les bienvenues! N'hésitez pas à:\n\n1. Fork le projet\n2. Créer une branche (`git checkout -b feature/AmazingFeature`)\n3. Commit vos changements (`git commit -m 'Add AmazingFeature'`)\n4. Push vers la branche (`git push origin feature/AmazingFeature`)\n5. Ouvrir une Pull Request\n\n---\n\n## Licence\n\nCe projet est sous licence **MIT**. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.\n\n---\n\n## Auteurs\n\nDéveloppé avec par **[L'Antre des Loutres](https://github.com/L-Antre-des-Loutres)**\n\n---\n\n## Liens utiles\n\n- [Discord.js Documentation](https://discord.js.org/)\n- [Discord Developer Portal](https://discord.com/developers/applications)\n- [Node-cron Documentation](https://github.com/node-cron/node-cron)\n- [Pino Logger](https://getpino.io/)\n\n---",
+      "type": "Bot Discord",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2025-10-12T16:18:26Z",
+      "ended": "",
+      "updated": "2026-08-29T08:51:43Z",
+      "featured": false,
+      "version": "v1.0.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Otterbots"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 124,
+        "total": 126,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/arisoutre",
+      "slug": "arisoutre",
+      "title": "Arisoutre",
+      "summary": "Bot principale de l'Antre des Loutres, responsable de l'administration et la gestion de nos membres.",
+      "body": "---\n\n## À propos\n\n**Arisoutre** est un bot Discord de modération développé en TypeScript pour le serveur \"L'Antre des Loutres\". Il offre un système de protection avancé (OtterGuard), une intégration API complète (OtterlyAPI), et une architecture modulaire extensible.\n\n### Points forts\n\n- **Système de protection multi-couches** avec OtterGuard\n- **Architecture modulaire** séparant framework et logique métier\n- **Intégration API** pour la persistance des données\n- **Embeds personnalisables** et messages de bienvenue\n- **Performances optimisées** avec système de cache\n- **Logs avancés** avec support Discord webhooks\n- **Tâches planifiées** avec node-cron\n- **Configuration flexible** via variables d'environnement\n\n---\n\n## Fonctionnalités (hérité d'Otterbots)\n\n### OtterGuard - Système de protection\n\n- **Protection contre les liens**: Filtre les liens non autorisés avec liste blanche configurable\n- **Protection anti-scam**: Détecte et bloque les tentatives de phishing\n- **Protection anti-spam**: Limite les messages répétitifs et le flood\n- **Logs automatiques**: Enregistre toutes les actions dans le canal de modération\n\n### Commandes slash\n\n| Commande | Description | Permissions |\n|----------|-------------|-------------|\n| `/analyze` | Analyse le score de fiabilité d'un membre | Admin |\n| `/clear` | Supprime des messages en masse (1-100) | Admin |\n| `/git-repo` | Affiche les informations du repository | Tous |\n\n### Événements automatiques\n\n- **Bienvenue**: Message personnalisé pour les nouveaux membres\n- **Au revoir**: Notification lors du départ d'un membre\n- **Logs de messages**: Suivi des suppressions et modifications\n- **Statistiques vocales**: Suivi de l'activité dans les salons vocaux\n- **Comptage de messages**: Système de statistiques et de classement\n\n### API Otterly\n\n- Client HTTP intégré pour communication avec API externe\n- Cache local des routes pour performances optimales\n- Support GET, POST, PUT avec gestion d'erreurs\n- Types TypeScript pour sécurité du code\n\n### Système de logs\n\n- **Console**: Logs colorés avec pino-pretty\n- **Discord**: Webhooks pour logs critiques\n- **Niveaux**: debug, info, success, warn, error\n- **Configuration**: Activation sélective par niveau\n\n---\n\n## Installation rapide\n\ngit clone https://github.com/L-Antre-des-Loutres/Otterbots.git\ncd Otterbots\n\nnpm install\n\ncp.env.example.env\n\nnpm run dev\n```\n\n## Documentation\n\n### Guides principaux\n\n| Document | Description |\n|----------|-------------|\n| [ ARCHITECTURE.md](../../Antigravity/Arisoutre/docs/ARCHITECTURE.md) | Architecture du projet et structure des modules |\n| [ INSTALLATION.md](../../Antigravity/Arisoutre/docs/INSTALLATION.md) | Guide d'installation pas à pas |\n| [ CONFIGURATION.md](../../Antigravity/Arisoutre/docs/CONFIGURATION.md) | Configuration détaillée et variables d'environnement |\n| [ COMMANDS.md](../../Antigravity/Arisoutre/docs/COMMANDS.md) | Documentation des commandes et création de nouvelles commandes |\n| [ EVENTS.md](../../Antigravity/Arisoutre/docs/EVENTS.md) | Événements Discord et création d'événements personnalisés |\n| [ API.md](../../Antigravity/Arisoutre/docs/API.md) | Utilisation du module OtterlyAPI |\n| [‍ DEVELOPMENT.md](../../Antigravity/Arisoutre/docs/DEVELOPMENT.md) | Guide de développement et bonnes pratiques |\n\n---\n\n## Configuration\n\n### Structure du projet\n\n```\nArisoutre/\n src/\n app/ # Logique métier\n commands/ # Commandes personnalisées\n config/ # Configuration\n embeds/ # Templates d'embeds\n events/ # Événements\n utils/ # Utilitaires\n\n otterbots/ # Framework réutilisable\n handlers/ # Gestionnaires\n utils/ # Utilitaires framework\n otterguard/ # Système de protection\n otterlyapi/ # Client API\n ottercache/ # Système de cache\n...\n\n docs/ # Documentation\n config/ # Configuration externe\n build/ # Fichiers compilés\n```\n\n## Développement\n\n### Scripts disponibles\n\n```bash\nnpm run dev # Développement (lint + build + start)\nnpm run build # Compilation TypeScript\nnpm run lint # Vérification ESLint\nnpm start # Lancer le bot compilé\n```\n\n### Créer une commande\n\n```typescript\n// src/app/commands/maCommande.ts\nimport { SlashCommandBuilder, ChatInputCommandInteraction } from \"discord.js\";\n\nexport default {\n data: new SlashCommandBuilder()\n.setName(\"macommande\")\n.setDescription(\"Ma nouvelle commande\"),\n\n async execute(interaction: ChatInputCommandInteraction): Promise<void> {\n await interaction.reply(\"Hello World!\");\n }\n};\n```\n\n### Créer un événement\n\n```typescript\n// src/app/events/MonEvenement.ts\nimport { Events, Message } from \"discord.js\";\n\nexport default {\n name: Events.MessageCreate,\n once: false,\n async execute(message: Message) {\n console.log(`Message de ${message.author.tag}`);\n }\n};\n```\n\n **Guide complet**: [docs/DEVELOPMENT.md](../../Antigravity/Arisoutre/docs/DEVELOPMENT.md)\n\n---\n\n## Architecture\n\nArisoutre utilise une architecture en couches:\n\n```mermaid\ngraph TD\n A[Application Layer] --> B[Otterbots Framework]\n B --> C[Discord.js]\n C --> D[Discord API]\n\n A --> E[Commands]\n A --> F[Events]\n A --> G[Config]\n\n B --> H[OtterGuard]\n B --> I[OtterlyAPI]\n B --> J[OtterCache]\n B --> K[OtterLogs]\n```\n\n- **Application Layer**: Logique métier spécifique au serveur\n- **Otterbots Framework**: Framework réutilisable pour bots Discord\n- **Modules**: OtterGuard, OtterlyAPI, OtterCache, OtterLogs\n\n **Détails**: [docs/ARCHITECTURE.md](../../Antigravity/Arisoutre/docs/ARCHITECTURE.md)\n\n---\n\n## Contribution\n\nLes contributions sont les bienvenues! Voici comment contribuer:\n\n1. **Fork** le projet\n2. Créez votre branche (`git checkout -b feature/AmazingFeature`)\n3. Committez vos changements (`git commit -m 'feat: add amazing feature'`)\n4. Pushez vers la branche (`git push origin feature/AmazingFeature`)\n5. Ouvrez une **Pull Request**\n\n---\n\n## License\n\nCe projet est sous licence MIT. Voir le fichier [LICENSE](../../Antigravity/Arisoutre/LICENSE) pour plus de détails.\n\n---\n\n## Auteurs\n\n- **Antre des Loutres** - [GitHub](https://github.com/L-Antre-des-Loutres)\n\n---\n\n## Modules utilisés\n\n- [Discord.js](https://discord.js.org/) - Framework Discord pour Node.js\n- [TypeScript](https://www.typescriptlang.org/) - Langage de programmation\n- [Pino](https://getpino.io/) - Système de logs\n- [Axios](https://axios-http.com/) - Client HTTP\n- [node-cron](https://github.com/node-cron/node-cron) - Planificateur de tâches\n\n---\n\n## Support\n\n- [Documentation complète](docs/)\n- [Signaler un bug](https://github.com/L-Antre-des-Loutres/Arisoutre/issues)\n- [Proposer une fonctionnalité](https://github.com/L-Antre-des-Loutres/Arisoutre/issues)\n\n---",
+      "type": "Bot Discord",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2024-02-10T15:55:48Z",
+      "ended": "",
+      "updated": "2026-06-22T14:32:10Z",
+      "featured": false,
+      "version": "v3.1.3",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Arisoutre",
+        "demo": "https://discord.gg/k4ZBFVdntp"
+      },
+      "stars": 2,
+      "contribution": {
+        "commits": 128,
+        "total": 128,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "aliases": [
+        {
+          "key": "matheo-1712/arisoutrev2",
+          "title": "ArisoutreV2",
+          "repo": "https://github.com/matheo-1712/ArisoutreV2",
+          "status": "archived",
+          "relation": "predecessor"
+        }
+      ]
+    },
+    {
+      "key": "matheo-1712/m.a.t.h.e.o",
+      "slug": "m-a-t-h-e-o",
+      "title": "M.A.T.H.E.O",
+      "summary": "Mon Assistant Technique Hautement Évolutif et Organisé",
+      "body": "Assistant du quotidien en Rust qui parle sur Telegram, reçoit des infos via une API et lance des tâches quotidiennes.\n\n```bash\ncargo run\n```",
+      "type": "",
+      "stack": [
+        "Rust"
+      ],
+      "status": "wip",
+      "started": "2026-10-07T20:45:15Z",
+      "ended": "",
+      "updated": "2026-11-05T03:00:56Z",
+      "featured": false,
+      "version": "",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/M.A.T.H.E.O"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 8,
+        "total": 8,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "matheo-1712/re-otterbots",
+      "slug": "re-otterbots",
+      "title": "Re Otterbots",
+      "summary": "Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu pour simplifier le développement en intégrant nativement la gestion des événements, commandes, réactions et création de salons — sans avoir à créer de couches de handlers séparées.",
+      "body": "*Re:start [Otterbots](https://github.com/L-Antre-des-Loutres/Otterbots) from zero*",
+      "type": "",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "wip",
+      "started": "2026-09-07T19:00:50Z",
+      "ended": "",
+      "updated": "2026-09-15T13:47:22Z",
+      "featured": false,
+      "version": "v0.1.3",
+      "prerelease": true,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/re-otterbots"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 18,
+        "total": 18,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/ottergames-plugin",
+      "slug": "ottergames-plugin",
+      "title": "Ottergames Plugin",
+      "summary": "Ottergames is a Minecraft plugin made to play multiple mini-games in a Wario Ware style.",
+      "body": "Ottergames is a Minecraft plugin made for multiplayer events. The game is made of multiples mini-games that quickly chain one after the other, similary to the Wario Ware series.\n\nLes mini-jeux sont rapident et s'enchaine avec de moins en moins de temps de pause plus le jeu dure longtemps. Un systeme compte les points dans un leaderboard pour la partie en cours, mais aussi pour le total de toutes les parties.\n\n## Lancement rapide (Windows)\n\nLe script `launch_minecraft_with_plugin.bat` fait tout automatiquement:\n1. build du plugin,\n2. installation du plugin dans le serveur local,\n3. ouverture du launcher Minecraft.\n\nEnsuite, connecte ton client sur `localhost:25565`.\n\nLe serveur est lance avec le jar Paper `26.1.2-53` telecharge depuis:\n`https://fill-data.papermc.io/v1/objects/6934188878fc351e1be5bfba5f2b8c4591224886e4b34e3de09dbec68a351caf/paper-26.1.2-53.jar`\n\nPaper 26.1.2 necessite Java 25 minimum:\n`https://docs.papermc.io/misc/java-install`\n\nSi le launcher n'est pas detecte automatiquement, definis la variable d'environnement `MINECRAFT_LAUNCHER` avec le chemin vers `MinecraftLauncher.exe`.",
+      "type": "Plugin",
+      "stack": [
+        "Java"
+      ],
+      "status": "wip",
+      "started": "2025-09-24T08:44:27Z",
+      "ended": "",
+      "updated": "2026-05-11T01:11:27Z",
+      "featured": false,
+      "version": "",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Ottergames-plugin"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 73,
+        "total": 128,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "matheo-1712/rustssh",
+      "slug": "rustssh",
+      "title": "RustSSH",
+      "summary": "Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs Linux",
+      "body": "",
+      "type": "",
+      "stack": [
+        "Rust"
+      ],
+      "status": "wip",
+      "started": "2026-01-22T19:18:13Z",
+      "ended": "",
+      "updated": "2026-02-15T21:04:45Z",
+      "featured": false,
+      "version": "",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/RustSSH"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 7,
+        "total": 7,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "lp-applications-web-angers-2025-2026/hiddenink",
+      "slug": "hiddenink",
+      "title": "HiddenInk",
+      "summary": "Application C++ de stéganographie permettant de cacher du texte dans une image, à la manière d’une écriture à l’encre invisible.",
+      "body": "",
+      "type": "",
+      "stack": [
+        "C++"
+      ],
+      "status": "archived",
+      "started": "2025-10-06T09:38:39Z",
+      "ended": "2026-04-06T20:56:38Z",
+      "updated": "2026-04-06T20:56:38Z",
+      "featured": false,
+      "version": "v1.0.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/LP-Applications-Web-Angers-2025-2026/HiddenInk"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 49,
+        "total": 78,
+        "rank": 1,
+        "contributors": 5
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "LP-Applications-Web-Angers-2025-2026",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "lp-applications-web-angers-2025-2026/projet2",
+      "slug": "projet2",
+      "title": "projet2",
+      "summary": "Ce depot contient un site pedagogique genere a partir de Markdown, avec injection automatique de benchmarks (SQLite + Highcharts), extraction de contenu depuis PDF et mise en forme via un layout PHP commun.",
+      "body": "Ce depot contient un site pedagogique genere a partir de Markdown, avec injection automatique de benchmarks (SQLite + Highcharts), extraction de contenu depuis PDF et mise en forme via un layout PHP commun.\n\n## 1) Objectif du projet\n\nLe site presente des etudes de cas autour de l'assembleur (x86 32/64), avec:\n\n- des chapitres rediges en Markdown;\n- des blocs de code exportes automatiquement;\n- des tableaux + graphiques de performances injectes depuis une base SQLite;\n- un pipeline d'extraction/import depuis un PDF source.\n\n## 2) Architecture du depot\n\nPrincipaux repertoires:\n\n- `site_web/`: site genere (HTML statique), styles, JS, data, templates;\n- `site_web/pages-md/`: sources Markdown des chapitres;\n- `site_web/markdown_to_php/build.php`: pipeline principal Markdown -> HTML;\n- `site_web/markdown_to_php/templates/layout.php`: layout commun;\n- `site_web/ez_web.php`: header/footer/menu + helpers historiques;\n- `site_web/data/benchmarks.db`: base SQLite des benchmarks;\n- `site_web/data/graph.js`: rendu des graphiques Highcharts;\n- `pdf_extract/`: scripts d'analyse/extraction/import depuis PDF;\n- `lar/`: dossiers de travaux benchmarks assembleur/C/C++ (sources et scripts de perf).\n\n## 3) Prerequis\n\nMinimum recommande:\n\n- PHP 8.x;\n- Composer;\n- extension PDO SQLite active dans PHP;\n- `sqlite3` (CLI, utile pour debug base);\n- `pdftotext` (`poppler-utils`) pour certains scripts d'extraction;\n- dependances Composer installees (`smalot/pdfparser`).\n\n## 4) Installation rapide\n\nDepuis la racine du projet:\n\n```bash\ncd /home/etud/PhpstormProjects/projet2\ncomposer install\n```\n\nOptionnel (outils extraction PDF):\n\n```bash\nsudo apt install -y poppler-utils sqlite3\n```\n\n## 5) Comment le site est genere\n\nLe flux principal est:\n\n1. lire chaque fichier `site_web/pages-md/*.md`;\n2. detecter/remplacer les balises speciales (ex: `[BENCHMARK:...]`);\n3. convertir Markdown vers HTML (Parsedown);\n4. post-traiter le HTML (titres, tableaux, blocs de code, nettoyage);\n5. injecter le layout via `templates/layout.php`;\n6. ecrire le resultat dans `site_web/*.html`.\n\nCommande:\n\n```bash\nphp site_web/markdown_to_php/build.php\n```\n\n### Details importants du build\n\n- Les formules mathematiques `$...$` et `$$...$$` sont protegees avant parsing pour eviter la corruption des `_` par le parser Markdown.\n- Les blocs de code Markdown sont exportes vers `site_web/code/chapitre_X/` puis affiches dans des `<details>` avec coloration GeSHi.\n- Si un benchmark est present, `highcharts.js` et `site_web/data/graph.js` sont injectes automatiquement dans la page.\n- Le lien Accueil du header pointe vers `/` (force dans `site_web/ez_web.php`).\n\n## 6) Systeme de benchmark dynamique\n\n### 6.1 Balisage dans le Markdown\n\nDans un chapitre, il suffit d'ecrire:\n\n```markdown\n[BENCHMARK:nom_du_benchmark]\n```\n\nExemples utilises:\n\n- `[BENCHMARK:asm_selfdesc]`\n- `[BENCHMARK:asm_bsr_lzcnt]`\n\n### 6.2 Source des donnees\n\nLe build interroge `site_web/data/benchmarks.db`, vue `v_resultats`, en filtrant:\n\n- `chapitre = nom_du_benchmark`\n- `type_test IN ('temps moyen', 'performance')`\n\nVue disponible dans la base:\n\n- `v_resultats(id_resultat, nom_cpu, marque, annee, chapitre, type_test, nom_test, valeur_resultat, validation, remarque)`\n\n### 6.3 Segmentation des graphiques\n\nPar defaut, un benchmark est split en 3 groupes:\n\n- `ancien`: annee < 2015\n- `moderne`: 2015 <= annee < 2020\n- `recent`: annee >= 2020\n\nCas special: `asm_bsr_lzcnt` est affiche en vue globale unique.\n\n## 7) Pipeline PDF (extraction/import)\n\nRepertoire: `pdf_extract/`\n\nScripts principaux:\n\n- `pdf_probe.php`: inspection structure PDF;\n- `extract_pdf_to_markdown.php`: extraction PDF -> fichiers Markdown;\n- `extract_chapter_data.php`: generation JSON de donnees chapitres;\n- `import_benchmark.php`: insertion/maj benchmarks dans SQLite.\n\nConfiguration centralisee: `pdf_extract/config.php` (+ `pdf_extract/.env`).\n\nVariables supportees:\n\n- `PDF_PATH`\n- `DB_PATH`\n- `OUTPUT_DIR`\n- `DATA_DIR`\n\nExemples:\n\n```bash\nphp pdf_extract/import_benchmark.php --config\nphp pdf_extract/pdf_probe.php --config\nphp pdf_extract/extract_pdf_to_markdown.php --config\nphp pdf_extract/import_benchmark.php\n```\n\n## 8) Lancer le site en local\n\nLe site genere est statique (HTML/CSS/JS). Pour le consulter localement:\n\n```bash\ncd site_web\nphp -S 127.0.0.1:8080\n```\n\nPuis ouvrir:\n\n- `http://127.0.0.1:8080/index.html`\n- ou directement un chapitre (ex: `chapitre_17.html`).\n\n## 9) Workflow mainteneur recommande\n\n1. Modifier un chapitre dans `site_web/pages-md/`.\n2. Ajouter/mettre a jour les donnees benchmark via SQLite ou `pdf_extract/import_benchmark.php`.\n3. Regenerer: `php site_web/markdown_to_php/build.php`.\n4. Verifier visuellement les pages modifiees.\n5. Commit des fichiers source + HTML regeneres si votre process le demande.\n\n## 10) Depannage courant\n\n### Le graphique ne s'affiche pas\n\nVerifier:\n\n- presence de la balise `[BENCHMARK:...]` dans le Markdown;\n- presence de donnees correspondantes dans `v_resultats` (`chapitre` identique);\n- chargement de `highcharts.js` et `data/graph.js` dans la page generee.\n\n### Le tableau benchmark est vide\n\n- Verifier que `type_test` est bien `temps moyen` ou `performance`;\n- Verifier l'existence du benchmark dans la table `Chapitre` + `Test` + `Resultat`.\n\n### Erreurs sur les formules\n\nLe build protege les formules math avant parsing Markdown. Si une formule casse, verifier que les delimiteurs `$...$` ou `$$...$$` sont bien fermes.\n\n### Scripts PDF en erreur\n\n- verifier le chemin du PDF (`PDF_PATH`);\n- verifier `pdftotext` installe;\n- verifier les droits d'ecriture des repertoires de sortie.\n\n## 11) Fichiers de reference\n\n- `site_web/markdown_to_php/build.php`\n- `site_web/markdown_to_php/templates/layout.php`\n- `site_web/ez_web.php`\n- `site_web/data/graph.js`\n- `site_web/SITE_WEB_DOC.md`\n- `pdf_extract/config.php`\n- `pdf_extract/import_benchmark.php`\n\n---",
+      "type": "",
+      "stack": [
+        "PHP",
+        "Assembly",
+        "JavaScript"
+      ],
+      "status": "archived",
+      "started": "2025-12-08T09:29:30Z",
+      "ended": "2026-03-27T09:32:28Z",
+      "updated": "2026-03-27T09:32:28Z",
+      "featured": false,
+      "version": "v1.2",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/LP-Applications-Web-Angers-2025-2026/projet2"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 52,
+        "total": 62,
+        "rank": 1,
+        "contributors": 4
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "LP-Applications-Web-Angers-2025-2026",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "matheo-1712/citlali",
+      "slug": "citlali",
+      "title": "Citlali",
+      "summary": "Bot Discord spécialisé dans Genshin Impact.",
+      "body": "Citlali est un bot Discord spécialisé pour le jeu **Genshin Impact**.\n\n## Fonctionnalités\n\nCe bot permet de:\n\n- Afficher les builds conseillés pour les personnages\n- Montrer les événements à venir dans le jeu (fonctionnalité en cours de développement)\n- Gérer les UID des utilisateurs\n- Proposer de nombreuses autres fonctionnalités à venir pour améliorer l'expérience des utilisateurs\n\nCe bot est en constante évolution et de nouvelles fonctionnalités seront ajoutées régulièrement.",
+      "type": "Bot Discord",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "archived",
+      "started": "2025-01-05T18:13:03Z",
+      "ended": "2026-01-20T10:26:17Z",
+      "updated": "2026-01-20T10:26:17Z",
+      "featured": false,
+      "version": "v3.0.3",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/Citlali",
+        "demo": "https://discord.com/oauth2/authorize?client_id=1300834433221267549&permissions=0&integration_type=0&scope=bot"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 81,
+        "total": 81,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [
+        {
+          "url": "img/shots/citlali/infographies.webp",
+          "full": "img/shots/citlali/infographies.webp",
+          "title": "Commande /build [nom du personnage]",
+          "description": ""
+        },
+        {
+          "url": "img/shots/citlali/autocompletion.webp",
+          "full": "img/shots/citlali/autocompletion.webp",
+          "title": "Système d'autocomplétion",
+          "description": ""
+        },
+        {
+          "url": "img/shots/citlali/profil.webp",
+          "full": "img/shots/citlali/profil.webp",
+          "title": "Profil de l'utilisateur via la commande /get-uid",
+          "description": ""
+        }
+      ],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "matheo-1712/citlapi",
+      "slug": "citlapi",
+      "title": "CitlAPI",
+      "summary": "Citlali - API est une API RESTful conçue pour être simple d’utilisation et facile à maintenir. Elle s’appuie sur le modèle de Otterly API. Bien qu’elle soit principalement destinée à être utilisée par le bot Citlali, elle reste ouverte à d’autres utilisateurs.",
+      "body": "Citlali - API est une API RESTful conçue pour être simple d’utilisation et facile à maintenir. Elle s’appuie sur le modèle de [Otterly API](https://github.com/matheo-1712/OtterlyAPI). Bien qu’elle soit principalement destinée à être utilisée par le bot Citlali, elle reste ouverte à d’autres utilisateurs.\n\n- [Citlali - API](#citlali---api)\n- [Sommaire](#sommaire)\n - [Fonctionnalités](#fonctionnalités)\n - [Installation](#installation)\n - [Exemple d'utilisation](#exemple-dutilisation)\n - [Auteur](#auteur)\n - [Liaisons avec d'autres projets](#liaisons-avec-dautres-projets)\n\n## Fonctionnalités\n\n- Gestion de table, Création, Suppression, Recherche de données.\n- Protocole de token d'authentification pour les requêtes demandant l'authentification.\n- Lancement de commande dans un terminal.\n\n## Exemple d'utilisation\n\n(Pas encore disponible)\n\n## Liaisons avec d'autres projets\n\n- [Citlali](https://github.com/matheo-1712/Citlali) réalisé par [Matheo Pérodeau](https://github.com/matheo-1712)",
+      "type": "API REST",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "archived",
+      "started": "2025-05-01T20:06:37Z",
+      "ended": "2026-01-19T13:22:45Z",
+      "updated": "2026-01-19T13:22:45Z",
+      "featured": false,
+      "version": "v1.0.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/CitlAPI"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 60,
+        "total": 60,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/otterlyapi",
+      "slug": "otterlyapi",
+      "title": "OtterlyApi",
+      "summary": "Une API permettant la gestion de serveurs de jeu. Elle permet d'afficher l'ensemble des informations les concernant, de les installer, de les démarrer et de les arrêter via une requête.",
+      "body": "Otterly API est une API RESTful. Elle est conçue pour être simple d'utilisation et facile à maintenir. Son objectif est de devenir un véritable framework d'API, pensé pour être hautement modifiable et extrêmement facile à prendre en main. Cette API est spécialisée pour [l'Antre des Loutres](https://github.com/L-Antre-des-Loutres), mais elle reste facilement modifiable pour s'adapter à un environnement différent.\n\n- [Otterly API](#otterly-api)\n- [Sommaire](#sommaire)\n - [Fonctionnalités](#fonctionnalités)\n - [Installation](#installation)\n - [Exemple d'utilisation](#exemple-dutilisation)\n - [Création d'un serveur](#création-dun-serveur)\n - [Récupération de tous les serveurs](#récupération-de-tous-les-serveurs)\n - [Auteur](#auteur)\n - [Liaisons avec les autres services de l'Antre des Loutres](#liaisons-avec-les-autres-services-de-lantre-des-loutres)\n\n## Fonctionnalités\n\n- Gestion de table, Création, Suppression, Recherche de données.\n- Protocole de token d'authentification pour les requêtes demandant l'authentification.\n- Lancement de commande dans un terminal.\n\n## Exemple d'utilisation\n\n### Création d'un serveur\nPour créer un serveur, vous devez utiliser la route POST `/api/serveurs` avec le corps JSON suivant:\n\n```typescript\nimport axios from 'axios';\n\nconst url = 'http://localhost:3000/api/serveur';\nconst token = 'VOTRE_TOKEN_ICI';\n\naxios.post(url, {\n nom: \"Serveur Test\",\n jeu: \"Minecraft\",\n version: \"1.19.2\",\n modpack: \"Minecraft\",\n modpack_url: \"https://www.minecraft.net/en-us/download/server/vanilla\",\n nom_monde: \"Test\",\n embed_color: \"#000000\",\n path_serv: \"C:/Users/perod/Documents/API-Serveur/API Serveur TS/serveur.bat\",\n start_script: \"start\",\n actif: true,\n global: false,\n}, {\n headers: {\n 'Authorization': `${token}`\n }\n})\n.then(response => {\n console.log(response.status); // Affiche le code de réponse HTTP, ex: 201\n})\n.catch(error => {\n console.error(error); // Affiche l'erreur si la requête échoue\n});\n```\n\n### Récupération de tous les serveurs\nPour récupérer tous les serveurs, vous devez utiliser la route GET `/api/serveurs` avec le corps JSON suivant:\n\n```typescript\nimport axios from 'axios';\n\n axios.get(url)\n.then(response => {\n console.log(response.data);\n })\n.catch(error => {\n console.error(error);\n });\n```\n\n## Liaisons avec les autres services de l'Antre des Loutres\n\n- [Server Sentinel](https://github.com/Corentin-cott/ServeurSentinel) réalisé par [Corentin Cotterau](https://github.com/Corentin-cott)\n- [MultiLoutre](https://github.com/L-Antre-des-Loutres/MultiLoutre) et [Mineotter](https://github.com/Corentin-cott/Mineotter-Bot) réalisé par [Corentin Cotterau](https://github.com/Corentin-cott) et [Matheo Pérodeau](https://github.com/matheo-1712)",
+      "type": "API",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "archived",
+      "started": "2024-06-24T16:08:51Z",
+      "ended": "2026-01-14T09:00:33Z",
+      "updated": "2026-01-14T09:00:33Z",
+      "featured": false,
+      "version": "v1.2.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/OtterlyApi"
+      },
+      "stars": 2,
+      "contribution": {
+        "commits": 158,
+        "total": 159,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "aliases": [
+        {
+          "key": "matheo-1712/api-serveur",
+          "title": "API Serveur",
+          "repo": "https://github.com/matheo-1712/API-Serveur",
+          "status": "archived",
+          "relation": "predecessor"
+        }
+      ]
+    },
+    {
+      "key": "matheo-1712/ticket-tool",
+      "slug": "ticket-tool",
+      "title": "Ticket Tool",
+      "summary": "TicketTool est une application ASP.NET MVC Core (C#) destinée à gérer les demandes des utilisateurs en créant des tickets de support.",
+      "body": "**Ticket-Tool** est une application web développée en **ASP.NET Core MVC** permettant de gérer efficacement des tickets de support. Elle permet aux utilisateurs de créer, modifier, visualiser et suivre l’état de leurs demandes.\n\n---\n\n## Fonctionnalités\n\n- Création de tickets via un formulaire simple\n- Modification des tickets existants\n- Changement de statut du ticket:\n `Non traité`, `En cours`, `Résolu`\n- Interface utilisateur simple et efficace **Bootstrap 5**\n- API REST pour interaction front/back\n\n---\n\n## Aperçu de l'application\n\n| Page d'accueil | Formulaire d'édition |\n|----------------|----------------------|\n| Affichage de tous les tickets avec leur statut coloré | Modification des champs et du statut |\n\n---",
+      "type": "",
+      "stack": [
+        "HTML",
+        "C#"
+      ],
+      "status": "archived",
+      "started": "2025-04-06T14:00:25Z",
+      "ended": "2025-04-06T22:02:29Z",
+      "updated": "2025-04-06T22:02:29Z",
+      "featured": false,
+      "version": "",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/Ticket-Tool",
+        "demo": "https://support.perodeau-matheo.xyz"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 17,
+        "total": 17,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "service": {
+        "up": false,
+        "uncertain": false,
+        "lastSeenUp": null,
+        "urls": {
+          "https://support.perodeau-matheo.xyz": false
+        }
+      }
+    },
+    {
+      "key": "l-antre-des-loutres/otterminded",
+      "slug": "otterminded",
+      "title": "OtterMinded",
+      "summary": "« Otter Minded », est une application mobile social et anonyme qui à pour but de partager son avis sur différentes questions proposer par les utilisateurs.",
+      "body": "*Jeu de mot sur le terme anglais Open-Minded (Ouvert d'esprit), en remplaçant \"Open\" (ouvert) par \"Otter\" (loutre).*\n<br><br>\n\n- [Introduction](#introduction)\n- [Technologies Utilisées](#technologies-utilisées)\n- [Fonctionnalités](#fonctionnalités)\n- [Captures d'écran](#captures-décran)\n- [Auteurs](#auteurs)\n\n« Otter Minded », est une application mobile social et anonyme qui à pour but de partager son avis sur différentes questions proposer par les utilisateurs.\n\nChaque questions possède son nombre de « like » et son espace commentaire libre, permettant aux utilisateur de répondre aux question et donner leur avis sur un dis sujet.\n\nLes questions proposés, avant d’être dévoilé aux utilisateurs, passe par un stade de modération, ou elle sont vérifier afin d’éviter de proposer des questions inapproprié.\n\nPour finir, l’espace commentaire peut être modéré afin de contrôler les commentaires et garder un espace de partage et bienveillance.\n\nLe projet est développer sur Android Studio, en Kotlin. Nous utilisons [Github](https://github.com/L-Antre-des-Loutres/OtterMinded/tree/master) et [Trello](https://trello.com/b/4kI6N7vs/otterminded) comme outils de suivi de projet.\n\nPour le moment, l'application utilise une base de donner local et l'intéraction entre utilisateurs est impossible.\nCependant, nous avons pour ambitions de changer cela une fois que la structure de l'application sera prête.\n\n **Données utilisateur**\n\n• Les utilisateurs se connectent sans informations personnelles (Juste login & Mdp)\n\n• Statistiques: Nb. de commentaire, Nb. de questions, Nb. de likes aux questions\n\n **Des questions tout les jours**\n\n• 4 Questions par jour\n\n• Proposer par les utilisateurs (Max 1/24h/Utilisateur)\n\n• Système de like\n\n• Notification à chaque nouvelle questions\n\n• Un historique des questions & commentaires\n\n• Statut: En attente, vérifié.\n\n• En cas de refus, elle est supprimé et l’utilisateur averti d’une simple notification\n\n **Espace commentaire aux questions**\n\n• Possibilité de modéré les commentaires pour les utilisateur admin & modérateur\n\nVoici quelques captures d'écran:\n\nCorentin, Mathéo, Victor, avec l'aide de notre professeur M. Jean-Christophe CASTILLO",
+      "type": "Application mobile",
+      "stack": [
+        "Kotlin"
+      ],
+      "status": "archived",
+      "started": "2024-03-21T08:46:58Z",
+      "ended": "2025-03-06T14:29:35Z",
+      "updated": "2025-03-06T14:29:35Z",
+      "featured": false,
+      "version": "v1.0.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/OtterMinded"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 62,
+        "total": 150,
+        "rank": 1,
+        "contributors": 3
+      },
+      "gallery": [
+        {
+          "url": "img/shots/otterminded/accueil.webp",
+          "full": "img/shots/otterminded/accueil.webp",
+          "title": "Page d'accueil de l'application (mode clair)",
+          "description": ""
+        },
+        {
+          "url": "img/shots/otterminded/navbar.webp",
+          "full": "img/shots/otterminded/navbar.webp",
+          "title": "Menu de navigation de l'application",
+          "description": ""
+        },
+        {
+          "url": "img/shots/otterminded/profil.webp",
+          "full": "img/shots/otterminded/profil.webp",
+          "title": "Page profil de l'application",
+          "description": ""
+        },
+        {
+          "url": "img/shots/otterminded/adminpanel_commentaire.webp",
+          "full": "img/shots/otterminded/adminpanel_commentaire.webp",
+          "title": "Page commentaire sur le panel Admin",
+          "description": ""
+        },
+        {
+          "url": "img/shots/otterminded/adminpanel_question.webp",
+          "full": "img/shots/otterminded/adminpanel_question.webp",
+          "title": "Page question sur le panel admin",
+          "description": ""
+        },
+        {
+          "url": "img/shots/otterminded/adminpanel_utilisateur.webp",
+          "full": "img/shots/otterminded/adminpanel_utilisateur.webp",
+          "title": "Page utilisateur sur le panel admin",
+          "description": ""
+        }
+      ],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "matheo-1712/furina",
+      "slug": "furina",
+      "title": "Furina",
+      "summary": "Un bot Discord en JavaScript spécialisé dans le jeu Genshin Impact.",
+      "body": "Furina est un bot Discord spécialisé pour le jeu **Genshin Impact**.\n\n## Fonctionnalités\n\nLe bot Furina permet de:\n\n- Afficher les builds conseillés pour les personnages\n- Montrer les événements à venir dans le jeu (fonctionnalité en cours de développement)\n- Gérer les UID des utilisateurs\n- Proposer de nombreuses autres fonctionnalités à venir pour améliorer l'expérience des utilisateurs\n\nCe bot est en constante évolution et de nouvelles fonctionnalités seront ajoutées régulièrement.\n\nIl possède également ça propre API pour récupérer les données des personnages et encore plus à venir.\n\nCette api sera disponible prochainement sur le site web du bot.\n\n[furina.antredesloutres.fr](https://furina.antredesloutres.fr) (encore en cours de développement)",
+      "type": "",
+      "stack": [
+        "JavaScript"
+      ],
+      "status": "archived",
+      "started": "2024-08-13T20:59:51Z",
+      "ended": "2025-01-12T13:52:45Z",
+      "updated": "2025-01-12T13:52:45Z",
+      "featured": false,
+      "version": "",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/Furina"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 16,
+        "total": 17,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/olderisoutre",
+      "slug": "olderisoutre",
+      "title": "Olderisoutre",
+      "summary": "Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements.",
+      "body": "*Webisoutre: Combinaison de Web + Loutre*\n\n- [Introduction](#introduction)\n- [Technologies Utilisées](#technologies-utilisées)\n- [Captures d'écran](#captures-décran)\n- [Auteurs](#auteurs)\n\n> [!NOTE]\n> Bientot™\n\n> [!NOTE]\n> Bientot™\n\n> [!NOTE]\n> Bientot™\n\n[**Corentin**](https://github.com/Corentin-cott)\nALIAS: TheAzertor, Cocow\n\n[**Mathéo**](https://github.com/matheo-1712)\nALIAS: Rerebleue",
+      "type": "Site web",
+      "stack": [
+        "PHP",
+        "Blade"
+      ],
+      "status": "archived",
+      "started": "2024-10-07T21:12:52Z",
+      "ended": "2024-11-04T22:06:34Z",
+      "updated": "2024-11-04T22:06:34Z",
+      "featured": false,
+      "version": "",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Olderisoutre",
+        "demo": "https://antredesloutres.fr"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 32,
+        "total": 42,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "service": {
+        "up": true,
+        "uncertain": false,
+        "lastSeenUp": "2026-11-08",
+        "urls": {
+          "https://antredesloutres.fr": true
+        }
+      }
+    }
+  ]
+}

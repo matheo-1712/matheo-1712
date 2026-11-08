@@ -1,15 +1,21 @@
-name: Update README
+name: Mise à jour du README
 
 on:
   schedule:
-    # Tous les jours à 04:17 UTC
-    - cron: "17 4 * * *"
+    # 06:17 UTC, après la collecte du portfolio (05:17 UTC) : sans ce décalage,
+    # le README republierait les projets de la veille.
+    - cron: "17 6 * * *"
   workflow_dispatch:
+  # Permet au portfolio de déclencher la régénération dès qu'il a collecté
+  # de nouveaux projets, au lieu d'attendre le lendemain.
+  # Voir docs/notify-readme.yml.
+  repository_dispatch:
+    types: [projects-updated]
   push:
     branches: [main]
     paths:
       - README.template.md
-      - scripts/build-readme.mjs
+      - scripts/**
       - .github/workflows/readme.yml
 
 permissions:
@@ -29,22 +35,23 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Build README
+      - name: Générer le README
         env:
-          # README_TOKEN (PAT classique, scope `repo`) permet de compter aussi
-          # les dépôts privés. Sinon on retombe sur le token d'Actions.
+          # README_TOKEN (PAT classique, scope `repo`) élargit les quotas de
+          # l'API search. Sans lui, le jeton d'Actions suffit.
           GITHUB_TOKEN: ${{ secrets.README_TOKEN || secrets.GITHUB_TOKEN }}
         run: node scripts/build-readme.mjs
 
-      - name: Commit & push
+      - name: Committer le README et les instantanés
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          # data/ est versionné exprès : c'est le repli quand une source tombe.
+          git add README.md data
           if git diff --staged --quiet; then
             echo "Aucun changement."
           else
-            git commit -m "chore(readme): refresh stats $(date -u +%Y-%m-%d)"
+            git commit -m "chore(readme): rafraîchit les données $(date -u +%Y-%m-%d)"
             git pull --rebase
             git push
           fi
