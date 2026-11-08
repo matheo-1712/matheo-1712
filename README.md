@@ -43,51 +43,124 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 > sur GitHub. Même liste, mêmes descriptions et mêmes versions que sur
 > **[https://matheo-1712.github.io](https://matheo-1712.github.io)** — rien n'est écrit à la main.
 >
-> La colonne **Commits** indique les miens, et leur part dans le dépôt.
+> Le nombre de **commits** affiché est le mien, suivi de ma part dans le dépôt.
 
-### En production
+### En production <sub>· 7</sub>
 
-| Projet | Stack | Version | Commits |
-|---|---|:---:|:---:|
-| **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** · [site ↗](https://antredesloutres.fr)<br><sub>Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements. <br> **L'Antre des Loutres**</sub> | [![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)](https://astro.build/) [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v1.9.0` | `401` <sub>66 %</sub> |
-| **[Cobblemon RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** · [Modrinth ↗](https://modrinth.com/datapack/cobblemon-rlm)<br><sub>Un datapack/ressourcepack fait pour ajouter les fakemon de RLM dans Cobblemon. <br> **Datapack · L'Antre des Loutres**</sub> | [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript) [![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://dev.java/) | `v1.7.0` | `401` <sub>65 %</sub> |
-| **[Cobblemon Trainers](https://github.com/matheo-1712/cobblemon-trainers)** · [Modrinth ↗](https://modrinth.com/mod/cobblemon-trainers-rerebleue)<br><sub>Make your own trainers, or drop in a datapack that brings them</sub> | [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org/) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript) | `v1.1.3` | `286` <sub>99 %</sub> |
-| **[OAPI](https://github.com/matheo-1712/OAPI)**<br><sub>OAPI is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the Antre… <br> **API REST**</sub> | [![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/) | `v1.2.1` | `165` |
-| **[Arisoutre](https://github.com/L-Antre-des-Loutres/Arisoutre)** · [Discord ↗](https://discord.gg/k4ZBFVdntp)<br><sub>Bot principale de l'Antre des Loutres, responsable de l'administration et la gestion de nos membres. <br> **Bot Discord · L'Antre des Loutres**</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v3.1.3` | `128` |
-| **[Otterbots](https://github.com/L-Antre-des-Loutres/Otterbots)**<br><sub>Un framework de bot Discord adapté à la stack Antre des Loutres, conçu pour simplifier le développement en intégrant… <br> **Bot Discord · L'Antre des Loutres**</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v1.0.0` | `124` <sub>98 %</sub> |
-| **[Mateloutre](https://github.com/L-Antre-des-Loutres/Mateloutre)**<br><sub>Mateloutre mais qui marche <br> **Bot Discord · L'Antre des Loutres**</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v1.3.1` | `77` <sub>86 %</sub> |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### En cours
+<a href="https://github.com/L-Antre-des-Loutres/Astroloutre"><b>Astroloutre</b></a> <a href="https://antredesloutres.fr"><sup>site ↗</sup></a><br>
+<sub>Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et…</sub><br>
+<sub><code>v1.9.0</code> · Astro · TypeScript · 401 commits (66 %) · L'Antre des Loutres</sub>
 
-| Projet | Stack | Version | Commits |
-|---|---|:---:|:---:|
-| **[Ottergames Plugin](https://github.com/L-Antre-des-Loutres/Ottergames-plugin)**<br><sub>Ottergames is a Minecraft plugin made to play multiple mini-games in a Wario Ware style. <br> **Plugin · L'Antre des Loutres**</sub> | [![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://dev.java/) | — | `73` <sub>57 %</sub> |
-| **[Re Otterbots](https://github.com/matheo-1712/re-otterbots)**<br><sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu pour simplifier le développement…</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v0.1.3` <sub>pre</sub> | `18` |
-| **[M.A.T.H.E.O](https://github.com/matheo-1712/M.A.T.H.E.O)**<br><sub>Mon Assistant Technique Hautement Évolutif et Organisé</sub> | [![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/) | — | `8` |
-| **[RustSSH](https://github.com/matheo-1712/RustSSH)**<br><sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs Linux</sub> | [![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/) | — | `7` |
+<a href="https://github.com/matheo-1712/cobblemon-trainers"><b>Cobblemon Trainers</b></a> <a href="https://modrinth.com/mod/cobblemon-trainers-rerebleue"><sup>Modrinth ↗</sup></a><br>
+<sub>Make your own trainers, or drop in a datapack that brings them</sub><br>
+<sub><code>v1.1.3</code> · Kotlin · JavaScript · 286 commits (99 %)</sub>
 
-### Archivés
+<a href="https://github.com/L-Antre-des-Loutres/Arisoutre"><b>Arisoutre</b></a> <a href="https://discord.gg/k4ZBFVdntp"><sup>Discord ↗</sup></a><br>
+<sub>Bot principale de l'Antre des Loutres, responsable de l'administration et la gestion de nos…</sub><br>
+<sub><code>v3.1.3</code> · TypeScript · 128 commits · Bot Discord · L'Antre des Loutres</sub>
 
-<details>
-<summary><b>Archivés · 9 projets</b></summary>
+<a href="https://github.com/L-Antre-des-Loutres/Mateloutre"><b>Mateloutre</b></a><br>
+<sub>Mateloutre mais qui marche</sub><br>
+<sub><code>v1.3.1</code> · TypeScript · 77 commits (86 %) · Bot Discord · L'Antre des Loutres</sub>
 
-| Projet | Stack | Version | Commits |
-|---|---|:---:|:---:|
-| **[OtterlyApi](https://github.com/L-Antre-des-Loutres/OtterlyApi)**<br><sub>Une API permettant la gestion de serveurs de jeu. Elle permet d'afficher l'ensemble des informations les concernant, de les… <br> **API · L'Antre des Loutres**</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v1.2.0` | `158` <sub>99 %</sub> |
-| **[Citlali](https://github.com/matheo-1712/Citlali)** · [Discord ↗](https://discord.com/oauth2/authorize?client_id=1300834433221267549&permissions=0&integration_type=0&scope=bot)<br><sub>Bot Discord spécialisé dans Genshin Impact. <br> **Bot Discord**</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v3.0.3` | `81` |
-| **[OtterMinded](https://github.com/L-Antre-des-Loutres/OtterMinded)**<br><sub>« Otter Minded », est une application mobile social et anonyme qui à pour but de partager son avis sur différentes questions… <br> **Application mobile · L'Antre des Loutres**</sub> | [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org/) | `v1.0.0` | `62` <sub>41 %</sub> |
-| **[CitlAPI](https://github.com/matheo-1712/CitlAPI)**<br><sub>Citlali - API est une API RESTful conçue pour être simple d’utilisation et facile à maintenir. Elle s’appuie sur le modèle… <br> **API REST**</sub> | [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `v1.0.0` | `60` |
-| **[projet2](https://github.com/LP-Applications-Web-Angers-2025-2026/projet2)**<br><sub>Ce depot contient un site pedagogique genere a partir de Markdown, avec injection automatique de benchmarks (SQLite +… <br> **LP Applications web · Angers**</sub> | [![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net/) ![Assembly](https://img.shields.io/badge/-Assembly-64748B?style=flat-square) [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript) | `v1.2` | `52` <sub>84 %</sub> |
-| **[HiddenInk](https://github.com/LP-Applications-Web-Angers-2025-2026/HiddenInk)**<br><sub>Application C++ de stéganographie permettant de cacher du texte dans une image, à la manière d’une écriture à l’encre… <br> **LP Applications web · Angers**</sub> | [![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org/) | `v1.0.0` | `49` <sub>63 %</sub> |
-| **[Olderisoutre](https://github.com/L-Antre-des-Loutres/Olderisoutre)** · [site ↗](https://antredesloutres.fr)<br><sub>Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements. <br> **Site web · L'Antre des Loutres**</sub> | [![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net/) [![Blade](https://img.shields.io/badge/-Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com/docs/blade) | — | `32` <sub>76 %</sub> |
-| **[Ticket Tool](https://github.com/matheo-1712/Ticket-Tool)** · [site ↗](https://support.perodeau-matheo.xyz)<br><sub>TicketTool est une application ASP.NET MVC Core (C#) destinée à gérer les demandes des utilisateurs en créant des tickets de…</sub> | [![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML) [![C#](https://img.shields.io/badge/-C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/) | — | `17` |
-| **[Furina](https://github.com/matheo-1712/Furina)**<br><sub>Un bot Discord en JavaScript spécialisé dans le jeu Genshin Impact.</sub> | [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript) | — | `16` <sub>94 %</sub> |
+</td>
+<td width="50%" valign="top">
 
-</details>
+<a href="https://github.com/L-Antre-des-Loutres/Cobblemon-RLM"><b>Cobblemon RLM</b></a> <a href="https://modrinth.com/datapack/cobblemon-rlm"><sup>Modrinth ↗</sup></a><br>
+<sub>Un datapack/ressourcepack fait pour ajouter les fakemon de RLM dans Cobblemon.</sub><br>
+<sub><code>v1.7.0</code> · JavaScript · Java · 401 commits (65 %) · Datapack · L'Antre des Loutres</sub>
+
+<a href="https://github.com/matheo-1712/OAPI"><b>OAPI</b></a><br>
+<sub>OAPI is a high-performance, asynchronous orchestration API built with Rust. It serves as the…</sub><br>
+<sub><code>v1.2.1</code> · Rust · 165 commits · API REST</sub>
+
+<a href="https://github.com/L-Antre-des-Loutres/Otterbots"><b>Otterbots</b></a><br>
+<sub>Un framework de bot Discord adapté à la stack Antre des Loutres, conçu pour simplifier le…</sub><br>
+<sub><code>v1.0.0</code> · TypeScript · 124 commits (98 %) · Bot Discord · L'Antre des Loutres</sub>
+
+</td>
+</tr>
+</table>
+
+### En cours <sub>· 4</sub>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/L-Antre-des-Loutres/Ottergames-plugin"><b>Ottergames Plugin</b></a><br>
+<sub>Ottergames is a Minecraft plugin made to play multiple mini-games in a Wario Ware style.</sub><br>
+<sub>Java · 73 commits (57 %) · Plugin · L'Antre des Loutres</sub>
+
+<a href="https://github.com/matheo-1712/M.A.T.H.E.O"><b>M.A.T.H.E.O</b></a><br>
+<sub>Mon Assistant Technique Hautement Évolutif et Organisé</sub><br>
+<sub>Rust · 8 commits</sub>
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
+<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
+<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
+
+<a href="https://github.com/matheo-1712/RustSSH"><b>RustSSH</b></a><br>
+<sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs…</sub><br>
+<sub>Rust · 7 commits</sub>
+
+</td>
+</tr>
+</table>
+
+### Archivés <sub>· 9</sub>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<a href="https://github.com/L-Antre-des-Loutres/OtterlyApi"><b>OtterlyApi</b></a><br>
+<sub><code>v1.2.0</code> · TypeScript · 158 commits (99 %) · API · L'Antre des Loutres</sub>
+
+<a href="https://github.com/matheo-1712/CitlAPI"><b>CitlAPI</b></a><br>
+<sub><code>v1.0.0</code> · TypeScript · 60 commits · API REST</sub>
+
+<a href="https://github.com/L-Antre-des-Loutres/Olderisoutre"><b>Olderisoutre</b></a><br>
+<sub>PHP · Blade · 32 commits (76 %) · Site web · L'Antre des Loutres</sub>
+
+</td>
+<td width="33%" valign="top">
+
+<a href="https://github.com/matheo-1712/Citlali"><b>Citlali</b></a> <a href="https://discord.com/oauth2/authorize?client_id=1300834433221267549&amp;permissions=0&amp;integration_type=0&amp;scope=bot"><sup>Discord ↗</sup></a><br>
+<sub><code>v3.0.3</code> · TypeScript · 81 commits · Bot Discord</sub>
+
+<a href="https://github.com/LP-Applications-Web-Angers-2025-2026/projet2"><b>projet2</b></a><br>
+<sub><code>v1.2</code> · PHP · Assembly · JavaScript · 52 commits (84 %) · LP Applications web · Angers</sub>
+
+<a href="https://github.com/matheo-1712/Ticket-Tool"><b>Ticket Tool</b></a><br>
+<sub>HTML · C# · 17 commits</sub>
+
+</td>
+<td width="33%" valign="top">
+
+<a href="https://github.com/L-Antre-des-Loutres/OtterMinded"><b>OtterMinded</b></a><br>
+<sub><code>v1.0.0</code> · Kotlin · 62 commits (41 %) · Application mobile · L'Antre des Loutres</sub>
+
+<a href="https://github.com/LP-Applications-Web-Angers-2025-2026/HiddenInk"><b>HiddenInk</b></a><br>
+<sub><code>v1.0.0</code> · C++ · 49 commits (63 %) · LP Applications web · Angers</sub>
+
+<a href="https://github.com/matheo-1712/Furina"><b>Furina</b></a><br>
+<sub>JavaScript · 16 commits (94 %)</sub>
+
+</td>
+</tr>
+</table>
 
 ## Activité récente
 
-<sub>Derniers dépôts poussés, avec leur version courante.</sub>
+<sub>Date de la dernière sortie quand elle est connue, sinon du dernier push.</sub>
 
 - `2026-11-05` **[M.A.T.H.E.O](https://github.com/matheo-1712/M.A.T.H.E.O)**
 - `2026-11-02` **[Cobblemon RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.7.0`
@@ -98,44 +171,14 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 
 ## Stack
 
-**Langages des projets publiés** <sub>— nombre de projets</sub>
-
-[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) <sub>8</sub> [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript) <sub>4</sub> [![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/) <sub>3</sub> [![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://dev.java/) <sub>2</sub> [![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org/) <sub>2</sub> [![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net/) <sub>2</sub> ![Assembly](https://img.shields.io/badge/-Assembly-64748B?style=flat-square) <sub>1</sub> [![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)](https://astro.build/) <sub>1</sub> [![Blade](https://img.shields.io/badge/-Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com/docs/blade) <sub>1</sub> [![C#](https://img.shields.io/badge/-C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/) <sub>1</sub> [![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org/) <sub>1</sub> [![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML) <sub>1</sub>
-
-**Backend**
-
-[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Rust](https://img.shields.io/badge/-Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-[![Java](https://img.shields.io/badge/-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://dev.java/)
-[![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-
-**Web**
-
-[![Node.js](https://img.shields.io/badge/-Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![Axum](https://img.shields.io/badge/-Axum-000000?style=for-the-badge&logo=rust&logoColor=white)](https://docs.rs/axum/)
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
-[![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
-
-**Données**
-
-[![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/doc/)
-[![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)](https://mariadb.org/)
-[![PocketBase](https://img.shields.io/badge/-PocketBase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=black)](https://pocketbase.io/docs/)
-
-**Infrastructure**
-
-[![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/)
-[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Nginx](https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/en/docs/)
-[![CI/CD](https://img.shields.io/badge/-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://docs.github.com/actions)
-[![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-
-**Mobile**
-
-[![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+<table>
+<tr><td valign="middle"><b>Dans mes projets</b></td><td><sub>TypeScript&nbsp;<sub>8</sub> · JavaScript&nbsp;<sub>4</sub> · Rust&nbsp;<sub>3</sub> · Java&nbsp;<sub>2</sub> · Kotlin&nbsp;<sub>2</sub> · PHP&nbsp;<sub>2</sub> · Assembly&nbsp;<sub>1</sub> · Astro&nbsp;<sub>1</sub> · Blade&nbsp;<sub>1</sub> · C#&nbsp;<sub>1</sub> · C++&nbsp;<sub>1</sub> · HTML&nbsp;<sub>1</sub></sub></td></tr>
+<tr><td valign="middle"><b>Backend</b></td><td><a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a> <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" /></a> <a href="https://www.php.net/"><img src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" /></a> <a href="https://dev.java/"><img src="https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" /></a> <a href="https://www.python.org/"><img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /></a></td></tr>
+<tr><td valign="middle"><b>Web</b></td><td><a href="https://nodejs.org/"><img src="https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /></a> <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" /></a> <a href="https://docs.rs/axum/"><img src="https://img.shields.io/badge/-Axum-000000?style=flat-square&logo=rust&logoColor=white" alt="Axum" /></a> <a href="https://laravel.com/"><img src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" /></a> <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /></a> <a href="https://astro.build/"><img src="https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" alt="Astro" /></a></td></tr>
+<tr><td valign="middle"><b>Données</b></td><td><a href="https://dev.mysql.com/doc/"><img src="https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL" /></a> <a href="https://mariadb.org/"><img src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB" /></a> <a href="https://pocketbase.io/docs/"><img src="https://img.shields.io/badge/-PocketBase-B8DBE4?style=flat-square&logo=pocketbase&logoColor=black" alt="PocketBase" /></a></td></tr>
+<tr><td valign="middle"><b>Infrastructure</b></td><td><a href="https://www.kernel.org/"><img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></a> <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /></a> <a href="https://nginx.org/en/docs/"><img src="https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" /></a> <a href="https://docs.github.com/actions"><img src="https://img.shields.io/badge/-CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="CI/CD" /></a> <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" /></a></td></tr>
+<tr><td valign="middle"><b>Mobile</b></td><td><a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" /></a></td></tr>
+</table>
 
 ## Activité
 

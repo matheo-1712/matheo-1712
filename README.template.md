@@ -30,31 +30,27 @@
 > sur GitHub. Même liste, mêmes descriptions et mêmes versions que sur
 > **[{{PORTFOLIO_URL}}]({{PORTFOLIO_URL}})** — rien n'est écrit à la main.
 >
-> La colonne **Commits** indique les miens, et leur part dans le dépôt.
+> Le nombre de **commits** affiché est le mien, suivi de ma part dans le dépôt.
 
-### En production
+### En production <sub>· {{PROD_COUNT}}</sub>
 
 {{PROJECTS_PROD}}
 
-### En cours
+### En cours <sub>· {{WIP_COUNT}}</sub>
 
 {{PROJECTS_WIP}}
 
-### Archivés
+### Archivés <sub>· {{ARCHIVED_COUNT}}</sub>
 
 {{PROJECTS_ARCHIVED}}
 
 ## Activité récente
 
-<sub>Derniers dépôts poussés, avec leur version courante.</sub>
+<sub>Date de la dernière sortie quand elle est connue, sinon du dernier push.</sub>
 
 {{RECENT}}
 
 ## Stack
-
-**Langages des projets publiés** <sub>— nombre de projets</sub>
-
-{{LANGUAGES}}
 
 {{STACK}}
 

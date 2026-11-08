@@ -37,8 +37,11 @@ jobs:
 
       - name: Générer le README
         env:
-          # README_TOKEN (PAT classique, scope `repo`) élargit les quotas de
-          # l'API search. Sans lui, le jeton d'Actions suffit.
+          # Le jeton d'Actions ne voit que les dépôts publics : les compteurs
+          # excluent alors tout ce qui a été fait en privé. README_TOKEN
+          # (PAT classique, scope `repo`) les inclut, et élargit les quotas.
+          # Mesuré le 2026-11-08 : 2 831 commits vus par le jeton d'Actions,
+          # 2 929 avec un jeton qui voit aussi le privé.
           GITHUB_TOKEN: ${{ secrets.README_TOKEN || secrets.GITHUB_TOKEN }}
         run: node scripts/build-readme.mjs
 

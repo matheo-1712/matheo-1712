@@ -17,16 +17,20 @@ import { fileURLToPath } from "node:url";
 import { argv } from "node:process";
 
 import { fetchStats } from "./lib/github.mjs";
-import { loadProjects, loadProfile, loadStats } from "./lib/sources.mjs";
+import { pruneDeadLinks } from "./lib/links.mjs";
+import {
+  applyReleases,
+  deserializeReleases,
+  fetchReleases,
+  serializeReleases,
+} from "./lib/releases.mjs";
+import { loadProjects, loadProfile, loadStats, withCache } from "./lib/sources.mjs";
 import {
   bannerUrl,
-  collapsed,
-  languageBar,
-  projectTable,
+  projectGrid,
   recentActivity,
-  stackSection,
+  stackTable,
   statBadges,
-  STATUS_LABEL,
 } from "./lib/render.mjs";
 
 const USER = process.env.GH_USER ?? "matheo-1712";
@@ -46,6 +50,7 @@ const PATHS = {
   projects: here("../data/projects.json"),
   profile: here("../data/profile.yml"),
   stats: here("../data/stats.json"),
+  releases: here("../data/releases.json"),
 };
 
 // Langages de balisage ou de configuration : comptés dans les projets, mais
@@ -137,6 +142,24 @@ export async function main() {
     collect: () => fetchStats({ user: USER, orgs: ORGS, token, since: SINCE }),
   });
 
+  // Versions fraîches. data/projects.json porte celle que le portfolio a vue
+  // lors de sa dernière collecte : une release publiée depuis n'y est pas.
+  const { value: releases } = await withCache({
+    cache: PATHS.releases,
+    label: "releases",
+    collect: () => fetchReleases(projects, { token }),
+    serialize: serializeReleases,
+    deserialize: deserializeReleases,
+  });
+  const refreshed = applyReleases(projects, releases);
+  if (refreshed) console.log(`${refreshed} version(s) mise(s) à jour depuis GitHub`);
+
+  // Liens vérifiés avant affichage : un lien mort laisse croire qu'un projet
+  // tourne encore.
+  const { removed, checked, inconclusive } = await pruneDeadLinks(projects);
+  console.log(`liens : ${checked} vérifiés, ${removed.length} retiré(s)${inconclusive ? " (contrôle non concluant)" : ""}`);
+  for (const r of removed) console.log(`  - ${r.project} : ${r.url} — ${r.reason}`);
+
   const identity = profile.identity ?? {};
   const portfolioUrl = profile.seo?.url ?? `https://${USER}.github.io`;
 
@@ -167,14 +190,6 @@ export async function main() {
       `${archived.length} archivés)${projectsFresh ? "" : " — données de l'instantané"}`,
   );
 
-  const archivedBlock =
-    archived.length === 0
-      ? "_Aucun projet archivé._"
-      : collapsed(
-          `${STATUS_LABEL.archived} · ${archived.length} projets`,
-          projectTable(archived, { orgLabel }),
-        );
-
   const cvUrl = identity.cv
     ? new URL(identity.cv, `${portfolioUrl.replace(/\/$/, "")}/`).href
     : "";
@@ -189,11 +204,14 @@ export async function main() {
     BANNER: bannerUrl({ role: identity.role, stats, derived }),
     STATS: statBadges(stats, derived),
     RECENT: recentActivity(projects),
-    PROJECTS_PROD: projectTable(active, { orgLabel }),
-    PROJECTS_WIP: projectTable(ongoing, { orgLabel }),
-    PROJECTS_ARCHIVED: archivedBlock,
-    LANGUAGES: languageBar(projects),
-    STACK: stackSection(profile.skills),
+    // Deux colonnes pour les projets vivants, trois pour les archivés : tout
+    // reste affiché, sans que la page s'allonge inutilement.
+    PROJECTS_PROD: projectGrid(active, { columns: 2, orgLabel }),
+    PROJECTS_WIP: projectGrid(ongoing, { columns: 2, orgLabel }),
+    PROJECTS_ARCHIVED: projectGrid(archived, { columns: 3, orgLabel, compact: true }),
+    ARCHIVED_COUNT: String(archived.length),
+    WIP_COUNT: String(ongoing.length),
+    STACK: stackTable(profile.skills, projects),
     PROJECT_COUNT: String(projects.length),
     PROD_COUNT: String(active.length),
     PORTFOLIO_URL: portfolioUrl,
