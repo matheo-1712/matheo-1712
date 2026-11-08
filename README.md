@@ -5,7 +5,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=Backend+%26+full-stack+developer%3BJavaScript+%C2%B7+TypeScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B2%2C816+commits+%C2%B7+550+pull+requests+%C2%B7+134+releases%3BOpen+to+work+%C2%B7+Ouvert+aux+opportunit%C3%A9s" alt="Backend and full-stack developer" />
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://perodeau-matheo.xyz)
+[![Portfolio](https://img.shields.io/badge/matheo--1712.github.io-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://matheo-1712.github.io/)
 [![Email](https://img.shields.io/badge/Email-perod.matheo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
 [![Organization](https://img.shields.io/badge/Org-L'Antre_des_Loutres-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
@@ -134,7 +134,7 @@
 <div align="center">
 
 [![Email](https://img.shields.io/badge/perod.matheo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
-[![Portfolio](https://img.shields.io/badge/perodeau--matheo.xyz-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://matheo-1712.github.io/)
+[![Portfolio](https://img.shields.io/badge/matheo--1712.github.io-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://matheo-1712.github.io/)
 [![GitHub](https://img.shields.io/badge/L'Antre_des_Loutres-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
 <sub>Auto-generated · Généré automatiquement - 2026-11-08</sub>
