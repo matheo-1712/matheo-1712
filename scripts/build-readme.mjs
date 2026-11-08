@@ -17,7 +17,14 @@ import { fileURLToPath } from "node:url";
 import { argv } from "node:process";
 
 import { fetchStats } from "./lib/github.mjs";
-import { loadProjects, loadProfile, loadStats } from "./lib/sources.mjs";
+import { pruneDeadLinks } from "./lib/links.mjs";
+import {
+  applyReleases,
+  deserializeReleases,
+  fetchReleases,
+  serializeReleases,
+} from "./lib/releases.mjs";
+import { loadProjects, loadProfile, loadStats, withCache } from "./lib/sources.mjs";
 import {
   bannerUrl,
   projectGrid,
@@ -43,6 +50,7 @@ const PATHS = {
   projects: here("../data/projects.json"),
   profile: here("../data/profile.yml"),
   stats: here("../data/stats.json"),
+  releases: here("../data/releases.json"),
 };
 
 // Langages de balisage ou de configuration : comptés dans les projets, mais
@@ -133,6 +141,24 @@ export async function main() {
     cache: PATHS.stats,
     collect: () => fetchStats({ user: USER, orgs: ORGS, token, since: SINCE }),
   });
+
+  // Versions fraîches. data/projects.json porte celle que le portfolio a vue
+  // lors de sa dernière collecte : une release publiée depuis n'y est pas.
+  const { value: releases } = await withCache({
+    cache: PATHS.releases,
+    label: "releases",
+    collect: () => fetchReleases(projects, { token }),
+    serialize: serializeReleases,
+    deserialize: deserializeReleases,
+  });
+  const refreshed = applyReleases(projects, releases);
+  if (refreshed) console.log(`${refreshed} version(s) mise(s) à jour depuis GitHub`);
+
+  // Liens vérifiés avant affichage : un lien mort laisse croire qu'un projet
+  // tourne encore.
+  const { removed, checked, inconclusive } = await pruneDeadLinks(projects);
+  console.log(`liens : ${checked} vérifiés, ${removed.length} retiré(s)${inconclusive ? " (contrôle non concluant)" : ""}`);
+  for (const r of removed) console.log(`  - ${r.project} : ${r.url} — ${r.reason}`);
 
   const identity = profile.identity ?? {};
   const portfolioUrl = profile.seo?.url ?? `https://${USER}.github.io`;

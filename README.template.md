@@ -46,7 +46,7 @@
 
 ## Activité récente
 
-<sub>Derniers dépôts poussés, avec leur version courante.</sub>
+<sub>Date de la dernière sortie quand elle est connue, sinon du dernier push.</sub>
 
 {{RECENT}}
 

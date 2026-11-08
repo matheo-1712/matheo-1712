@@ -179,12 +179,14 @@ export function projectGrid(projects, { columns = 2, orgLabel = (o) => o, compac
       lines.push(`<sub>${escapeHtml(shorten(p.summary, maxSummary))}</sub>`);
     }
 
-    const badges = (p.stack ?? []).map((t) => techBadgeHtml(t)).join(" ");
-    if (badges) lines.push(badges);
-
-    // Métadonnées sur une seule ligne : version, mes commits, cadre du projet.
+    // Métadonnées sur une ligne, en texte. Les badges d'images ont été
+    // retirés des cartes : à vingt projets ils représentaient une trentaine
+    // d'images, et GitHub les relaie toutes par son proxy, qui se fait
+    // limiter par shields.io et en laisse tomber au hasard.
     const meta = [];
-    if (p.version) meta.push(`<code>${escapeHtml(p.version)}</code>${p.prerelease ? " <sub>pre</sub>" : ""}`);
+    if (p.version) meta.push(`<code>${escapeHtml(p.version)}</code>${p.prerelease ? " pre" : ""}`);
+    const stack = (p.stack ?? []).map((t) => escapeHtml(t)).join(" · ");
+    if (stack) meta.push(stack);
     const { commits = 0, total = 0 } = p.contribution ?? {};
     if (commits) {
       const share = total && total !== commits ? ` (${Math.round((commits / total) * 100)} %)` : "";
@@ -219,13 +221,15 @@ export function collapsed(summary, body) {
   return `<details>\n<summary><b>${summary}</b></summary>\n\n${body}\n\n</details>`;
 }
 
-// data/projects.json porte la version courante mais pas la date de sa
-// publication : `updated` est la date du dernier push. On annonce donc une
-// activité récente, pas une date de sortie — ce serait faux.
+// Date affichée : celle de la dernière sortie quand on a pu la lire sur
+// GitHub, sinon celle du dernier push — la seule que data/projects.json
+// contienne. Le sous-titre du gabarit le dit, pour ne rien laisser croire.
+const activityDate = (p) => p.releaseDate || p.updated || "";
+
 export function recentActivity(projects, limit = 6) {
   const items = projects
-    .filter((p) => p.updated)
-    .sort((a, b) => String(b.updated).localeCompare(String(a.updated)))
+    .filter((p) => activityDate(p))
+    .sort((a, b) => activityDate(b).localeCompare(activityDate(a)))
     .slice(0, limit);
   if (items.length === 0) return "_Aucune activité récente._";
   return items
@@ -233,7 +237,7 @@ export function recentActivity(projects, limit = 6) {
       const repo = p.links?.repo;
       const name = repo ? `[${cell(p.title)}](${repo})` : cell(p.title);
       const version = p.version ? ` → \`${cell(p.version)}\`` : "";
-      return `- \`${day(p.updated)}\` **${name}**${version}`;
+      return `- \`${day(activityDate(p))}\` **${name}**${version}`;
     })
     .join("\n");
 }
@@ -253,11 +257,14 @@ export function stackTable(skills, projects) {
     for (const t of p.stack ?? []) count.set(t, (count.get(t) ?? 0) + 1);
   }
   if (count.size) {
-    const badges = [...count.entries()]
+    // En texte, pas en badges : cette ligne recoupe largement les groupes
+    // ci-dessous, et chaque image de plus est une requête de plus que le
+    // proxy de GitHub peut laisser tomber.
+    const list = [...count.entries()]
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"))
-      .map(([t, n]) => `${techBadgeHtml(t)}&nbsp;<sub>${n}</sub>`)
-      .join(" ");
-    rows.push(["Dans mes projets", badges]);
+      .map(([t, n]) => `${escapeHtml(t)}&nbsp;<sub>${n}</sub>`)
+      .join(" · ");
+    rows.push(["Dans mes projets", `<sub>${list}</sub>`]);
   }
 
   for (const g of skills ?? []) {

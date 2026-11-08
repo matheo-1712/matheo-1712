@@ -66,6 +66,25 @@ export async function loadProfile({ url, cache }) {
   return value;
 }
 
+// Collecte quelconque adossée à un instantané : on tente, on enregistre en
+// cas de succès, on repart du fichier committé sinon.
+export async function withCache({ collect, cache, label, serialize, deserialize }) {
+  try {
+    const value = await collect();
+    await writeFile(cache, serialize(value));
+    console.log(`${label} : collecté depuis GitHub`);
+    return { value, fresh: true };
+  } catch (err) {
+    console.warn(`${label} : ${err.message} — repli sur ${cache}`);
+    const text = await readLocal(cache);
+    if (text === null) {
+      console.warn(`${label} : aucun instantané, on continue sans`);
+      return { value: deserialize("{}"), fresh: false };
+    }
+    return { value: deserialize(text), fresh: false };
+  }
+}
+
 // Les compteurs GitHub ont leur propre cache : un quota dépassé ne doit pas
 // faire échouer la génération, ni réinitialiser les chiffres à zéro.
 export async function loadStats({ collect, cache }) {
