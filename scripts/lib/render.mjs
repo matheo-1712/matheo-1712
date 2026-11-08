@@ -49,6 +49,23 @@ const shield = (s) => encodeURIComponent(String(s).replace(/_/g, "__").replace(/
 
 const link = (markdown, href) => (href ? `[${markdown}](${href})` : markdown);
 
+// Variante HTML : dans une cellule de tableau HTML, la syntaxe Markdown des
+// images n'est pas interprétée de façon fiable par GitHub.
+export function techBadgeHtml(name, { style = "flat-square" } = {}) {
+  const spec = TECH[name];
+  const [color, logo, logoColor, docs] = spec ?? ["64748B", "", "", ""];
+  const logoPart = logo ? `&logo=${logo}&logoColor=${logoColor}` : "";
+  const img = `<img src="https://img.shields.io/badge/-${shield(name)}-${color}?style=${style}${logoPart}" alt="${escapeHtml(name)}" />`;
+  return docs ? `<a href="${docs}">${img}</a>` : img;
+}
+
+const escapeHtml = (s) =>
+  String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
 export function techBadge(name, { style = "flat-square" } = {}) {
   const spec = TECH[name];
   if (!spec) {
@@ -131,15 +148,70 @@ function titleCell(p, orgLabel) {
   return sub ? `${head}<br><sub>${sub}</sub>` : head;
 }
 
-export function projectTable(projects, { orgLabel = (o) => o } = {}) {
+// Grille de cartes.
+//
+// Un tableau Markdown à quatre colonnes se tasse sur un profil GitHub : les
+// résumés passent à la ligne au milieu d'un mot, les badges débordent, et les
+// lignes n'ont plus la même hauteur. Une table HTML à colonnes de largeur
+// fixe donne des cartes lisibles, en largeur d'écran comme sur mobile.
+//
+// `compact` retire le résumé : de quoi montrer les projets archivés sans
+// allonger la page.
+export function projectGrid(projects, { columns = 2, orgLabel = (o) => o, compact = false } = {}) {
   if (projects.length === 0) return "_Aucun projet dans cette catégorie._";
-  const head = "| Projet | Stack | Version | Commits |\n|---|---|:---:|:---:|";
-  const rows = projects.map((p) => {
-    const stack = (p.stack ?? []).map((t) => techBadge(t)).join(" ") || "—";
-    const version = p.version ? `\`${cell(p.version)}\`${p.prerelease ? " <sub>pre</sub>" : ""}` : "—";
-    return `| ${titleCell(p, orgLabel)} | ${stack} | ${version} | ${shareNote(p.contribution)} |`;
-  });
-  return [head, ...rows].join("\n");
+
+  const width = Math.round(100 / columns);
+  const maxSummary = compact ? 0 : columns >= 3 ? 70 : 95;
+
+  const card = (p) => {
+    const repo = p.links?.repo;
+    const name = escapeHtml(p.title);
+    const head = repo ? `<a href="${repo}"><b>${name}</b></a>` : `<b>${name}</b>`;
+
+    const extra = Object.entries(p.links ?? {})
+      .filter(([k, v]) => k !== "repo" && v)
+      .map(([k, v]) => ` <a href="${escapeHtml(v)}"><sup>${linkLabel(k, v)} ↗</sup></a>`)
+      .join("");
+
+    const lines = [`${head}${extra}`];
+
+    if (!compact && p.summary) {
+      lines.push(`<sub>${escapeHtml(shorten(p.summary, maxSummary))}</sub>`);
+    }
+
+    const badges = (p.stack ?? []).map((t) => techBadgeHtml(t)).join(" ");
+    if (badges) lines.push(badges);
+
+    // Métadonnées sur une seule ligne : version, mes commits, cadre du projet.
+    const meta = [];
+    if (p.version) meta.push(`<code>${escapeHtml(p.version)}</code>${p.prerelease ? " <sub>pre</sub>" : ""}`);
+    const { commits = 0, total = 0 } = p.contribution ?? {};
+    if (commits) {
+      const share = total && total !== commits ? ` (${Math.round((commits / total) * 100)} %)` : "";
+      meta.push(`${commits} commits${share}`);
+    }
+    const frame = [p.type, p.org ? orgLabel(p.org) : ""].filter(Boolean).join(" · ");
+    if (frame) meta.push(escapeHtml(frame));
+    if (meta.length) lines.push(`<sub>${meta.join(" · ")}</sub>`);
+
+    return lines.join("<br>\n");
+  };
+
+  // Une seule table, une seule rangée : les cartes sont empilées DANS chaque
+  // colonne, pas réparties en rangées.
+  //
+  // Deux contraintes de GitHub imposent cette forme. Il grise une ligne sur
+  // deux, ce qui barrerait une grille en rangées de bandes alternées ; et il
+  // rend les tables en `width: max-content`, si bien qu'une table par rangée
+  // se rétracte sur son contenu et que les colonnes ne s'alignent plus.
+  // Avec une rangée unique, aucune des deux ne s'applique.
+  const cols = Array.from({ length: columns }, () => []);
+  projects.forEach((p, i) => cols[i % columns].push(card(p)));
+
+  const cells = cols
+    .map((cards) => `<td width="${width}%" valign="top">\n\n${cards.join("\n\n") || "&nbsp;"}\n\n</td>`)
+    .join("\n");
+  return `<table>\n<tr>\n${cells}\n</tr>\n</table>`;
 }
 
 // Les projets archivés sont nombreux et secondaires : repliés par défaut.
@@ -166,28 +238,38 @@ export function recentActivity(projects, limit = 6) {
     .join("\n");
 }
 
-// Les groupes viennent de data/profile.yml du portfolio : un seul endroit
-// à modifier pour que le site et le README disent la même chose.
-export function stackSection(skills) {
-  if (!Array.isArray(skills) || skills.length === 0) return "_Stack non renseignée._";
-  return skills
-    .filter((g) => g?.group && Array.isArray(g.items) && g.items.length)
-    .map((g) => `**${cell(g.group)}**\n\n${g.items.map((t) => techBadge(t, { style: "for-the-badge" })).join("\n")}`)
-    .join("\n\n");
-}
+// Stack. Les groupes viennent de data/profile.yml du portfolio : un seul
+// endroit à modifier pour que le site et le README disent la même chose.
+//
+// Une table à deux colonnes plutôt que six blocs empilés : la section tenait
+// sur un écran entier pour une dizaine de lignes d'information.
+export function stackTable(skills, projects) {
+  const rows = [];
 
-// Langages réellement présents dans les projets publiés, avec leur nombre
-// d'apparitions. Rien à maintenir : la liste suit les dépôts.
-export function languageBar(projects) {
+  // Les langages réellement présents dans les projets publiés, avec leur
+  // nombre d'apparitions. Rien à maintenir : la liste suit les dépôts.
   const count = new Map();
-  for (const p of projects) {
+  for (const p of projects ?? []) {
     for (const t of p.stack ?? []) count.set(t, (count.get(t) ?? 0) + 1);
   }
-  if (count.size === 0) return "";
-  return [...count.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"))
-    .map(([t, n]) => `${techBadge(t)} <sub>${n}</sub>`)
-    .join(" ");
+  if (count.size) {
+    const badges = [...count.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"))
+      .map(([t, n]) => `${techBadgeHtml(t)}&nbsp;<sub>${n}</sub>`)
+      .join(" ");
+    rows.push(["Dans mes projets", badges]);
+  }
+
+  for (const g of skills ?? []) {
+    if (!g?.group || !Array.isArray(g.items) || g.items.length === 0) continue;
+    rows.push([g.group, g.items.map((t) => techBadgeHtml(t)).join(" ")]);
+  }
+
+  if (rows.length === 0) return "_Stack non renseignée._";
+  const body = rows
+    .map(([label, badges]) => `<tr><td valign="middle"><b>${escapeHtml(label)}</b></td><td>${badges}</td></tr>`)
+    .join("\n");
+  return `<table>\n${body}\n</table>`;
 }
 
 export function statBadges(stats, derived) {

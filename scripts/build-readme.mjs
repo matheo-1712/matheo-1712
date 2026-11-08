@@ -20,13 +20,10 @@ import { fetchStats } from "./lib/github.mjs";
 import { loadProjects, loadProfile, loadStats } from "./lib/sources.mjs";
 import {
   bannerUrl,
-  collapsed,
-  languageBar,
-  projectTable,
+  projectGrid,
   recentActivity,
-  stackSection,
+  stackTable,
   statBadges,
-  STATUS_LABEL,
 } from "./lib/render.mjs";
 
 const USER = process.env.GH_USER ?? "matheo-1712";
@@ -167,14 +164,6 @@ export async function main() {
       `${archived.length} archivés)${projectsFresh ? "" : " — données de l'instantané"}`,
   );
 
-  const archivedBlock =
-    archived.length === 0
-      ? "_Aucun projet archivé._"
-      : collapsed(
-          `${STATUS_LABEL.archived} · ${archived.length} projets`,
-          projectTable(archived, { orgLabel }),
-        );
-
   const cvUrl = identity.cv
     ? new URL(identity.cv, `${portfolioUrl.replace(/\/$/, "")}/`).href
     : "";
@@ -189,11 +178,14 @@ export async function main() {
     BANNER: bannerUrl({ role: identity.role, stats, derived }),
     STATS: statBadges(stats, derived),
     RECENT: recentActivity(projects),
-    PROJECTS_PROD: projectTable(active, { orgLabel }),
-    PROJECTS_WIP: projectTable(ongoing, { orgLabel }),
-    PROJECTS_ARCHIVED: archivedBlock,
-    LANGUAGES: languageBar(projects),
-    STACK: stackSection(profile.skills),
+    // Deux colonnes pour les projets vivants, trois pour les archivés : tout
+    // reste affiché, sans que la page s'allonge inutilement.
+    PROJECTS_PROD: projectGrid(active, { columns: 2, orgLabel }),
+    PROJECTS_WIP: projectGrid(ongoing, { columns: 2, orgLabel }),
+    PROJECTS_ARCHIVED: projectGrid(archived, { columns: 3, orgLabel, compact: true }),
+    ARCHIVED_COUNT: String(archived.length),
+    WIP_COUNT: String(ongoing.length),
+    STACK: stackTable(profile.skills, projects),
     PROJECT_COUNT: String(projects.length),
     PROD_COUNT: String(active.length),
     PORTFOLIO_URL: portfolioUrl,
