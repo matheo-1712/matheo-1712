@@ -1,318 +1,219 @@
 #!/usr/bin/env node
-// Génère README.md à partir de README.template.md et de l'API GitHub.
-// Aucune dépendance : Node 20+ (fetch natif).
+// Génère README.md à partir de README.template.md.
+//
+// Ce script ne décrit AUCUN projet. La liste, les descriptions, les versions
+// et la stack viennent de mon portfolio, qui collecte GitHub chaque matin :
+//
+//   topic `portfolio` sur un dépôt  ->  collecte du portfolio  ->  ce README
+//
+// Ajouter un projet au README = poser le topic sur le dépôt. Rien à éditer ici.
+// Corriger un titre, masquer un projet, en fusionner deux : data/overrides.yml
+// du portfolio. Changer la stack affichée ou l'identité : data/profile.yml.
+//
+// Node 20+, aucune dépendance.
 
 import { readFile, writeFile } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 import { argv } from "node:process";
+
+import { fetchStats } from "./lib/github.mjs";
+import { loadProjects, loadProfile, loadStats } from "./lib/sources.mjs";
+import {
+  bannerUrl,
+  collapsed,
+  languageBar,
+  projectTable,
+  recentActivity,
+  stackSection,
+  statBadges,
+  STATUS_LABEL,
+} from "./lib/render.mjs";
 
 const USER = process.env.GH_USER ?? "matheo-1712";
 const ORGS = (process.env.GH_ORGS ?? "L-Antre-des-Loutres").split(",").filter(Boolean);
-const TOKEN = process.env.GITHUB_TOKEN ?? "";
+// Année d'arrivée sur GitHub : une constante, pas un appel réseau.
+const SINCE = Number(process.env.GH_SINCE ?? 2022);
 
-// Un projet n'est retenu que s'il a des releases, assez de commits de ma part,
-// et que ces commits représentent une part réelle du dépôt.
-const MIN_COMMITS = 40;
-const MIN_SHARE = 0.4;
-const TOP_TEAM = 6;
-const TOP_SOLO = 6;
-const RECENT_COUNT = 5;
+// Dépôt du portfolio : c'est lui qui produit les données.
+const PORTFOLIO_REPO = process.env.PORTFOLIO_REPO ?? "matheo-1712/matheo-1712.github.io";
+const PORTFOLIO_REF = process.env.PORTFOLIO_REF ?? "main";
+const raw = (path) => `https://raw.githubusercontent.com/${PORTFOLIO_REPO}/${PORTFOLIO_REF}/${path}`;
 
-// Descriptions courtes, volontairement lisibles en anglais comme en français.
-// Si un dépôt n'est pas listé ici, sa description GitHub est utilisée.
-const DESC = {
-  Astroloutre: "Community website · member stats & achievements",
-  "Cobblemon-RLM": "Minecraft datapack + resourcepack · custom creature roster",
-  OtterlyApi: "Game server management API · install, start, stop over HTTP",
-  Arisoutre: "Discord admin bot · member management",
-  Otterbots: "Discord bot framework · native events, commands, channels",
-  Mateloutre: "Community Discord bot · Docker deployment",
-  OAPI: "Async orchestration API · image generation, infra monitoring",
-  Citlali: "Genshin Impact Discord bot",
-  WatchSide: "Movie rental platform · dynamic pricing, user roles",
-  CitlAPI: "REST API powering Citlali",
-  "cobblemon-trainers": "Minecraft mod · configurable trainers",
-  OtterlyAPI: "Game server management API",
-  OtterMinded: "Anonymous social mobile app",
+const here = (path) => fileURLToPath(new URL(path, import.meta.url));
+const PATHS = {
+  template: here("../README.template.md"),
+  readme: here("../README.md"),
+  projects: here("../data/projects.json"),
+  profile: here("../data/profile.yml"),
+  stats: here("../data/stats.json"),
 };
 
-// Dépôts à ne jamais afficher (doublons, archives remplacées...). Format `owner/name`.
-const EXCLUDE = new Set([
-  "matheo-1712/OtterlyAPI", // repris et poursuivi sous L-Antre-des-Loutres/OtterlyApi
-]);
-
-// Langages de configuration/markup : comptés dans les projets, mais hors bandeau.
+// Langages de balisage ou de configuration : comptés dans les projets, mais
+// jamais mis en avant dans le bandeau — ce n'est pas ce que je sais faire.
 const NOT_A_SELLING_POINT = new Set([
-  "mcfunction", "Dockerfile", "HTML", "CSS", "Twig", "Blade", "Shell",
-  "Makefile", "Batchfile", "PowerShell", "Procfile", "SCSS", "Less", "Vue", "Handlebars",
+  "HTML", "CSS", "SCSS", "Less", "Blade", "Twig", "Handlebars", "mcfunction",
+  "Dockerfile", "Shell", "Makefile", "Batchfile", "PowerShell", "Procfile",
 ]);
 
-// Destination officielle de chaque techno. Un langage absent d'ici reste
-// affiché, mais sans lien : on ne renvoie jamais vers une simple image.
-const DOCS = {
-  TypeScript: "https://www.typescriptlang.org/",
-  JavaScript: "https://developer.mozilla.org/docs/Web/JavaScript",
-  Rust: "https://www.rust-lang.org/",
-  Java: "https://dev.java/",
-  Kotlin: "https://kotlinlang.org/",
-  PHP: "https://www.php.net/",
-  "C++": "https://isocpp.org/",
-  "C#": "https://learn.microsoft.com/dotnet/csharp/",
-  Astro: "https://astro.build/",
-  HTML: "https://developer.mozilla.org/docs/Web/HTML",
-  CSS: "https://developer.mozilla.org/docs/Web/CSS",
-  Ruby: "https://www.ruby-lang.org/",
-  Dockerfile: "https://docs.docker.com/reference/dockerfile/",
-  Twig: "https://twig.symfony.com/",
-  Vue: "https://vuejs.org/",
-  Shell: "https://www.gnu.org/software/bash/",
-};
+const STATUS_ORDER = ["prod", "wip", "paused", "archived"];
 
-const BADGE = {
-  TypeScript: "TypeScript-3178C6?logo=typescript&logoColor=white",
-  JavaScript: "JavaScript-F7DF1E?logo=javascript&logoColor=black",
-  Rust: "Rust-000000?logo=rust&logoColor=white",
-  Java: "Java-ED8B00?logo=openjdk&logoColor=white",
-  Kotlin: "Kotlin-7F52FF?logo=kotlin&logoColor=white",
-  PHP: "PHP-777BB4?logo=php&logoColor=white",
-  "C++": "C++-00599C?logo=cplusplus&logoColor=white",
-  "C#": "C%23-512BD4?logo=dotnet&logoColor=white",
-  Astro: "Astro-BC52EE?logo=astro&logoColor=white",
-  HTML: "HTML-E34F26?logo=html5&logoColor=white",
-  CSS: "CSS-1572B6?logo=css3&logoColor=white",
-  Ruby: "Ruby-CC342D?logo=ruby&logoColor=white",
-  Dockerfile: "Docker-2496ED?logo=docker&logoColor=white",
+// Nom lisible des organisations. Le login GitHub sert de repli : il est exact,
+// juste moins joli. C'est de la présentation, aucune donnée de projet.
+const ORG_LABEL = {
+  "l-antre-des-loutres": "L'Antre des Loutres",
+  "lp-applications-web-angers-2025-2026": "LP Applications web · Angers",
 };
+const orgLabel = (org) => ORG_LABEL[String(org).toLowerCase()] ?? org;
 
-const api = "https://api.github.com";
-const headers = {
-  "User-Agent": `${USER}-readme-builder`,
-  Accept: "application/vnd.github+json",
-  ...(TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {}),
-};
+// Au sein d'un même état : les projets mis en avant, puis ceux où j'ai le plus
+// investi. L'ancienneté est déjà traitée par la section « Dernières sorties ».
+function byInvestment(a, b) {
+  if (Boolean(a.featured) !== Boolean(b.featured)) return a.featured ? -1 : 1;
+  const ca = a.contribution?.commits ?? 0;
+  const cb = b.contribution?.commits ?? 0;
+  if (ca !== cb) return cb - ca;
+  return String(a.title).localeCompare(String(b.title), "fr");
+}
 
-async function gh(path, { accept } = {}) {
-  const url = path.startsWith("http") ? path : api + path;
-  for (let attempt = 0; attempt < 4; attempt++) {
-    const res = await fetch(url, { headers: accept ? { ...headers, Accept: accept } : headers });
-    if (res.ok) return res.json();
-    // 403/429 = rate limit : on attend la fenêtre indiquée par l'API.
-    if (res.status === 403 || res.status === 429) {
-      const reset = Number(res.headers.get("x-ratelimit-reset") ?? 0) * 1000;
-      const wait = Math.min(Math.max(reset - Date.now(), 2000), 60_000);
-      console.warn(`rate limit sur ${url}, attente ${Math.round(wait / 1000)}s`);
-      await new Promise((r) => setTimeout(r, wait));
-      continue;
+function topLanguages(projects, limit = 5) {
+  const weight = new Map();
+  for (const p of projects) {
+    const commits = p.contribution?.commits ?? 1;
+    for (const t of p.stack ?? []) {
+      if (NOT_A_SELLING_POINT.has(t)) continue;
+      weight.set(t, (weight.get(t) ?? 0) + commits);
     }
-    if (res.status === 404) return null;
-    throw new Error(`${res.status} ${res.statusText} — ${url}`);
   }
-  throw new Error(`échec après plusieurs tentatives — ${url}`);
+  return [...weight.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"))
+    .slice(0, limit)
+    .map(([t]) => t);
 }
 
-async function ghAll(path) {
+function headerLinks(identity, portfolioUrl, cvUrl) {
+  const badge = (label, value, color, logo, logoColor = "white") =>
+    `https://img.shields.io/badge/${encodeURIComponent(label)}-${encodeURIComponent(value)
+      .replace(/-/g, "--")}-${color}?style=for-the-badge&logo=${logo}&logoColor=${logoColor}`;
+
   const out = [];
-  for (let page = 1; page <= 10; page++) {
-    const sep = path.includes("?") ? "&" : "?";
-    const batch = await gh(`${path}${sep}per_page=100&page=${page}`);
-    if (!Array.isArray(batch) || batch.length === 0) break;
-    out.push(...batch);
-    if (batch.length < 100) break;
+  if (portfolioUrl) {
+    const shown = portfolioUrl.replace(/^https?:\/\//, "").replace(/\/$/, "");
+    out.push(`[![Portfolio](${badge("Portfolio", shown, "2563EB", "googlechrome")})](${portfolioUrl})`);
   }
-  return out;
+  if (identity.email) {
+    out.push(`[![Email](${badge("Email", identity.email, "EA4335", "gmail")})](mailto:${identity.email})`);
+  }
+  // Affiché seulement si renseigné dans profile.yml : pas de lien mort.
+  if (identity.linkedin) {
+    out.push(`[![LinkedIn](${badge("LinkedIn", "profil", "0A66C2", "linkedin")})](${identity.linkedin})`);
+  }
+  if (cvUrl) {
+    out.push(`[![CV](${badge("CV", "PDF", "DC2626", "adobeacrobatreader")})](${cvUrl})`);
+  }
+  if (ORGS.length) {
+    const label = orgLabel(ORGS[0]);
+    out.push(`[![${label}](${badge("Org", label, "7C3AED", "github")})](https://github.com/${ORGS[0]})`);
+  }
+  return out.join("\n");
 }
 
-// L'API search est limitée à ~10 req/min sans token, 30 avec.
-let lastSearch = 0;
-async function searchCount(kind, q) {
-  const gap = TOKEN ? 2200 : 7000;
-  const since = Date.now() - lastSearch;
-  if (since < gap) await new Promise((r) => setTimeout(r, gap - since));
-  lastSearch = Date.now();
-  const accept = kind === "commits" ? "application/vnd.github.cloak-preview+json" : undefined;
-  const res = await gh(`/search/${kind}?q=${encodeURIComponent(q)}&per_page=1`, { accept });
-  return res?.total_count ?? 0;
-}
-
-const fmt = (n) => n.toLocaleString("en-US");
-const day = (iso) => (iso ? iso.slice(0, 10) : "");
-
-// Rend l'image cliquable seulement si on a une vraie destination.
-const linked = (img, href) => (href ? `[${img}](${href})` : img);
-
-function langBadge(lang) {
-  if (!lang) return "";
-  const spec = BADGE[lang] ?? `${encodeURIComponent(lang)}-64748B`;
-  const sep = spec.includes("?") ? "&" : "?";
-  return linked(`![${lang}](https://img.shields.io/badge/-${spec}${sep}style=flat-square)`, DOCS[lang]);
-}
-
-export async function collectRepo(repo) {
-  const [contributors, releases, languages] = await Promise.all([
-    ghAll(`/repos/${repo.full_name}/contributors`),
-    ghAll(`/repos/${repo.full_name}/releases`),
-    gh(`/repos/${repo.full_name}/languages`),
-  ]);
-
-  const total = contributors.reduce((sum, c) => sum + c.contributions, 0);
-  const mine = contributors.find((c) => c.login?.toLowerCase() === USER.toLowerCase())?.contributions ?? 0;
-  const published = releases.filter((r) => !r.draft);
-  const latest = published[0] ?? null;
-
-  return {
-    name: repo.name,
-    fullName: repo.full_name,
-    url: repo.html_url,
-    owner: repo.owner.login,
-    isOrg: repo.owner.login.toLowerCase() !== USER.toLowerCase(),
-    description: DESC[repo.name] ?? repo.description ?? "",
-    mine,
-    share: total > 0 ? mine / total : 0,
-    releases: published.length,
-    latestTag: latest?.tag_name ?? "",
-    latestDate: latest?.published_at ?? "",
-    langs: Object.keys(languages ?? {}).slice(0, 2),
-  };
-}
-
-export function projectTable(rows) {
-  if (rows.length === 0) return "_No project matches the criteria yet._";
-  const head =
-    "| Project | | Commits | Releases | Latest | Stack |\n|---|---|:---:|:---:|:---:|---|";
-  const body = rows.map((r) => {
-    const stack = r.langs.map(langBadge).join(" ");
-    const latest = r.latestTag ? `\`${r.latestTag}\` <sub>${day(r.latestDate)}</sub>` : "—";
-    return `| **[${r.name}](${r.url})** | ${r.description} | \`${r.mine}\` | \`${r.releases}\` | ${latest} | ${stack} |`;
-  });
-  return [head, ...body].join("\n");
-}
-
-export function statBadges(s) {
-  const img = (label, value, color) =>
-    `![${label}](https://img.shields.io/badge/${encodeURIComponent(label).replace(/%20/g, "_")}-${encodeURIComponent(value)}-${color}?style=for-the-badge)`;
-  // Chaque compteur pointe vers la recherche GitHub qui le reproduit : le chiffre est vérifiable.
-  const find = (query, type) => `https://github.com/search?q=${encodeURIComponent(query)}&type=${type}`;
-  const orgQuery = ORGS.map((o) => `org:${o}`).join(" ");
-
-  return [
-    ["Commits", fmt(s.commits), "7C3AED", find(`author:${USER}`, "commits")],
-    ["Pull requests", fmt(s.prs), "7C3AED", find(`author:${USER} type:pr`, "pullrequests")],
-    ["Merged", `${fmt(s.merged)} / ${fmt(s.prs)}`, "16A34A", find(`author:${USER} type:pr is:merged`, "pullrequests")],
-    ["Issues", fmt(s.issues), "7C3AED", find(`author:${USER} type:issue`, "issues")],
-    ["Repositories", fmt(s.repos), "7C3AED", `https://github.com/${USER}?tab=repositories`],
-    // Pas d'URL fiable pour l'ensemble des releases : badge non cliquable.
-    ["Releases", fmt(s.releases), "7C3AED", ""],
-    ["Org / team commits", `${s.orgShare}%`, "16A34A", ORGS.length ? find(`author:${USER} ${orgQuery}`, "commits") : ""],
-    // Rien d'utile à ouvrir : on laisse le badge non cliquable.
-    ["GitHub since", String(s.since), "64748B", ""],
-  ]
-    .map(([label, value, color, href]) => linked(img(label, value, color), href))
-    .join("\n");
-}
-
-export function bannerUrl(s) {
-  const lines = [
-    "Backend & full-stack developer",
-    s.topLangs.join(" · "),
-    `${fmt(s.commits)} commits · ${fmt(s.prs)} pull requests · ${s.releases} releases`,
-    "Open to work · Ouvert aux opportunités",
-  ];
-  const params = new URLSearchParams({
-    font: "JetBrains Mono",
-    weight: "600",
-    size: "21",
-    duration: "3000",
-    pause: "900",
-    color: "7C3AED",
-    center: "true",
-    vCenter: "true",
-    width: "680",
-    height: "45",
-    lines: lines.join(";"),
-  });
-  return `https://readme-typing-svg.demolab.com?${params}`;
-}
-
-export function recentList(repos) {
-  const items = repos
-    .filter((r) => r.latestDate)
-    .sort((a, b) => b.latestDate.localeCompare(a.latestDate))
-    .slice(0, RECENT_COUNT);
-  if (items.length === 0) return "_No recent release._";
-  return items
-    .map((r) => `- \`${day(r.latestDate)}\` **[${r.name}](${r.url})** → \`${r.latestTag}\``)
-    .join("\n");
+function factsTable(facts) {
+  const rows = (facts ?? []).filter((f) => f?.label && f?.value);
+  if (rows.length === 0) return "";
+  return rows.map((f) => `**${f.label}** · ${f.value}`).join(" <br> ");
 }
 
 export async function main() {
-  console.log(`collecte pour ${USER}${TOKEN ? " (authentifié)" : " (anonyme, quotas serrés)"}`);
+  console.log(`source des projets : ${PORTFOLIO_REPO}@${PORTFOLIO_REF}`);
 
-  const profile = await gh(`/users/${USER}`);
-  const ownRepos = await ghAll(`/users/${USER}/repos?sort=pushed`);
-  const orgRepos = (await Promise.all(ORGS.map((o) => ghAll(`/orgs/${o}/repos?sort=pushed`)))).flat();
+  const token = process.env.GITHUB_TOKEN ?? "";
+  const [{ projects, fresh: projectsFresh }, profile] = await Promise.all([
+    loadProjects({ url: raw("data/projects.json"), cache: PATHS.projects }),
+    loadProfile({ url: raw("data/profile.yml"), cache: PATHS.profile }),
+  ]);
 
-  const candidates = [...ownRepos, ...orgRepos].filter(
-    (r) => !r.fork && r.name !== ".github" && !r.private,
-  );
-  console.log(`${candidates.length} dépôts à inspecter`);
+  const { stats } = await loadStats({
+    cache: PATHS.stats,
+    collect: () => fetchStats({ user: USER, orgs: ORGS, token, since: SINCE }),
+  });
 
-  const detailed = [];
-  for (const repo of candidates) {
-    detailed.push(await collectRepo(repo));
+  const identity = profile.identity ?? {};
+  const portfolioUrl = profile.seo?.url ?? `https://${USER}.github.io`;
+
+  const groups = new Map(STATUS_ORDER.map((s) => [s, []]));
+  for (const p of projects) {
+    const status = groups.has(p.status) ? p.status : "wip";
+    groups.get(status).push(p);
   }
+  for (const list of groups.values()) list.sort(byInvestment);
 
-  const mine = detailed.filter((r) => r.share >= MIN_SHARE && r.mine > 0);
-  const eligible = mine
-    .filter((r) => r.releases > 0 && r.mine >= MIN_COMMITS && !EXCLUDE.has(r.fullName))
-    .sort((a, b) => b.mine - a.mine);
+  // « En pause » rejoint « En cours » : deux tableaux d'un projet chacun
+  // n'apportent rien, et un projet en pause reste un projet vivant.
+  const active = [...groups.get("prod")];
+  const ongoing = [...groups.get("wip"), ...groups.get("paused")].sort(byInvestment);
+  const archived = groups.get("archived");
 
-  const team = eligible.filter((r) => r.isOrg).slice(0, TOP_TEAM);
-  const solo = eligible.filter((r) => !r.isOrg).slice(0, TOP_SOLO);
-
-  const orgFilter = ORGS.map((o) => `org:${o}`).join(" ");
-  const commits = await searchCount("commits", `author:${USER}`);
-  const orgCommits = ORGS.length ? await searchCount("commits", `author:${USER} ${orgFilter}`) : 0;
-  const prs = await searchCount("issues", `author:${USER} type:pr`);
-  const merged = await searchCount("issues", `author:${USER} type:pr is:merged`);
-  const issues = await searchCount("issues", `author:${USER} type:issue`);
-
-  const byLang = new Map();
-  for (const r of mine) {
-    for (const l of r.langs) byLang.set(l, (byLang.get(l) ?? 0) + r.mine);
-  }
-  const topLangs = [...byLang.entries()]
-    .filter(([l]) => !NOT_A_SELLING_POINT.has(l))
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5)
-    .map(([l]) => l);
-
-  const stats = {
-    commits,
-    prs,
-    merged,
-    issues,
-    repos: candidates.length,
-    releases: mine.reduce((sum, r) => sum + r.releases, 0),
-    orgShare: commits > 0 ? Math.round((orgCommits / commits) * 100) : 0,
-    since: new Date(profile.created_at).getUTCFullYear(),
-    topLangs,
+  const derived = {
+    user: USER,
+    orgs: ORGS,
+    portfolio: portfolioUrl,
+    projectCount: projects.length,
+    prodCount: active.length,
+    stars: projects.reduce((sum, p) => sum + (p.stars ?? 0), 0),
+    topLangs: topLanguages(projects),
   };
-  console.log(stats);
+  console.log(
+    `${projects.length} projets (${active.length} en production, ${ongoing.length} en cours, ` +
+      `${archived.length} archivés)${projectsFresh ? "" : " — données de l'instantané"}`,
+  );
 
-  const template = await readFile(new URL("../README.template.md", import.meta.url), "utf8");
-  const output = template
-    .replaceAll("{{BANNER}}", bannerUrl(stats))
-    .replaceAll("{{STATS}}", statBadges(stats))
-    .replaceAll("{{PROJECTS_TEAM}}", projectTable(team))
-    .replaceAll("{{PROJECTS_SOLO}}", projectTable(solo))
-    .replaceAll("{{RECENT}}", recentList(eligible))
-    .replaceAll("{{UPDATED}}", new Date().toISOString().slice(0, 10));
+  const archivedBlock =
+    archived.length === 0
+      ? "_Aucun projet archivé._"
+      : collapsed(
+          `${STATUS_LABEL.archived} · ${archived.length} projets`,
+          projectTable(archived, { orgLabel }),
+        );
 
-  if (output.includes("{{")) {
-    throw new Error("un placeholder n'a pas été remplacé");
+  const cvUrl = identity.cv
+    ? new URL(identity.cv, `${portfolioUrl.replace(/\/$/, "")}/`).href
+    : "";
+
+  const values = {
+    NAME: identity.name ?? USER,
+    ROLE: identity.role ?? "",
+    HEADLINE: profile.headline ?? "",
+    SUBLINE: profile.subline ?? "",
+    FACTS: factsTable(profile.facts),
+    LINKS: headerLinks(identity, portfolioUrl, cvUrl),
+    BANNER: bannerUrl({ role: identity.role, stats, derived }),
+    STATS: statBadges(stats, derived),
+    RECENT: recentActivity(projects),
+    PROJECTS_PROD: projectTable(active, { orgLabel }),
+    PROJECTS_WIP: projectTable(ongoing, { orgLabel }),
+    PROJECTS_ARCHIVED: archivedBlock,
+    LANGUAGES: languageBar(projects),
+    STACK: stackSection(profile.skills),
+    PROJECT_COUNT: String(projects.length),
+    PROD_COUNT: String(active.length),
+    PORTFOLIO_URL: portfolioUrl,
+    PORTFOLIO_REPO,
+    USER,
+    CV_URL: cvUrl,
+    UPDATED: new Date().toISOString().slice(0, 10),
+  };
+
+  const template = await readFile(PATHS.template, "utf8");
+  let output = template;
+  for (const [key, value] of Object.entries(values)) {
+    output = output.replaceAll(`{{${key}}}`, value);
   }
 
-  await writeFile(new URL("../README.md", import.meta.url), output);
-  console.log(`README.md écrit — ${team.length} projets équipe, ${solo.length} solo`);
+  const leftover = output.match(/\{\{[A-Z_]+\}\}/g);
+  if (leftover) throw new Error(`placeholder non remplacé : ${[...new Set(leftover)].join(", ")}`);
+
+  await writeFile(PATHS.readme, output);
+  console.log(`README.md écrit (${output.length} caractères)`);
 }
 
 const isEntry = argv[1] && import.meta.url === new URL(`file://${argv[1].replace(/\\/g, "/")}`).href;
