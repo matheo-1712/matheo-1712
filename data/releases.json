@@ -1,0 +1,67 @@
+{
+  "l-antre-des-loutres/arisoutre": {
+    "tag": "v3.1.3",
+    "date": "2026-02-12T12:01:17Z",
+    "prerelease": false
+  },
+  "l-antre-des-loutres/astroloutre": {
+    "tag": "v1.9.0",
+    "date": "2026-10-25T18:27:00Z",
+    "prerelease": false
+  },
+  "l-antre-des-loutres/cobblemon-rlm": {
+    "tag": "v1.7.0",
+    "date": "2026-11-02T23:13:54Z",
+    "prerelease": false
+  },
+  "l-antre-des-loutres/mateloutre": {
+    "tag": "v1.3.1",
+    "date": "2026-10-13T13:44:09Z",
+    "prerelease": false
+  },
+  "l-antre-des-loutres/otterbots": {
+    "tag": "v1.0.0",
+    "date": "2026-01-15T10:51:07Z",
+    "prerelease": false
+  },
+  "l-antre-des-loutres/otterlyapi": {
+    "tag": "v1.2.0",
+    "date": "2026-01-14T08:57:59Z",
+    "prerelease": false
+  },
+  "l-antre-des-loutres/otterminded": {
+    "tag": "v1.0.0",
+    "date": "2025-03-06T14:29:35Z",
+    "prerelease": false
+  },
+  "lp-applications-web-angers-2025-2026/hiddenink": {
+    "tag": "v1.0.0",
+    "date": "2026-01-19T13:16:58Z",
+    "prerelease": false
+  },
+  "lp-applications-web-angers-2025-2026/projet2": {
+    "tag": "v1.2",
+    "date": "2026-03-25T10:40:46Z",
+    "prerelease": false
+  },
+  "matheo-1712/citlali": {
+    "tag": "v3.0.3",
+    "date": "2026-01-20T10:26:17Z",
+    "prerelease": false
+  },
+  "matheo-1712/citlapi": {
+    "tag": "v1.0.0",
+    "date": "2026-01-19T13:22:45Z",
+    "prerelease": false
+  },
+  "matheo-1712/cobblemon-trainers": {
+    "tag": "v1.1.3",
+    "date": "2026-10-30T15:59:05Z",
+    "prerelease": false
+  },
+  "matheo-1712/oapi": {
+    "tag": "v1.2.1",
+    "date": "2026-10-24T23:20:15Z",
+    "prerelease": false
+  }
+}
