@@ -16,14 +16,27 @@ function ownerRepo(url) {
   return m ? `${m[1]}/${m[2].replace(/\.git$/, "")}` : null;
 }
 
+// On liste les releases au lieu d'appeler `/releases/latest` : cet endpoint
+// écarte les pré-releases par conception. Un projet dont la dernière version
+// est une bêta serait donc affiché sans version du tout, alors que le
+// portfolio, lui, la connaît.
+//
+// La liste est renvoyée de la plus récente à la plus ancienne ; on prend la
+// première qui n'est pas un brouillon.
 async function latestRelease(fullName, headers) {
-  const res = await fetch(`${API}/repos/${fullName}/releases/latest`, { headers });
-  // 404 : aucune release publiée. Ce n'est pas une erreur.
+  const res = await fetch(`${API}/repos/${fullName}/releases?per_page=10`, { headers });
+  // 404 : dépôt inaccessible ou sans releases. Ce n'est pas une erreur.
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`${res.status} ${res.statusText} — ${fullName}`);
-  const r = await res.json();
-  if (r.draft) return null;
-  return { tag: r.tag_name ?? "", date: r.published_at ?? "", prerelease: Boolean(r.prerelease) };
+  const list = await res.json();
+  if (!Array.isArray(list)) return null;
+  const r = list.find((x) => !x.draft);
+  if (!r) return null;
+  return {
+    tag: r.tag_name ?? "",
+    date: r.published_at ?? r.created_at ?? "",
+    prerelease: Boolean(r.prerelease),
+  };
 }
 
 // Renvoie une Map `owner/repo` -> { tag, date, prerelease }.
