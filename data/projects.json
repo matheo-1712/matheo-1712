@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08T11:59:06.085Z",
+  "generated": "2026-11-09T13:59:24.012Z",
   "count": 20,
   "projects": [
     {
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 10934,
+        "downloads": 10952,
         "followers": 21,
         "license": "MIT"
       },
@@ -287,7 +287,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-08",
+        "lastSeenUp": "2026-11-09",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -416,7 +416,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 3928,
+        "downloads": 3958,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -593,18 +593,18 @@
       "status": "wip",
       "started": "2026-10-07T20:45:15Z",
       "ended": "",
-      "updated": "2026-11-05T03:00:56Z",
+      "updated": "2026-11-08T18:17:37Z",
       "featured": false,
-      "version": "",
-      "prerelease": false,
+      "version": "v0.3.0",
+      "prerelease": true,
       "image": null,
       "links": {
         "repo": "https://github.com/matheo-1712/M.A.T.H.E.O"
       },
-      "stars": 0,
+      "stars": 1,
       "contribution": {
-        "commits": 8,
-        "total": 8,
+        "commits": 21,
+        "total": 21,
         "rank": 1,
         "contributors": 1
       },
@@ -1130,7 +1130,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-08",
+        "lastSeenUp": "2026-11-09",
         "urls": {
           "https://antredesloutres.fr": true
         }

@@ -31,7 +31,7 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 [![Projets publiés](https://img.shields.io/badge/Projets%20publi%C3%A9s-20-7C3AED?style=for-the-badge)](https://matheo-1712.github.io)
 [![En production](https://img.shields.io/badge/En%20production-7-16A34A?style=for-the-badge)](https://matheo-1712.github.io)
 [![Commits en équipe](https://img.shields.io/badge/Commits%20en%20%C3%A9quipe-54%20%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
-![Étoiles reçues](https://img.shields.io/badge/%C3%89toiles%20re%C3%A7ues-17-64748B?style=for-the-badge)
+![Étoiles reçues](https://img.shields.io/badge/%C3%89toiles%20re%C3%A7ues-18-64748B?style=for-the-badge)
 ![Sur GitHub depuis](https://img.shields.io/badge/Sur%20GitHub%20depuis-2022-64748B?style=for-the-badge)
 
 </div>
@@ -96,16 +96,16 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 <sub>Ottergames is a Minecraft plugin made to play multiple mini-games in a Wario Ware style.</sub><br>
 <sub>Java · 73 commits (57 %) · Plugin · L'Antre des Loutres</sub>
 
-<a href="https://github.com/matheo-1712/M.A.T.H.E.O"><b>M.A.T.H.E.O</b></a><br>
-<sub>Mon Assistant Technique Hautement Évolutif et Organisé</sub><br>
-<sub><code>v0.3.0</code> pre · Rust · 8 commits</sub>
+<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
+<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
+<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
-<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
-<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
+<a href="https://github.com/matheo-1712/M.A.T.H.E.O"><b>M.A.T.H.E.O</b></a><br>
+<sub>Mon Assistant Technique Hautement Évolutif et Organisé</sub><br>
+<sub><code>v0.3.0</code> pre · Rust · 21 commits</sub>
 
 <a href="https://github.com/matheo-1712/RustSSH"><b>RustSSH</b></a><br>
 <sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs…</sub><br>
@@ -252,6 +252,6 @@ la veille, au lieu de se vider.
 [![CV](https://img.shields.io/badge/CV-PDF-DC2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://matheo-1712.github.io/cv.pdf)
 [![L'Antre des Loutres](https://img.shields.io/badge/Org-L'Antre%20des%20Loutres-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>20 projets collectés · 7 en production · généré automatiquement le 2026-11-08</sub>
+<sub>20 projets collectés · 7 en production · généré automatiquement le 2026-11-09</sub>
 
 </div>
