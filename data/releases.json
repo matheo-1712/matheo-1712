@@ -60,9 +60,9 @@
     "prerelease": false
   },
   "matheo-1712/m.a.t.h.e.o": {
-    "tag": "v0.3.0",
-    "date": "2026-11-08T18:13:24Z",
-    "prerelease": true
+    "tag": "v1.0.0",
+    "date": "2026-11-10T00:34:53Z",
+    "prerelease": false
   },
   "matheo-1712/oapi": {
     "tag": "v1.2.1",

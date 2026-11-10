@@ -3,7 +3,7 @@
 
 # Mathéo Pérodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=D%C3%A9veloppeur+backend+%26+infrastructure%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B20+projets+publi%C3%A9s+%C2%B7+7+en+production%3B2+834+commits+%C2%B7+555+pull+requests" alt="Développeur backend & infrastructure" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=D%C3%A9veloppeur+backend+%26+infrastructure%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B20+projets+publi%C3%A9s+%C2%B7+8+en+production%3B2+843+commits+%C2%B7+558+pull+requests" alt="Développeur backend & infrastructure" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-matheo--1712.github.io-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://matheo-1712.github.io)
 [![Email](https://img.shields.io/badge/Email-perod.matheo%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -23,13 +23,13 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 
 <div align="center">
 
-[![Commits](https://img.shields.io/badge/Commits-2%20834-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
-[![Pull requests](https://img.shields.io/badge/Pull%20requests-555-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
-[![Fusionnées](https://img.shields.io/badge/Fusionn%C3%A9es-544%20%2F%20555-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
+[![Commits](https://img.shields.io/badge/Commits-2%20843-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
+[![Pull requests](https://img.shields.io/badge/Pull%20requests-558-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
+[![Fusionnées](https://img.shields.io/badge/Fusionn%C3%A9es-547%20%2F%20558-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
 [![Dépôts](https://img.shields.io/badge/D%C3%A9p%C3%B4ts-37-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
 [![Projets publiés](https://img.shields.io/badge/Projets%20publi%C3%A9s-20-7C3AED?style=for-the-badge)](https://matheo-1712.github.io)
-[![En production](https://img.shields.io/badge/En%20production-7-16A34A?style=for-the-badge)](https://matheo-1712.github.io)
+[![En production](https://img.shields.io/badge/En%20production-8-16A34A?style=for-the-badge)](https://matheo-1712.github.io)
 [![Commits en équipe](https://img.shields.io/badge/Commits%20en%20%C3%A9quipe-54%20%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
 ![Étoiles reçues](https://img.shields.io/badge/%C3%89toiles%20re%C3%A7ues-18-64748B?style=for-the-badge)
 ![Sur GitHub depuis](https://img.shields.io/badge/Sur%20GitHub%20depuis-2022-64748B?style=for-the-badge)
@@ -45,7 +45,7 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 >
 > Le nombre de **commits** affiché est le mien, suivi de ma part dans le dépôt.
 
-### En production <sub>· 7</sub>
+### En production <sub>· 8</sub>
 
 <table>
 <tr>
@@ -82,11 +82,15 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 <sub>Un framework de bot Discord adapté à la stack Antre des Loutres, conçu pour simplifier le…</sub><br>
 <sub><code>v1.0.0</code> · TypeScript · 124 commits (98 %) · Bot Discord · L'Antre des Loutres</sub>
 
+<a href="https://github.com/matheo-1712/M.A.T.H.E.O"><b>M.A.T.H.E.O</b></a><br>
+<sub>Mon Assistant Technique Hautement Évolutif et Organisé</sub><br>
+<sub><code>v1.0.0</code> · Rust · 30 commits</sub>
+
 </td>
 </tr>
 </table>
 
-### En cours <sub>· 4</sub>
+### En cours <sub>· 3</sub>
 
 <table>
 <tr>
@@ -96,20 +100,16 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 <sub>Ottergames is a Minecraft plugin made to play multiple mini-games in a Wario Ware style.</sub><br>
 <sub>Java · 73 commits (57 %) · Plugin · L'Antre des Loutres</sub>
 
-<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
-<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
-<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
+<a href="https://github.com/matheo-1712/RustSSH"><b>RustSSH</b></a><br>
+<sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs…</sub><br>
+<sub>Rust · 7 commits</sub>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/matheo-1712/M.A.T.H.E.O"><b>M.A.T.H.E.O</b></a><br>
-<sub>Mon Assistant Technique Hautement Évolutif et Organisé</sub><br>
-<sub><code>v0.3.0</code> pre · Rust · 21 commits</sub>
-
-<a href="https://github.com/matheo-1712/RustSSH"><b>RustSSH</b></a><br>
-<sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs…</sub><br>
-<sub>Rust · 7 commits</sub>
+<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
+<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
+<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
 
 </td>
 </tr>
@@ -162,7 +162,7 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 
 <sub>Date de la dernière sortie quand elle est connue, sinon du dernier push.</sub>
 
-- `2026-11-08` **[M.A.T.H.E.O](https://github.com/matheo-1712/M.A.T.H.E.O)** → `v0.3.0`
+- `2026-11-10` **[M.A.T.H.E.O](https://github.com/matheo-1712/M.A.T.H.E.O)** → `v1.0.0`
 - `2026-11-02` **[Cobblemon RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.7.0`
 - `2026-10-30` **[Cobblemon Trainers](https://github.com/matheo-1712/cobblemon-trainers)** → `v1.1.3`
 - `2026-10-25` **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** → `v1.9.0`
@@ -252,6 +252,6 @@ la veille, au lieu de se vider.
 [![CV](https://img.shields.io/badge/CV-PDF-DC2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://matheo-1712.github.io/cv.pdf)
 [![L'Antre des Loutres](https://img.shields.io/badge/Org-L'Antre%20des%20Loutres-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>20 projets collectés · 7 en production · généré automatiquement le 2026-11-09</sub>
+<sub>20 projets collectés · 8 en production · généré automatiquement le 2026-11-10</sub>
 
 </div>
