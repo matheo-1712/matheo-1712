@@ -252,6 +252,6 @@ la veille, au lieu de se vider.
 [![CV](https://img.shields.io/badge/CV-PDF-DC2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://matheo-1712.github.io/cv.pdf)
 [![L'Antre des Loutres](https://img.shields.io/badge/Org-L'Antre%20des%20Loutres-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>20 projets collectés · 8 en production · généré automatiquement le 2026-11-10</sub>
+<sub>20 projets collectés · 8 en production · généré automatiquement le 2026-11-11</sub>
 
 </div>
