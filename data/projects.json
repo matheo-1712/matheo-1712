@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T12:48:51.823Z",
+  "generated": "2026-11-16T13:45:22.663Z",
   "count": 20,
   "projects": [
     {
@@ -16,9 +16,9 @@
       "status": "prod",
       "started": "2025-07-24T20:12:46Z",
       "ended": "",
-      "updated": "2026-11-02T23:13:53Z",
+      "updated": "2026-11-15T16:16:35Z",
       "featured": false,
-      "version": "v1.7.0",
+      "version": "v1.7.2",
       "prerelease": false,
       "image": "https://cdn.modrinth.com/data/GC58bFHM/3bf877dff9d979aac58d4df761f378cd57210cdb_96.webp",
       "links": {
@@ -27,8 +27,8 @@
       },
       "stars": 1,
       "contribution": {
-        "commits": 401,
-        "total": 614,
+        "commits": 415,
+        "total": 628,
         "rank": 1,
         "contributors": 2
       },
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 11074,
+        "downloads": 11147,
         "followers": 21,
         "license": "MIT"
       },
@@ -261,9 +261,9 @@
       "status": "prod",
       "started": "2026-08-15T15:04:01Z",
       "ended": "",
-      "updated": "2026-11-12T20:12:56Z",
+      "updated": "2026-11-15T17:25:13Z",
       "featured": false,
-      "version": "v2.0.0-alpha",
+      "version": "v2.0.1",
       "prerelease": false,
       "image": "https://cdn.modrinth.com/data/khlinTrc/48634cdcb9d1f1c196f1335a6d3b798379a54085.png",
       "links": {
@@ -272,8 +272,8 @@
       },
       "stars": 2,
       "contribution": {
-        "commits": 299,
-        "total": 303,
+        "commits": 303,
+        "total": 307,
         "rank": 1,
         "contributors": 3
       },
@@ -362,7 +362,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 4228,
+        "downloads": 4308,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -448,7 +448,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-15",
+        "lastSeenUp": "2026-11-16",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -1122,7 +1122,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-15",
+        "lastSeenUp": "2026-11-16",
         "urls": {
           "https://antredesloutres.fr": true
         }
