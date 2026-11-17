@@ -3,7 +3,7 @@
 
 # Mathéo Pérodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=D%C3%A9veloppeur+backend+%26+infrastructure%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B20+projets+publi%C3%A9s+%C2%B7+8+en+production%3B2+896+commits+%C2%B7+566+pull+requests" alt="Développeur backend & infrastructure" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=D%C3%A9veloppeur+backend+%26+infrastructure%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B20+projets+publi%C3%A9s+%C2%B7+8+en+production%3B2+898+commits+%C2%B7+566+pull+requests" alt="Développeur backend & infrastructure" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-matheo--1712.github.io-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://matheo-1712.github.io)
 [![Email](https://img.shields.io/badge/Email-perod.matheo%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -23,7 +23,7 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 
 <div align="center">
 
-[![Commits](https://img.shields.io/badge/Commits-2%20896-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
+[![Commits](https://img.shields.io/badge/Commits-2%20898-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
 [![Pull requests](https://img.shields.io/badge/Pull%20requests-566-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
 [![Fusionnées](https://img.shields.io/badge/Fusionn%C3%A9es-555%20%2F%20566-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
 [![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
@@ -252,6 +252,6 @@ la veille, au lieu de se vider.
 [![CV](https://img.shields.io/badge/CV-PDF-DC2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://matheo-1712.github.io/cv.pdf)
 [![L'Antre des Loutres](https://img.shields.io/badge/Org-L'Antre%20des%20Loutres-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>20 projets collectés · 8 en production · généré automatiquement le 2026-11-16</sub>
+<sub>20 projets collectés · 8 en production · généré automatiquement le 2026-11-17</sub>
 
 </div>
