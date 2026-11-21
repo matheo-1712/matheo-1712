@@ -3,7 +3,7 @@
 
 # Mathéo Pérodeau
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=D%C3%A9veloppeur+backend+%26+infrastructure%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Astro+%C2%B7+Kotlin%3B20+projets+publi%C3%A9s+%C2%B7+8+en+production%3B2+932+commits+%C2%B7+572+pull+requests" alt="Développeur backend & infrastructure" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3000&pause=900&color=7C3AED&center=true&vCenter=true&width=680&height=45&lines=D%C3%A9veloppeur+backend+%26+infrastructure%3BTypeScript+%C2%B7+JavaScript+%C2%B7+Java+%C2%B7+Kotlin+%C2%B7+Astro%3B21+projets+publi%C3%A9s+%C2%B7+8+en+production%3B2+946+commits+%C2%B7+574+pull+requests" alt="Développeur backend & infrastructure" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-matheo--1712.github.io-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://matheo-1712.github.io)
 [![Email](https://img.shields.io/badge/Email-perod.matheo%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:perod.matheo@gmail.com)
@@ -23,12 +23,12 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 
 <div align="center">
 
-[![Commits](https://img.shields.io/badge/Commits-2%20932-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
-[![Pull requests](https://img.shields.io/badge/Pull%20requests-572-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
-[![Fusionnées](https://img.shields.io/badge/Fusionn%C3%A9es-561%20%2F%20572-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
-[![Issues](https://img.shields.io/badge/Issues-279-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
+[![Commits](https://img.shields.io/badge/Commits-2%20946-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712&type=commits)
+[![Pull requests](https://img.shields.io/badge/Pull%20requests-574-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr&type=pullrequests)
+[![Fusionnées](https://img.shields.io/badge/Fusionn%C3%A9es-563%20%2F%20574-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Apr%20is%3Amerged&type=pullrequests)
+[![Issues](https://img.shields.io/badge/Issues-280-7C3AED?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20type%3Aissue&type=issues)
 [![Dépôts](https://img.shields.io/badge/D%C3%A9p%C3%B4ts-39-7C3AED?style=for-the-badge)](https://github.com/matheo-1712?tab=repositories)
-[![Projets publiés](https://img.shields.io/badge/Projets%20publi%C3%A9s-20-7C3AED?style=for-the-badge)](https://matheo-1712.github.io)
+[![Projets publiés](https://img.shields.io/badge/Projets%20publi%C3%A9s-21-7C3AED?style=for-the-badge)](https://matheo-1712.github.io)
 [![En production](https://img.shields.io/badge/En%20production-8-16A34A?style=for-the-badge)](https://matheo-1712.github.io)
 [![Commits en équipe](https://img.shields.io/badge/Commits%20en%20%C3%A9quipe-53%20%25-16A34A?style=for-the-badge)](https://github.com/search?q=author%3Amatheo-1712%20org%3AL-Antre-des-Loutres&type=commits)
 ![Étoiles reçues](https://img.shields.io/badge/%C3%89toiles%20re%C3%A7ues-18-64748B?style=for-the-badge)
@@ -90,7 +90,7 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 </tr>
 </table>
 
-### En cours <sub>· 3</sub>
+### En cours <sub>· 4</sub>
 
 <table>
 <tr>
@@ -100,16 +100,20 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 <sub>Ottergames is a Minecraft plugin made to play multiple mini-games in a Wario Ware style.</sub><br>
 <sub>Java · 73 commits (57 %) · Plugin · L'Antre des Loutres</sub>
 
-<a href="https://github.com/matheo-1712/RustSSH"><b>RustSSH</b></a><br>
-<sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs…</sub><br>
-<sub>Rust · 7 commits</sub>
+<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
+<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
+<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/matheo-1712/re-otterbots"><b>Re Otterbots</b></a><br>
-<sub>Refonte d'Otterbots: Un framework de bot Discord adapté à la stack Antre des Loutres, conçu…</sub><br>
-<sub><code>v0.1.3</code> pre · TypeScript · 18 commits</sub>
+<a href="https://github.com/matheo-1712/cobblemon-league-screen"><b>Cobblemon League Screen</b></a><br>
+<sub>Cobblemon League Screen est un mod Minecraft open source qui ajoute un écran qui suit le…</sub><br>
+<sub><code>v0.1.3</code> pre · Kotlin · 40 commits</sub>
+
+<a href="https://github.com/matheo-1712/RustSSH"><b>RustSSH</b></a><br>
+<sub>Un client SSH codé en Rust qui a pour but de faciliter la vie des administrateurs de serveurs…</sub><br>
+<sub>Rust · 7 commits</sub>
 
 </td>
 </tr>
@@ -162,17 +166,17 @@ Je construis et j'exploite l'infrastructure d'une communauté de joueurs : APIs 
 
 <sub>Date de la dernière sortie quand elle est connue, sinon du dernier push.</sub>
 
+- `2026-11-21` **[Cobblemon League Screen](https://github.com/matheo-1712/cobblemon-league-screen)** → `v0.1.3`
 - `2026-11-15` **[Cobblemon Trainers](https://github.com/matheo-1712/cobblemon-trainers)** → `v2.0.1`
 - `2026-11-15` **[Cobblemon RLM](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)** → `v1.7.2`
 - `2026-11-10` **[M.A.T.H.E.O](https://github.com/matheo-1712/M.A.T.H.E.O)** → `v1.0.0`
 - `2026-10-25` **[Astroloutre](https://github.com/L-Antre-des-Loutres/Astroloutre)** → `v1.9.0`
 - `2026-10-24` **[OAPI](https://github.com/matheo-1712/OAPI)** → `v1.2.1`
-- `2026-10-13` **[Mateloutre](https://github.com/L-Antre-des-Loutres/Mateloutre)** → `v1.3.1`
 
 ## Stack
 
 <table>
-<tr><td valign="middle"><b>Dans mes projets</b></td><td><sub>TypeScript&nbsp;<sub>8</sub> · JavaScript&nbsp;<sub>4</sub> · Rust&nbsp;<sub>3</sub> · Java&nbsp;<sub>2</sub> · Kotlin&nbsp;<sub>2</sub> · PHP&nbsp;<sub>2</sub> · Assembly&nbsp;<sub>1</sub> · Astro&nbsp;<sub>1</sub> · Blade&nbsp;<sub>1</sub> · C#&nbsp;<sub>1</sub> · C++&nbsp;<sub>1</sub> · HTML&nbsp;<sub>1</sub></sub></td></tr>
+<tr><td valign="middle"><b>Dans mes projets</b></td><td><sub>TypeScript&nbsp;<sub>8</sub> · JavaScript&nbsp;<sub>4</sub> · Kotlin&nbsp;<sub>3</sub> · Rust&nbsp;<sub>3</sub> · Java&nbsp;<sub>2</sub> · PHP&nbsp;<sub>2</sub> · Assembly&nbsp;<sub>1</sub> · Astro&nbsp;<sub>1</sub> · Blade&nbsp;<sub>1</sub> · C#&nbsp;<sub>1</sub> · C++&nbsp;<sub>1</sub> · HTML&nbsp;<sub>1</sub></sub></td></tr>
 <tr><td valign="middle"><b>Backend</b></td><td><a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a> <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" /></a> <a href="https://www.php.net/"><img src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" /></a> <a href="https://dev.java/"><img src="https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" /></a> <a href="https://www.python.org/"><img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /></a></td></tr>
 <tr><td valign="middle"><b>Web</b></td><td><a href="https://nodejs.org/"><img src="https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /></a> <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" /></a> <a href="https://docs.rs/axum/"><img src="https://img.shields.io/badge/-Axum-000000?style=flat-square&logo=rust&logoColor=white" alt="Axum" /></a> <a href="https://laravel.com/"><img src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" /></a> <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /></a> <a href="https://astro.build/"><img src="https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" alt="Astro" /></a></td></tr>
 <tr><td valign="middle"><b>Données</b></td><td><a href="https://dev.mysql.com/doc/"><img src="https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL" /></a> <a href="https://mariadb.org/"><img src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB" /></a> <a href="https://pocketbase.io/docs/"><img src="https://img.shields.io/badge/-PocketBase-B8DBE4?style=flat-square&logo=pocketbase&logoColor=black" alt="PocketBase" /></a></td></tr>
@@ -252,6 +256,6 @@ la veille, au lieu de se vider.
 [![CV](https://img.shields.io/badge/CV-PDF-DC2626?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://matheo-1712.github.io/cv.pdf)
 [![L'Antre des Loutres](https://img.shields.io/badge/Org-L'Antre%20des%20Loutres-7C3AED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/L-Antre-des-Loutres)
 
-<sub>20 projets collectés · 8 en production · généré automatiquement le 2026-11-20</sub>
+<sub>21 projets collectés · 8 en production · généré automatiquement le 2026-11-21</sub>
 
 </div>
