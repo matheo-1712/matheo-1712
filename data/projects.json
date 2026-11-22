@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T13:32:04.824Z",
+  "generated": "2026-11-22T13:25:37.467Z",
   "count": 21,
   "projects": [
     {
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 11472,
+        "downloads": 11532,
         "followers": 21,
         "license": "MIT"
       },
@@ -261,9 +261,9 @@
       "status": "prod",
       "started": "2026-08-15T15:04:01Z",
       "ended": "",
-      "updated": "2026-11-20T05:43:58Z",
+      "updated": "2026-11-22T00:31:17Z",
       "featured": false,
-      "version": "v2.0.1",
+      "version": "v2.1.0",
       "prerelease": false,
       "image": "https://cdn.modrinth.com/data/khlinTrc/48634cdcb9d1f1c196f1335a6d3b798379a54085.png",
       "links": {
@@ -272,8 +272,8 @@
       },
       "stars": 2,
       "contribution": {
-        "commits": 305,
-        "total": 309,
+        "commits": 313,
+        "total": 317,
         "rank": 1,
         "contributors": 3
       },
@@ -362,7 +362,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 4528,
+        "downloads": 4588,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -484,7 +484,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-21",
+        "lastSeenUp": "2026-11-22",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -613,7 +613,7 @@
       "slug": "cobblemon-league-screen",
       "title": "Cobblemon League Screen",
       "summary": "Cobblemon League Screen est un mod Minecraft open source qui ajoute un écran qui suit le combat comme dans les combats de ligue de l'anime à Cobblemon.",
-      "body": "<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/logo-plain.png\" alt=\"Logo Cobblemon League Screen\"/>\n\nCobblemon League Screen est un mod Minecraft open source qui ajoute un écran qui suit le combat comme dans les combats de ligue de l'anime à Cobblemon.\n\n## Fonctionnalités\n\n- **Écran de ligue**: pose des blocs d'écran pour construire un mur de la taille que tu veux, et il affiche l'équipe du joueur et son statut en direct\n- **Terminal d'inscription**: relie jusqu'à 8 écrans, puis clique sur le terminal pendant un combat pour l'afficher à l'écran\n- **Arène**: définis une zone dans le terminal d'inscription, et l'écran se lance tout seul quand deux dresseurs s'affrontent dedans\n- **Thèmes**: change l'apparence de l'écran depuis le menu du terminal, ou ajoute tes propres thèmes avec un data pack\n- Compatible avec **Cobblemon Trainers** (optionnel)\n\n## Prérequis\n\n- Minecraft 1.21.1\n- Fabric Loader 0.19.5+\n- [Fabric API](https://modrinth.com/mod/fabric-api)\n- [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin)\n- [Cobblemon](https://modrinth.com/mod/cobblemon) 1.8.0+\n- [Cobblemon Trainers](https://modrinth.com/mod/khlinTrc) 2.0.0+ (optionnel)\n\n## Installation\n\nTélécharge la dernière version depuis les [releases](https://github.com/matheo-1712/cobblemon-league-screen/releases) et place le `.jar` dans ton dossier `mods`.\n\n## Crafts\n\n### Écran de ligue\n\n<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/craft-league_screen.png\" alt=\"Craft de l'écran de ligue\"/>\n\n### Terminal d'inscription\n\n<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/craft-registration_terminal.png\" alt=\"Craft du terminal d'inscription\"/>\n\n## Datapack\n\nTu peux créer tes propres thèmes d'écran avec un data pack: couleurs, place des Pokémon, portraits des dresseurs, images et textes. Tout est expliqué dans le [guide des data packs](docs/DATAPACK.fr.md).\n\nIci seront listés les thèmes créés par les joueurs, pour changer le look de ton écran sans rien écrire.\n\n*Aucun thème pour l'instant.*\n\nTu as créé un thème et tu veux qu'il soit dans la liste? Ouvre une [issue sur GitHub](https://github.com/matheo-1712/cobblemon-league-screen/issues) avec son lien.",
+      "body": "<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/logo-plain.png\" alt=\"Logo Cobblemon League Screen\"/>\n\nCobblemon League Screen est un mod Minecraft open source qui ajoute un écran qui suit le combat comme dans les combats de ligue de l'anime à Cobblemon.\n\n## Fonctionnalités\n\n- **Écran de ligue**: pose des blocs d'écran pour construire un mur de la taille que tu veux, et il affiche l'équipe du joueur et son statut en direct\n- **Terminal d'inscription**: relie jusqu'à 8 écrans, puis clique sur le terminal pendant un combat pour l'afficher à l'écran\n- **Arène**: définis une zone dans le terminal d'inscription, et l'écran se lance tout seul quand deux dresseurs s'affrontent dedans\n- **Thèmes**: change l'apparence de l'écran depuis le menu du terminal, ou ajoute tes propres thèmes avec un data pack\n- Compatible avec **Cobblemon Trainers** (optionnel)\n\n## Prérequis\n\n- Minecraft 1.21.1\n- Fabric Loader 0.19.5+\n- [Fabric API](https://modrinth.com/mod/fabric-api)\n- [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin)\n- [Cobblemon](https://modrinth.com/mod/cobblemon) 1.8.0+\n- [Cobblemon Trainers](https://modrinth.com/mod/khlinTrc) 2.0.0+ (optionnel)\n\n## Installation\n\nTélécharge la dernière version depuis les [releases](https://github.com/matheo-1712/cobblemon-league-screen/releases) et place le `.jar` dans ton dossier `mods`.\n\n## Crafts\n\n### Écran de ligue\n\n<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/craft-league_screen.png\" alt=\"Craft de l'écran de ligue\"/>\n\n### Terminal d'inscription\n\n<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/craft-registration_terminal.png\" alt=\"Craft du terminal d'inscription\"/>\n\n## Thèmes inclus\n\nPour changer de thème, accroupis-toi et fais un clic droit sur le terminal d'inscription, puis ouvre l'onglet **Thème**.\n\n<details>\n<summary><b>Glace & Feu</b> (par défaut)</summary>\n\n<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/theme-ice_fire.png\" alt=\"Fond du thème Glace & Feu\"/>\n\n</details>\n\n<details>\n<summary><b>Couronne</b></summary>\n\n<img src=\"https://raw.githubusercontent.com/matheo-1712/cobblemon-league-screen/refs/heads/master/media/theme-couronne.png\" alt=\"Fond du thème Couronne\"/>\n\n</details>\n\n## Datapack\n\nTu peux créer tes propres thèmes d'écran avec un data pack: couleurs, place des Pokémon, portraits des dresseurs, images et textes. Tout est expliqué dans le [guide des data packs](docs/DATAPACK.fr.md).\n\nIci seront listés les thèmes créés par les joueurs, pour changer le look de ton écran sans rien écrire.\n\n*Aucun thème pour l'instant.*\n\nTu as créé un thème et tu veux qu'il soit dans la liste? Ouvre une [issue sur GitHub](https://github.com/matheo-1712/cobblemon-league-screen/issues) avec son lien.",
       "type": "",
       "stack": [
         "Kotlin"
@@ -621,18 +621,19 @@
       "status": "wip",
       "started": "2026-11-18T20:54:10Z",
       "ended": "",
-      "updated": "2026-11-21T02:59:51Z",
+      "updated": "2026-11-21T20:08:26Z",
       "featured": false,
-      "version": "v0.1.3",
+      "version": "v0.2.0",
       "prerelease": true,
       "image": null,
       "links": {
-        "repo": "https://github.com/matheo-1712/cobblemon-league-screen"
+        "repo": "https://github.com/matheo-1712/cobblemon-league-screen",
+        "demo": "https://modrinth.com/mod/cobblemon-league-screen"
       },
       "stars": 0,
       "contribution": {
-        "commits": 40,
-        "total": 40,
+        "commits": 43,
+        "total": 43,
         "rank": 1,
         "contributors": 1
       },
@@ -1158,7 +1159,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-21",
+        "lastSeenUp": "2026-11-22",
         "urls": {
           "https://antredesloutres.fr": true
         }
